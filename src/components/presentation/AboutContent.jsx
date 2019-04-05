@@ -16,6 +16,7 @@ class AboutContent extends Component {
                                 Read more...
                             </button>
                         </p>
+
                         <div id="toggle-about-content"  hidden>
                             <p className="uk-margin-small-top">
                                 <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
