@@ -10,7 +10,7 @@
 
 # production
 /build
-/src/lib
+/lib
 /bin
 
 # misc
