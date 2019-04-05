@@ -10,10 +10,11 @@
 
 # production
 /build
-/lib
-/bin
 
-# misc
+# other
+lib
+bin
+dist
 .DS_Store
 .env.local
 .env.development.local
