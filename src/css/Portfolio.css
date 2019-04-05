@@ -1,0 +1,24 @@
+.portfolio-items .uk-card {
+  border-radius: 5px;
+}
+
+.portfolio-items .uk-card-media-top img {
+  border-radius: 5px 5px 0 0;
+}
+
+.portfolio-items .uk-card-secondary {
+  background-color: #37474f;
+}
+
+.portfolio-items .uk-card-body {
+  border-top: 2px solid #f8981c;
+}
+
+.portfolio-items .uk-label {
+  font-size: 0.79rem;
+  text-transform: capitalize;
+  background-color: #455a64 !important;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #b0bec5 !important;
+}

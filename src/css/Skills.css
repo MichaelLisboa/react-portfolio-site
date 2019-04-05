@@ -1,0 +1,93 @@
+.skills-tabs .uk-tab::before {
+  border-style: none !important;
+}
+
+.skills-section h4 {
+  font-size: 1.125rem;
+  margin-bottom: 14px !important;
+  font-weight: 800 !important;
+}
+
+.skills-section h5 {
+  font-size: 1rem;
+  margin: 0 auto 12px !important;
+}
+
+.skills-section li {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 6px !important;
+}
+
+.skills-section li a {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.skills-section img {
+  object-fit: cover !important;
+  width: 100%;
+}
+
+.skills-tabs .uk-active a {
+  color: #888;
+  border-width: 2px;
+  border-color: #f8981c !important;
+}
+
+@media (min-width: 640px) {
+  .skills-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 14px !important;
+    font-weight: 800 !important;
+  }
+
+  .skills-section h5 {
+    font-size: 1.25rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
+
+  .skills-section li {
+    font-size: 1.25rem;
+    margin: 0 auto 6px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .skills-section h4 {
+    font-size: 1.35rem;
+    margin-bottom: 14px !important;
+    font-weight: 800 !important;
+  }
+
+  .skills-section h5 {
+    font-size: 1rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
+
+  .skills-section li {
+    font-size: 1rem;
+    margin: 0 auto 6px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .skills-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 14px !important;
+    font-weight: 800 !important;
+  }
+
+  .skills-section h5 {
+    font-size: 1.25rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
+
+  .skills-section li {
+    font-size: 1.25rem;
+    margin: 0 auto 6px !important;
+  }
+}

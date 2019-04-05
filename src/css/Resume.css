@@ -1,0 +1,136 @@
+aside,
+article {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+aside {
+  padding-bottom: 100px;
+}
+
+article {
+  padding-bottom: 35px;
+}
+
+aside progress {
+  margin-top: 0 !important;
+}
+
+.skills-list h3,
+.work-experience h3 {
+  margin-top: 50px !important;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.skills-list h3:first-child,
+.work-experience h3:first-child {
+  margin-top: 0 !important;
+}
+
+article h5,
+aside.skills-list h5 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+aside.skills-list .uk-text-small {
+  font-size: 11px;
+}
+
+article .title {
+  margin-bottom: 15px;
+}
+
+.work-experience .uk-article-title {
+  margin-top: 35px;
+  font-size: 1.5rem;
+}
+
+.work-experience .uk-text-lead {
+  font-size: 1.124rem;
+}
+
+/* Progress */
+.uk-progress {
+  height: 3px;
+  margin-bottom: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.23);
+}
+
+* + .uk-progress {
+  margin-top: 0.25rem;
+}
+
+.uk-progress.one::-webkit-progress-value {
+  background-color: #26c6da;
+}
+
+.uk-progress.one::-moz-progress-bar {
+  background-color: #26c6da;
+}
+
+.uk-progress.one::-ms-fill {
+  background-color: #26c6da;
+}
+
+.uk-progress.two::-webkit-progress-value {
+  background-color: #faa05a;
+}
+
+.uk-progress.two::-moz-progress-bar {
+  background-color: #faa05a;
+}
+
+.uk-progress.two::-ms-fill {
+  background-color: #faa05a;
+}
+
+.uk-progress.three::-webkit-progress-value {
+  background-color: #32d296;
+}
+
+.uk-progress.three::-moz-progress-bar {
+  background-color: #32d296;
+}
+
+.uk-progress.three::-ms-fill {
+  background-color: #32d296;
+}
+
+.uk-progress.four::-webkit-progress-value {
+  background-color: #9c27b0;
+}
+
+.uk-progress.four::-moz-progress-bar {
+  background-color: #9c27b0;
+}
+
+.uk-progress.four::-ms-fill {
+  background-color: #9c27b0;
+}
+
+.uk-progress.five::-webkit-progress-value {
+  background-color: #ef5350;
+}
+
+.uk-progress.five::-moz-progress-bar {
+  background-color: #ef5350;
+}
+
+.uk-progress.five::-ms-fill {
+  background-color: #ef5350;
+}
+
+.uk-progress.six::-webkit-progress-value {
+  background-color: #90a4ae;
+}
+
+.uk-progress.six::-moz-progress-bar {
+  background-color: #90a4ae;
+}
+
+.uk-progress.six::-ms-fill {
+  background-color: #90a4ae;
+}
