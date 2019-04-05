@@ -10,8 +10,8 @@
 
 # production
 /build
-lib
-bin
+/src/lib
+/bin
 
 # misc
 .DS_Store
