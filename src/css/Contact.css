@@ -13,6 +13,10 @@ label {
   font-size: 0.879rem;
 }
 
+.contact-form h4 {
+  color: #fff !important;
+}
+
 .uk-notification-message {
   font-size: 16px;
   text-align: center;

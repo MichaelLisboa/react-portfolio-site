@@ -31,7 +31,7 @@ const clientLogos = clients.map((logo, i) => {
 class ClientsContent extends Component {
     render () {
         return (
-            <div className="client-grid uk-grid-small uk-child-width-1-4 uk-child-width-1-3@s uk-child-width-1-4@m
+            <div className="client-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@m
                 uk-margin-remove-top uk-margin-medium-top@m uk-margin-large-bottom" data-uk-grid>
                 {clientLogos}
             </div>

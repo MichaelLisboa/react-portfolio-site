@@ -356,6 +356,7 @@ h3.uk-section-title {
   padding: 2px 10px;
   color: #3c3c3c !important;
   border-radius: 3px;
+  white-space: nowrap !important;
 }
 
 .text-background-red {
@@ -384,4 +385,51 @@ h3.uk-section-title {
 
 .text-background-violet {
   background-color: #f3e5f5;
+}
+
+section h4.uk-heading-line {
+  font-size: 1.25rem;
+  font-weight: 600 !important;
+  font-family: 'Product Sans', sans-serif !important;
+}
+
+section h5. {
+  font-size: 1rem;
+  margin: 0 auto 12px !important;
+}
+
+@media (min-width: 640px) {
+  section h4.uk-heading-line {
+    font-size: 1.5rem;
+  }
+
+  section h5 {
+    font-size: 1.25rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  section h4.uk-heading-line {
+    font-size: 1.35rem;
+  }
+
+  section h5 {
+    font-size: 1rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
+}
+
+@media (min-width: 960px) {
+  section h4.uk-heading-line {
+    font-size: 1.5rem;
+  }
+
+  section h5 {
+    font-size: 1.25rem;
+    margin: 0 auto 12px !important;
+    font-weight: 600 !important;
+  }
 }

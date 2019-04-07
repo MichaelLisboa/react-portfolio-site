@@ -148,11 +148,11 @@ class ContactForm extends Component {
                         }`
                     }>
                     { !this.state.page ? (
-                        <div className="uk-text-center uk-container">
-                            <h3 className="header-headline uk-display-inline-block
-                                uk-section-title uk-text-center uk-text-capitalize uk-margin-remove-bottom">
-                                Let's Talk
-                            </h3>
+                        <div className="contact-form uk-text-center uk-container uk-container-small">
+                            <h4 className="uk-heading-line text-background
+                                 uk-text-capitalize uk-margin-large-top uk-margin-medium-bottom">
+                                <span>Let's Talk</span>
+                            </h4>
                         </div>
                     ) : null }
                     <div className="uk-container uk-container-small">

@@ -15,7 +15,7 @@ class Home extends Component {
                 <Header />
                 <About />
                 <Skills skillsTitle="Some of the Things I Do" />
-                <Clients clientsTitle="Some of the Great Brands I've Worked With" />
+                <Clients clientsTitle="Great Brands I've Worked With" />
                 <Testimonials testimonialsTitle="Nice things people have said" />
                 <ContactForm />
                 <Contact />

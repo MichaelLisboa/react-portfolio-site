@@ -33,11 +33,16 @@ class Rates extends Component {
                             technology at work.
                         </h3>
                         <p className="portfolio-lead uk-text-lead uk-margin-small-left uk-margin-small-right">
-                             See my freelance rates below, or have
-                             a <NavLink className="text-background text-background-orange
-                                uk-link-reset uk-link" to={'/resume'}>
-                                look at my resume
-                            </NavLink>.
+                            See my freelance rates below, or <NavLink className="text-background text-background-orange
+                                uk-link-reset uk-link uk-nowrap" to={'/contact'}>
+                                contact me
+                            </NavLink> for full-time opportunities.
+                        </p>
+                        <p className="uk-margin-small-left uk-margin-small-right">
+                            Have a <NavLink className="text-background text-background-green
+                            uk-link-reset uk-link uk-nowrap" to={'/resume'}>
+                            look at my resume
+                            </NavLink> for more info about my capabilities.
                         </p>
                     </div>
                     <RatesContent />
