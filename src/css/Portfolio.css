@@ -15,10 +15,19 @@
 }
 
 .portfolio-items .uk-label {
-  font-size: 0.79rem;
+  font-size: 0.7rem;
   text-transform: capitalize;
   background-color: #455a64 !important;
   padding-top: 3px;
   padding-bottom: 3px;
   color: #b0bec5 !important;
+}
+
+.portfolio-detail .uk-label {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  background-color: #efefef !important;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #90a4ae !important;
 }

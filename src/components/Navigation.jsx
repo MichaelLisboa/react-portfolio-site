@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../images/logo-dark.svg';
+import logo from '../images/astro-logo.svg';
 import '../css/Navigation.css';
 
 const LogoImage = () => (
@@ -9,14 +9,14 @@ const LogoImage = () => (
             <NavLink
                 className="uk-navbar-item uk-logo uk-margin-large-left@s"
                 to={'/'}>
-                <img src={logo} width="105px" alt="Phoenix Logo" data-uk-image />
+                <img src={logo} width="65px" alt="Astro logo" data-uk-image />
             </NavLink>
         </div>
         <div className="uk-navbar-center uk-hidden@s">
             <NavLink
                 className="uk-navbar-item uk-logo uk-margin-small-left@s"
                 to={'/'}>
-                <img src={logo} width="75px" alt="Phoenix Logo" data-uk-image />
+                <img src={logo} width="68px" alt="Phoenix Logo" data-uk-image />
             </NavLink>
         </div>
     </React.Fragment>

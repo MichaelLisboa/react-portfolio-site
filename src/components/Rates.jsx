@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import RatesContent from "./presentation/RatesContent.jsx";
 import { NavLink } from 'react-router-dom';
 import Contact from './Contact.jsx';
@@ -12,7 +12,7 @@ const headerStyles = {
 class Rates extends Component {
     render () {
         return (
-            <React.Fragment>
+            <Fragment>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light uk-flex uk-flex-center uk-flex-middle">
                     <div className="uk-width-2-3 uk-text-center">
@@ -24,15 +24,13 @@ class Rates extends Component {
                         </p>
                     </div>
                 </header>
-                <section id="priceModule" className="uk-section uk-section-large
-                    uk-section-muted uk-padding-remove-top">
+                <section id="priceModule" className="uk-section uk-section-muted uk-padding-remove-top">
                     <div className="uk-container uk-container-small uk-text-center
                         uk-margin-medium-top uk-margin-large-bottom">
-                        <h3 className="header-headline uk-margin-small-left uk-margin-small-right">
-                            20 years of experience in creative, user experience and
-                            technology at work.
+                        <h3 className="header-headline uk-margin-large-left@s uk-margin-large-right@s">
+                            20 years of experience in Creative, UX and Technology at work.
                         </h3>
-                        <p className="portfolio-lead uk-text-lead uk-margin-small-left uk-margin-small-right">
+                        <p className="portfolio-lead uk-text-lead">
                             See my freelance rates below, or <NavLink className="text-background text-background-orange
                                 uk-link-reset uk-link uk-nowrap" to={'/contact'}>
                                 contact me
@@ -48,7 +46,7 @@ class Rates extends Component {
                     <RatesContent />
                 </section>
                 <Contact />
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

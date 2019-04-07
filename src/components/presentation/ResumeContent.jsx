@@ -200,7 +200,7 @@ class ResumeContent extends Component {
                                 </p>
                                 <ul className="uk-list uk-list-bullet">
                                     <li>Spearheaded rebranding and remodelling of the consumer banking environmental
-                                        and digital experience of  Citibank in Asia.</li>
+                                        and digital experience of Citibank in Asia.</li>
                                     <li>Reformulated retail banking strategy by creating a new consumer banking
                                         experience with new, simpler tool sets, all founded on intuitive user experience
                                         strategy and design.</li>
@@ -283,7 +283,7 @@ class ResumeContent extends Component {
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Publicis (contract)</span><br />
                                     <small className="uk-text-muted">
-                                        Experience Director<br />Feb 2015 - June 2015
+                                        Director of User Experience, Singapore<br />Feb 2015 - June 2015
                                     </small>
                                 </h6>
 
@@ -304,21 +304,21 @@ class ResumeContent extends Component {
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">The Gate Worldwide (MSQ Partners)</span><br />
                                     <small className="uk-text-muted">
-                                        Creative Director, Asia Pacific<br />Sept 2012 - Mar 2015
+                                        Creative Director, Singapore<br />Sept 2012 - Mar 2015
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Eight Inc.</span><br />
                                     <small className="uk-text-muted">
-                                        DIRECTOR OF COMMUNICATIONS, APAC<br />JAN 2011 - Jan 2012
+                                        Director of Communications, APAC<br />JAN 2011 - Jan 2012
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Frog Design</span><br />
                                     <small className="uk-text-muted">
-                                        Lead Experience Designer<br />Dec 2005 - Dec 2006
+                                        Lead Experience Designer, San Francisco<br />Dec 2005 - Dec 2006
                                     </small>
                                 </h6>
                             </div>

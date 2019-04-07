@@ -4,8 +4,8 @@ class RatesContent extends Component {
     render () {
         return (
             <React.Fragment>
-                <div className="uk-container uk-container-small">
-                    <div className="uk-grid uk-grid-small uk-child-width-1-3@m uk-grid-match uk-flex-center"
+                <div className="uk-container uk-container-medium">
+                    <div className="uk-grid uk-grid-large uk-child-width-1-3@m uk-grid-match uk-flex-center"
                         data-uk-grid>
                         <div className="uk-first-column">
                             <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">

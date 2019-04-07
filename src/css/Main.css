@@ -19,6 +19,17 @@ h3.uk-section-title {
   font-weight: 300 !important;
 }
 
+.uk-breadcrumb li a,
+.uk-breadcrumb li span {
+  font-size: 12px !important;
+}
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+  content: '/';
+  display: inline-block;
+  margin: 0 8px;
+  color: #aaa;
+}
+
 .uk-background-primary {
   background-color: #49839a !important;
 }
@@ -60,6 +71,14 @@ h3.uk-section-title {
   .uk-margin-large-bottom\@s {
     margin-bottom: 70px !important;
   }
+
+  .uk-margin-large-left\@s {
+    margin-left: 70px !important;
+  }
+
+  .uk-margin-large-right\@s {
+    margin-right: 70px !important;
+  }
 }
 
 @media (min-width: 960px) {
@@ -93,6 +112,22 @@ h3.uk-section-title {
 
   .uk-margin-large-bottom\@m {
     margin-bottom: 70px !important;
+  }
+
+  .uk-margin-medium-left\@m {
+    margin-left: 40px !important;
+  }
+
+  .uk-margin-medium-right\@m {
+    margin-right: 40px !important;
+  }
+
+  .uk-margin-large-left\@m {
+    margin-left: 70px !important;
+  }
+
+  .uk-margin-large-right\@m {
+    margin-right: 70px !important;
   }
 }
 
@@ -388,48 +423,43 @@ h3.uk-section-title {
 }
 
 section h4.uk-heading-line {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600 !important;
   font-family: 'Product Sans', sans-serif !important;
 }
 
 section h5. {
   font-size: 1rem;
+  font-weight: 600 !important;
   margin: 0 auto 12px !important;
 }
 
 @media (min-width: 640px) {
   section h4.uk-heading-line {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   section h5 {
     font-size: 1.25rem;
-    margin: 0 auto 12px !important;
-    font-weight: 600 !important;
   }
 }
 
 @media (min-width: 768px) {
   section h4.uk-heading-line {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
   }
 
   section h5 {
     font-size: 1rem;
-    margin: 0 auto 12px !important;
-    font-weight: 600 !important;
   }
 }
 
-@media (min-width: 960px) {
+/* @media (min-width: 960px) {
   section h4.uk-heading-line {
     font-size: 1.5rem;
   }
 
   section h5 {
     font-size: 1.25rem;
-    margin: 0 auto 12px !important;
-    font-weight: 600 !important;
   }
-}
+} */

@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import { NavLink } from 'react-router-dom'
 import { getPostBySlug } from '../lib/contentful';
 import * as Markdown from 'react-markdown';
 import Contact from './Contact.jsx';
@@ -8,7 +9,6 @@ import '../css/Portfolio.css';
 class PortfolioDetail extends Component {
     constructor (props) {
         super(props);
-
         this.state = {
             entryHeroImage: '',
             entryHeadline: '',
@@ -37,13 +37,24 @@ class PortfolioDetail extends Component {
         }
 
         const {
+            entryClient,
             entryHeroImage,
             entryHeadline,
             entrySubHeadline,
+            entryCategory,
             entryDetails,
             entryImages,
             entryKey,
         } = this.state;
+
+        const categories = entryCategory.split(',')
+            .map((category, i) => {
+                return (
+                    <span key={i} className="uk-label uk-margin-small-right uk-margin-small-top">
+                        {category}
+                    </span>
+                )
+            })
 
 
         let portfolioImages = entryImages.map((image, i) => {
@@ -64,7 +75,7 @@ class PortfolioDetail extends Component {
         });
 
         return (
-            <React.Fragment>
+            <Fragment>
                 <div className="uk-cover-container">
                     <canvas width="1800" height="600"></canvas>
                     <img
@@ -74,13 +85,27 @@ class PortfolioDetail extends Component {
                         data-uk-cover
                     />
                 </div>
-                <div className="uk-container uk-container-small uk-text-center uk-margin">
+                <hr className="uk-margin-remove" />
+                <div className="uk-background-muted uk-padding-small uk-margin-large-bottom">
+                    <div className="uk-container">
+                        <ul className="uk-breadcrumb uk-text-uppercase uk-text-small">
+                            <li>
+                                <NavLink to={{pathname: `/portfolio/`}}>
+                                    All Case Studies
+                                </NavLink>
+                            </li>
+                            <li><span>{entryClient}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="portfolio-detail uk-container uk-container-small uk-text-center uk-margin">
                     <h3 className="header-headline uk-margin-small-left uk-margin-small-right">
                         {entryHeadline}
                     </h3>
                     <p className="portfolio-lead uk-text-lead uk-margin-small-left uk-margin-small-right">
                         {entrySubHeadline}
                     </p>
+                    {categories}
                 </div>
                 <div className="uk-container uk-container-small uk-margin-large">
                     <div className="uk-grid-small uk-width-1-1" data-uk-grid>
@@ -93,7 +118,7 @@ class PortfolioDetail extends Component {
                     </div>
                 </div>
                 <Contact />
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

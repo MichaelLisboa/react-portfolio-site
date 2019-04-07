@@ -18,7 +18,7 @@ class Skills extends Component {
                         See my portfolio <NavLink className="text-background text-background-indigo
                         uk-link-reset uk-link uk-nowrap" to={'/portfolio'}>
                         for case studies
-                    </NavLink> of projects I've done, or check out my <NavLink
+                    </NavLink>, or check out my <NavLink
                         className="text-background text-background-indigo
                         uk-link-reset uk-link uk-nowrap" to={'/rates'}>
                         freelance rates</NavLink>.</p>
