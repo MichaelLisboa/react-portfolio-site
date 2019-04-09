@@ -99,15 +99,15 @@ class PortfolioDetail extends Component {
                     </div>
                 </div>
                 <div className="portfolio-detail uk-container uk-container-small uk-text-center uk-margin">
-                    <h3 className="header-headline uk-margin-small-left uk-margin-small-right">
+                    <h2 className="content-title uk-margin-large-left@s uk-margin-large-right@s">
                         {entryHeadline}
-                    </h3>
-                    <p className="portfolio-lead uk-text-lead uk-margin-small-left uk-margin-small-right">
+                    </h2>
+                    <p className="content-lead uk-text-lead uk-margin-large-left@s uk-margin-large-right@s">
                         {entrySubHeadline}
                     </p>
                     {categories}
                 </div>
-                <div className="uk-container uk-container-small uk-margin-large">
+                <div className="portfolio-detail uk-container uk-container-small uk-margin-large">
                     <div className="uk-grid-small uk-width-1-1" data-uk-grid>
                         <div className="uk-width-3-5@m">
                             {portfolioImages}

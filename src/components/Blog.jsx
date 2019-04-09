@@ -40,9 +40,9 @@ class Blog extends Component {
                     className="uk-container uk-container-expand uk-light
                     uk-flex uk-flex-center uk-flex-middle">
                     <div className="uk-width-4-5 uk-width-2-3@ uk-text-center">
-                        <h3 className="header-headline">
+                        <h2>
                             Waste no time.
-                        </h3>
+                        </h2>
                         <p className="header-lead uk-text-lead uk-margin-remove-vertical">
                             Design, code, art, thoughts.
                         </p>

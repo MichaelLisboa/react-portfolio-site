@@ -1,0 +1,115 @@
+h1,
+h3 {
+  font-weight: 400 !important;
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+}
+
+p,
+h4,
+h5,
+li {
+  font-weight: 300;
+  font-family: "Bitter", Georgia, "Garamond", "Times New Roman", serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Bitter", Georgia, "Garamond", "Times New Roman", serif;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  font-weight: 400 !important;
+}
+
+header h2 {
+  font-family: 'Maven Pro', "Helvetica", "Arial", sans-serif !important;
+  font-weight: 500 !important;
+}
+
+h2.content-title {
+  font-weight: 600 !important;
+  text-align: left;
+}
+
+.content-lead {
+  font-size: 1.125rem !important;
+  color: #6c6c6c;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  h2.content-title {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+  }
+
+  .content-lead {
+    text-align: center;
+  }
+}
+
+.uk-article-meta {
+  font-size: 10px;
+}
+
+h3.uk-card-title {
+  font-weight: 400 !important;
+}
+
+h6 {
+  font-size: 0.879rem;
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  font-weight: 400 !important;
+}
+
+.header-lead {
+  font-size: 1.25rem !important;
+  font-weight: 400;
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 1.55rem !important;
+  }
+
+  .header-lead {
+    font-size: 1.35rem !important;
+  }
+}
+
+@media (min-width: 960px) {
+  h2 {
+    font-size: 1.75rem !important;
+  }
+
+  .header-lead {
+    font-size: 1.5rem !important;
+  }
+}
+
+h5 {
+  margin-bottom: 0 !important;
+  padding-bottom: 6px !important;
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  font-weight: 600 !important;
+}
+
+.uk-breadcrumb li a,
+.uk-breadcrumb li span {
+  font-size: 11px !important;
+  font-family: 'Maven Pro', "Helvetica", "Arial", sans-serif !important;
+}
+
+.uk-breadcrumb li span {
+  font-weight: 600;
+}
+
+.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
+  content: '/';
+  display: inline-block;
+  margin: 0 8px;
+  color: #aaa;
+}

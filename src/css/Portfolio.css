@@ -14,20 +14,35 @@
   border-top: 2px solid #f8981c;
 }
 
-.portfolio-items .uk-label {
+.uk-label {
   font-size: 0.7rem;
   text-transform: capitalize;
-  background-color: #455a64 !important;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+.portfolio-items .uk-label {
+  background-color: #455a64 !important;
   color: #b0bec5 !important;
 }
 
 .portfolio-detail .uk-label {
-  font-size: 0.7rem;
-  text-transform: capitalize;
   background-color: #efefef !important;
-  padding-top: 3px;
-  padding-bottom: 3px;
   color: #90a4ae !important;
+}
+
+.portfolio-detail h5:first-child {
+  padding-top: 0 !important;
+}
+
+.uk-button-portfolio {
+  background-color: #263238;
+  border: 1px solid #263238;
+  color: #b0bec5 !important;
+}
+
+.uk-button-portfolio:hover {
+  background-color: #29434e;
+  border-color: #ffae47;
+  color: #eceff1 !important;
 }

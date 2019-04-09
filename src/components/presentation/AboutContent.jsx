@@ -6,7 +6,7 @@ class AboutContent extends Component {
             <div className="uk-container uk-container-small uk-margin-large-top">
                 <div className="uk-width-expand@m">
                     <div className="uk-padding-small">
-                        <p className="uk-text-lead">
+                        <p className="uk-text-lead about-intro">
                             <span className="uk-margin-bottom uk-display-block">Hi, I'm Michael.</span>
                             I'm a <span className="text-background text-background-red">UX designer</span>, <span className="text-background text-background-yellow uk-text-nowrap">creative director</span>, <span className="text-background text-background-orange">illustrator</span>, <span className="text-background text-background-green">programmer</span>, <span className="text-background text-background-indigo uk-text-nowrap">start-up founder</span>, and a <span className="text-background text-background-violet">really good guy</span> who specializes in the <i>creative</i> use
                             of <i>technology</i> to invent and design unforgettable user experiences. <button

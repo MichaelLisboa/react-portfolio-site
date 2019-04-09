@@ -1,33 +1,9 @@
-h1,
-h2,
-h3 {
-  font-weight: 200 !important;
-  font-family: 'Product Sans', sans-serif !important;
-}
-
-p,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-  font-family: 'Open Sans', sans-serif;
-}
+@import url("./typography.css");
 
 h3.uk-section-title {
   font-size: 1.35rem;
   margin: 50px auto 35px !important;
-  font-weight: 300 !important;
-}
-
-.uk-breadcrumb li a,
-.uk-breadcrumb li span {
-  font-size: 12px !important;
-}
-.uk-breadcrumb > :nth-child(n+2):not(.uk-first-column)::before {
-  content: '/';
-  display: inline-block;
-  margin: 0 8px;
-  color: #aaa;
+  font-weight: 400 !important;
 }
 
 .uk-background-primary {
@@ -287,6 +263,7 @@ h3.uk-section-title {
 
 .uk-button {
   border-radius: 3px;
+  font-family: 'Maven Pro', "Helvetica", "Arial", sans-serif !important;
 }
 
 .uk-button-success {
@@ -299,91 +276,8 @@ h3.uk-section-title {
   color: #eceff1 !important;
 }
 
-.uk-button-brand {
-  background-color: #263238;
-  border: 1px solid #263238;
-  color: #b0bec5 !important;
-}
-
-.uk-button-brand:hover {
-  background-color: #29434e;
-  border-color: #ffae47;
-  color: #eceff1 !important;
-}
-
 .card-brand {
   border-top: 3px solid #f8981c;
-}
-
-.header-headline {
-  font-size: 1.75rem;
-  font-weight: 200;
-  color: #4c4c4c;
-}
-
-.header-lead {
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: #6c6c6c;
-}
-
-.portfolio-lead {
-  font-size: 1.25rem;
-  color: #6c6c6c;
-}
-
-.post-content h5 {
-  font-size: 1.125rem;
-  margin: 1.5rem auto 0.25rem;
-  margin: 0;
-  padding: 1em 0;
-}
-
-.post-content h5:first-child {
-  margin: 0 auto 0.15rem;
-}
-
-.post-content h6 {
-  text-align: center;
-  font-weight: 600;
-  margin: 0;
-  padding: 1em 0;
-}
-
-.post-content p {
-  margin: 0 0 0.75rem;
-  padding: 0;
-}
-
-.post-content hr {
-  margin: 0;
-}
-
-.post-content .content-box {
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  padding: 25px !important;
-}
-
-.post-content a img {
-  display: flex;
-  border-radius: 5px;
-  width: 90%;
-}
-
-.post-content pre {
-  margin: 50px auto !important;
-  padding: 10px !important;
-  overflow-x: scroll !important;
-}
-
-.post-content code {
-  overflow-x: scroll !important;
-}
-
-.post-content iframe {
-  width: 100% !important;
-  padding-bottom: 20px;
 }
 
 .text-background {
@@ -424,8 +318,8 @@ h3.uk-section-title {
 
 section h4.uk-heading-line {
   font-size: 1.15rem;
-  font-weight: 600 !important;
-  font-family: 'Product Sans', sans-serif !important;
+  font-weight: 700 !important;
+  font-family: 'Maven Pro', sans-serif !important;
 }
 
 section h5. {

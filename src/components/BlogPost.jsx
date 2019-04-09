@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { getBlogPostBySlug } from '../lib/contentful';
 import BlogPostContent from './presentation/BlogPostContent.jsx';
 import Contact from './Contact.jsx';
@@ -39,10 +39,10 @@ class BlogPost extends Component {
         }
 
         return (
-            <React.Fragment>
+            <Fragment>
                 <BlogPostContent blog={this.state} />
                 <Contact />
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

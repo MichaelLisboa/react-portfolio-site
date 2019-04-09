@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 class ResumeContent extends Component {
     render () {
         return (
-            <React.Fragment>
+            <Fragment>
                 <div className="uk-grid-small uk-margin-medium-top uk-margin-remove-bottom" data-uk-grid>
                     <aside className="skills-list uk-width-1-3@m uk-flex-last uk-flex-first@s">
                         <h3 className="uk-margin-small uk-padding-remove">Skills</h3>
@@ -126,7 +126,7 @@ class ResumeContent extends Component {
 
                     <article className="uk-article uk-width-expand@m uk-flex-first uk-flex-last@s">
                         <div className="work-experience">
-                            <h3 className="uk-margin-small uk-padding-remove">Client Projects</h3>
+                            <h3 className="uk-margin-small uk-padding-remove">Notable Projects</h3>
 
                             <div>
                                 <p className="uk-heading-line uk-article-title
@@ -332,7 +332,7 @@ class ResumeContent extends Component {
                         </div>
                     </article>
                 </div>
-            </React.Fragment>
+            </Fragment>
         )
     }
 };

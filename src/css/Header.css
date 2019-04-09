@@ -9,8 +9,13 @@ header {
 
 p.case-study-label {
   font-weight: 400 !important;
+  font-family: 'Maven Pro', "Helvetica", "Arial", sans-serif !important;
   text-transform: uppercase;
   color: #fff !important;
+}
+
+p.uk-text-lead {
+  font-size: 1.487rem;
 }
 
 .case-study-header-title {

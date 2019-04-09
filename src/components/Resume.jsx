@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ResumeContent from "./presentation/ResumeContent.jsx";
 import Contact from './Contact.jsx';
 import '../css/Resume.css';
@@ -13,14 +13,14 @@ const headerStyles = {
 class Resume extends Component {
     render () {
         return (
-            <React.Fragment>
+            <Fragment>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light
                     uk-flex uk-flex-center uk-flex-middle">
                     <div className="uk-width-4-5 uk-width-2-3@ uk-text-center">
-                        <h3 className="header-headline">
+                        <h2>
                             These are my creds, because it's expected.
-                        </h3>
+                        </h2>
                         <p className="header-lead uk-text-lead uk-margin-remove-vertical">
                             But, I'm not.
                         </p>
@@ -30,7 +30,7 @@ class Resume extends Component {
                     <ResumeContent />
                 </section>
                 <Contact />
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

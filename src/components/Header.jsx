@@ -5,7 +5,7 @@ import '../css/Header.css';
 
 const headerStyles = {
     // height: '30vh',
-    backgroundColor: '#ebebeb'
+    // backgroundColor: '#ebebeb'
 };
 
 const CtaItem = (props) => {
@@ -18,8 +18,6 @@ const CtaItem = (props) => {
         entryPath,
         buttonStyle
     } = props.cta;
-
-    console.log(props)
 
     return (
         <Fragment>
@@ -74,6 +72,12 @@ class Header extends Component {
     }
 
     render () {
+        if (this.state.isLoading) {
+            return (
+                <div data-uk-spinner></div>
+            );
+        }
+
         let ctaArray = this.state.posts;
 
         let ctaNodes = ctaArray

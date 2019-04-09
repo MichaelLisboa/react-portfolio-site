@@ -2,28 +2,6 @@
   border-style: none !important;
 }
 
-.skills-section h4 {
-  font-size: 1.125rem;
-  margin-bottom: 14px !important;
-  font-weight: 800 !important;
-}
-
-.skills-section h5 {
-  font-size: 1rem;
-  margin: 0 auto 12px !important;
-}
-
-.skills-section li {
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 6px !important;
-}
-
-.skills-section li a {
-  padding-left: 2px !important;
-  padding-right: 2px !important;
-}
-
 .skills-section img {
   object-fit: cover !important;
   width: 100%;
@@ -35,21 +13,60 @@
   border-color: #f8981c !important;
 }
 
+@media (max-width: 640px) {
+
+  .skills-section .uk-card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .skills-section h4 {
+    font-size: 1.125rem;
+    margin-bottom: 14px !important;
+    font-weight: 800 !important;
+  }
+
+  .skills-section h5 {
+    font-size: 1rem;
+    font-family: "Bitter", Georgia, "Garamond", "Times New Roman", serif !important;
+    font-weight: 400 !important;
+    color: #6c6c6c !important;
+    margin: 0 auto 12px !important;
+  }
+
+  .skills-section li {
+    font-size: 1rem;
+    margin-top: 0;
+    line-height: 1.25em;
+    margin-bottom: 6px !important;
+  }
+
+  .skills-section li a {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+  }
+}
+
 @media (min-width: 640px) {
   .skills-section h4 {
     font-size: 1.5rem;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
     margin-bottom: 14px !important;
     font-weight: 800 !important;
   }
 
   .skills-section h5 {
     font-size: 1.25rem;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+    color: #6c6c6c !important;
     margin: 0 auto 12px !important;
-    font-weight: 600 !important;
+    font-weight: 400 !important;
   }
 
   .skills-section li {
     font-size: 1.25rem;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+    color: #6c6c6c !important;
     margin: 0 auto 6px !important;
   }
 }
@@ -57,37 +74,27 @@
 @media (min-width: 768px) {
   .skills-section h4 {
     font-size: 1.35rem;
-    margin-bottom: 14px !important;
-    font-weight: 800 !important;
   }
 
   .skills-section h5 {
-    font-size: 1rem;
-    margin: 0 auto 12px !important;
-    font-weight: 600 !important;
+    font-size: 1.125rem;
   }
 
   .skills-section li {
     font-size: 1rem;
-    margin: 0 auto 6px !important;
   }
 }
 
 @media (min-width: 960px) {
   .skills-section h4 {
     font-size: 1.5rem;
-    margin-bottom: 14px !important;
-    font-weight: 800 !important;
   }
 
   .skills-section h5 {
-    font-size: 1.25rem;
-    margin: 0 auto 12px !important;
-    font-weight: 600 !important;
+    font-size: 1.275rem;
   }
 
   .skills-section li {
     font-size: 1.25rem;
-    margin: 0 auto 6px !important;
   }
 }

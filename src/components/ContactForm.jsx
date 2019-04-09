@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Contact from './Contact.jsx';
 import '../css/Contact.css';
 import UIkit from 'uikit';
@@ -61,7 +61,7 @@ class ContactForm extends Component {
 
     handleSubmit (event) {
         event.preventDefault();
-        let endpoint = 'https://www.influense.me/api/contact/';
+        let endpoint = 'http://127.0.0.1:8001/api/contact/';
         let target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
 
@@ -128,15 +128,15 @@ class ContactForm extends Component {
 
     render () {
         return (
-            <React.Fragment>
+            <Fragment>
                 { this.state.page ? (
                     <header style={headerStyles}
                         className="uk-container uk-container-expand uk-light
                         uk-flex uk-flex-center uk-flex-middle uk-margin-large-bottom">
                         <div className="uk-width-2-3 uk-text-center">
-                            <h3 className="header-headline">
+                            <h2>
                                 Get in touch.
-                            </h3>
+                            </h2>
                         </div>
                     </header>
                 ) : null}
@@ -250,7 +250,7 @@ class ContactForm extends Component {
                     </div>
                 </section>
                 {this.state.page ? <Contact /> : null}
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

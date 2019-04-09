@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 class RatesContent extends Component {
     render () {
         return (
-            <React.Fragment>
+            <Fragment>
                 <div className="uk-container uk-container-medium">
                     <div className="uk-grid uk-grid-large uk-child-width-1-3@m uk-grid-match uk-flex-center"
                         data-uk-grid>
@@ -65,7 +65,7 @@ class RatesContent extends Component {
                         </div>
                     </div>
                 </div>
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

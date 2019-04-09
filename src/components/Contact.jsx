@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../css/Contact.css';
 
@@ -10,7 +10,7 @@ const FooterStyles = {
 
 const ContactFooter = () => {
     return (
-        <React.Fragment>
+        <Fragment>
             <div className="uk-container uk-container-expand uk-padding-remove uk-margin-remove-vertical">
                 <div className="uk-text-center uk-padding uk-padding-remove-horizontal">
                     <span className="uk-text-small uk-text-light">
@@ -21,7 +21,7 @@ const ContactFooter = () => {
                     </span>
                 </div>
             </div>
-        </React.Fragment>
+        </Fragment>
     );
 };
 

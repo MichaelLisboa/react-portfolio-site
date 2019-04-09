@@ -44,7 +44,7 @@ const PortfolioItem = (props) => {
                         </div>
                     </div>
                     <div className="uk-card-footer uk-text-center">
-                        <Link className="uk-button uk-button uk-button-brand uk-margin-small-bottom"
+                        <Link className="uk-button uk-button-portfolio uk-margin-small-bottom"
                             to={{
                                 pathname: `/portfolio/${entryKey}`,
                                 state: { props }

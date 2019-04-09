@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PortfolioItem from './presentation/PortfolioItem.jsx';
 import Contact from './Contact.jsx';
 import '../css/Portfolio.css';
@@ -37,33 +37,33 @@ class Portfolio extends Component {
             });
 
         return (
-            <React.Fragment>
+            <Fragment>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light
                     uk-flex uk-flex-center uk-flex-middle">
                     <div className="uk-width-4-5 uk-width-2-3@s uk-text-center">
-                        <h3 className="header-headline">
+                        <h2>
                             <span className="uk-text-nowrap uk-margin-small-right">Brand.</span>
                             <span className="uk-text-nowrap uk-margin-small-right">UX.</span>
                             <span className="uk-text-nowrap">Code.</span>
-                        </h3>
+                        </h2>
                         <p className="header-lead uk-text-lead uk-margin-remove-vertical">
                             Case studies of my work.
                         </p>
                     </div>
                 </header>
                 <section className="uk-section">
-                    <React.Fragment>
+                    <Fragment>
                         <div className="uk-container uk-container-small">
                             <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid
                                 data-uk-height-match="target: .uk-card-body">
                                 {portfolioNodes}
                             </div>
                         </div>
-                    </React.Fragment>
+                    </Fragment>
                 </section>
                 <Contact />
-            </React.Fragment>
+            </Fragment>
         );
     }
 }

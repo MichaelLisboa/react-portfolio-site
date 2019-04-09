@@ -14,7 +14,7 @@ let UxMessage = () => (
             User Experience &amp; UI Design
         </h4>
         <h5 className="uk-margin-remove">
-            I create powerful Experiences.<br />
+            I design inspiring Experiences.<br />
             Experiences that solve problems.<br />
             Experiences that will be remembered.<br />
             Experiences that people <span data-uk-icon="icon: heart"></span>
@@ -55,7 +55,7 @@ let CreativeTechMessage = () => (
         </h4>
         <h5 className="uk-margin-remove">
             I like to make things work, whether it's building mobile UIs in React (like this site),
-                or diving into Python, Pandas or Sci-Kit Learn for deep data analysis.
+                or diving into Python and Pandas for deep data analysis.
         </h5>
         <ul className="uk-list uk-list-bullet">
             <li>HTML5 / CSS3</li>
@@ -83,7 +83,6 @@ class SkillsContent extends Component {
                     </div>
 
                     <div className="uk-slideshow-items uk-box-shadow-xlarge ">
-
                         <div className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove" data-uk-grid>
                             <div className="uk-flex-last@s uk-card-media-right uk-cover-container" data-uk-scrollspy="cls: uk-animation-slide-right;">
                                 <img
@@ -134,7 +133,6 @@ class SkillsContent extends Component {
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 

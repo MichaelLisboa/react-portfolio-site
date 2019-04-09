@@ -9,12 +9,14 @@ a {
   cursor: pointer !important;
 }
 
-
-
 .uk-navbar-container {
   height: 60px !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+nav img {
+  min-width: 60px;
 }
 
 nav .uk-navbar-item {
@@ -26,8 +28,12 @@ nav li a {
   min-height: 60px !important;
 }
 nav .uk-active {
-  color: 000 !important;
+  color: #546e7a !important;
   background-color: #f5f5f5;
+}
+
+.top-nav-overlay a {
+  color: #546e7a !important;
 }
 
 #offcanvas .uk-active {
