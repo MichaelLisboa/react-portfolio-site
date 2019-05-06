@@ -31,7 +31,7 @@ class AboutContent extends Component {
                                     className="uk-icon-button uk-margin-small-right" data-uk-icon="linkedin"><span>LinkedIn</span></a>
                                 <a href="https://github.com/MichaelLisboa"
                                     className="uk-icon-button uk-margin-small-right" data-uk-icon="github"><span>GitHub</span></a>
-                                <a href="https://www.instagram.com/vexfluxor/"
+                                <a href="https://www.instagram.com/michael__lisboa/"
                                     className="uk-icon-button" data-uk-icon="instagram"><span>Instagram</span></a>
                             </div>
                         </div>

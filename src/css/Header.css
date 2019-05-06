@@ -1,7 +1,3 @@
-header {
-
-}
-
 .uk-slideshow-items {
   min-height: 600px !important;
   height: 600px !important;
@@ -24,12 +20,11 @@ p.uk-text-lead {
   color: #fff;
 }
 
-uk-button.pink {
-  color: pink
+.uk-button.pink {
+  color: pink;
 }
 
 @media (max-width: 640px) {
-
   p.case-study-label {
     font-weight: 400 !important;
     text-transform: uppercase;
@@ -56,5 +51,4 @@ uk-button.pink {
     margin: 5px auto !important;
     padding: 5px !important;
   }
-
 }

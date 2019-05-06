@@ -32,6 +32,14 @@ nav .uk-active {
   background-color: #f5f5f5;
 }
 
+a.home-icon {
+  color: #888 !important;
+}
+
+a.hide-home-icon {
+  display: none !important;
+}
+
 .top-nav-overlay a {
   color: #546e7a !important;
 }

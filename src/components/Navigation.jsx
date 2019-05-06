@@ -4,18 +4,21 @@ import logo from '../images/astro-logo.svg';
 import '../css/Navigation.css';
 
 const LogoImage = () => (
-    <Fragment>
-        <div className="uk-navbar-center uk-hidden@s">
-            <NavLink
-                className="uk-navbar-item uk-logo"
-                to={'/'}>
-                <img src={logo} width="60px" alt="Phoenix Logo" data-uk-image />
-            </NavLink>
-        </div>
-    </Fragment>
+    <div className="uk-navbar-center uk-hidden@s">
+        <NavLink
+            className="uk-navbar-item uk-logo"
+            to={'/'}>
+            <img src={logo} width="60px" alt="Phoenix Logo" data-uk-image />
+        </NavLink>
+    </div>
 );
 
 class Navigation extends Component {
+
+    constructor (props) {
+        super(props);
+        console.log("PROPS", this.props)
+    }
 
     render () {
         return (
@@ -23,6 +26,15 @@ class Navigation extends Component {
                 <div className="navbar-container" data-uk-sticky>
                     <nav className="uk-navbar-container" data-uk-navbar>
                         <LogoImage />
+                        <div className="uk-navbar-left uk-margin-medium-left uk-visible@s">
+                            <NavLink
+                                activeClassName="hide-home-icon"
+                                className="home-icon uk-link-muted uk-link-reset"
+                                exact to={'/'}>
+                                <i data-uk-icon="icon: arrow-left; ratio: 0.95;" />
+                                <i data-uk-icon="icon: home; ratio: 0.75;" />
+                            </NavLink>
+                        </div>
                         <div className="uk-navbar-center uk-margin-medium-right uk-visible@s">
                             <ul className="uk-navbar-nav">
                                 <li>

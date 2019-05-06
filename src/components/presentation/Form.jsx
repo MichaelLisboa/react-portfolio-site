@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { FormErrors } from '../FormErrors.jsx';
+// import { FormErrors } from './FormErrors.jsx';
 import UIkit from 'uikit';
 import '../../css/Contact.css';
 

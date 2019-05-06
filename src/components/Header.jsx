@@ -3,19 +3,13 @@ import { NavLink } from 'react-router-dom';
 import { getHeroCtas } from '../lib/contentful';
 import '../css/Header.css';
 
-const headerStyles = {
-    // height: '30vh',
-    // backgroundColor: '#ebebeb'
-};
-
 const CtaItem = (props) => {
     const {
+        entryPortfolioReference,
         entryClient,
-        entryTopic,
         entryImage,
         entryText,
         textPosition,
-        entryPath,
         buttonStyle
     } = props.cta;
 
@@ -31,23 +25,27 @@ const CtaItem = (props) => {
                 />
                 <div className={`uk-width-1-3 uk-overlay ${textPosition} uk-visible@s`}
                     data-uk-slideshow-parallax="y: -200, 100, 1000">
-                    <p className="case-study-label uk-margin-remove uk-padding-remove">Case Study: {entryTopic}</p>
+                    <p className="case-study-label uk-margin-remove uk-padding-remove">
+                        Case Study: {entryPortfolioReference.fields.entryTopic}
+                    </p>
                     <h3 className="case-study-header-title uk-margin-remove">
                         {entryText}
                     </h3>
                     <NavLink className={`uk-button uk-button-large ${buttonStyle} uk-margin`}
-                        to={entryPath}>
+                        to={`/portfolio/${entryPortfolioReference.fields.entrySlug}`}>
                         See more
                     </NavLink>
                 </div>
 
                 <div className={`uk-width-1-2 uk-overlay ${textPosition} uk-hidden@s`}>
-                    <p className="case-study-label uk-margin-remove uk-padding-remove">Case Study: {entryTopic}</p>
+                    <p className="case-study-label uk-margin-remove uk-padding-remove">
+                        Case Study: {entryPortfolioReference.fields.entryTopic}
+                    </p>
                     <h3 className="case-study-header-title uk-margin-remove">
                         {entryText}
                     </h3>
                     <NavLink className={`uk-button uk-button-small ${buttonStyle}`}
-                        to={entryPath}>
+                        to={`/portfolio/${entryPortfolioReference.fields.entrySlug}`}>
                         See more
                     </NavLink>
                 </div>
@@ -72,24 +70,17 @@ class Header extends Component {
     }
 
     render () {
-        if (this.state.isLoading) {
-            return (
-                <div data-uk-spinner></div>
-            );
-        }
-
         let ctaArray = this.state.posts;
-
         let ctaNodes = ctaArray
             .sort((a, b) =>
-                a.entryId - b.entryId
-            )
+                new Date(b.entryPortfolioReference.fields.entryDate).getTime()
+                - new Date(a.entryPortfolioReference.fields.entryDate).getTime())
             .map(post => {
                 return <CtaItem cta={post} key={post.entryClient} />
             });
 
         return (
-            <header style={headerStyles}>
+            <header>
                 <div className="uk-position-relative"
                     data-uk-slideshow="autoplay: true; autoplay-interval: 5000; animation: fade; pause-on-hover: false;">
                     <ul className="uk-slideshow-items uk-height-small">

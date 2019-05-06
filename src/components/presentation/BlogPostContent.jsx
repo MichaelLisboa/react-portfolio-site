@@ -1,6 +1,6 @@
 import React from 'react';
 import * as Markdown from 'react-markdown';
-import CodeBlock from "../CodeBlock";
+import CodeBlock from "../../lib/CodeBlock";
 import moment from 'moment';
 import '../../css/Blog.css';
 

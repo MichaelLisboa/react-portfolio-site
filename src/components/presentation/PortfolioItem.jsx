@@ -8,7 +8,7 @@ const PortfolioItem = (props) => {
         entryClient,
         entryDescription,
         entryTileImage,
-        entryKey,
+        entrySlug,
     } = props.portfolioItem;
 
 
@@ -34,7 +34,16 @@ const PortfolioItem = (props) => {
                         />
                     </div>
                     <div className="uk-card-body">
+                        <Link
+                            style={{textDecoration: 'none'}}
+                            className="uk-display-inline-block"
+                            to={{
+                                pathname: `/portfolio/${entrySlug}`,
+                                state: { props }
+                            }}
+                        >
                         <h3 className="uk-card-title">{entryClient}</h3>
+                        </Link>
                         <p>{entryDescription}</p>
                         <div className="uk-width-1-1 uk-margin-small-bottom">
                             <h6 className="uk-heading-line uk-text-small uk-margin-remove-bottom">
@@ -46,11 +55,11 @@ const PortfolioItem = (props) => {
                     <div className="uk-card-footer uk-text-center">
                         <Link className="uk-button uk-button-portfolio uk-margin-small-bottom"
                             to={{
-                                pathname: `/portfolio/${entryKey}`,
+                                pathname: `/portfolio/${entrySlug}`,
                                 state: { props }
                             }}
                         >
-                        More about {entryClient}
+                        Read more
                         </Link>
                     </div>
                 </div>

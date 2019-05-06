@@ -1,11 +1,28 @@
 {
 	"short_name": "Hypermix",
-	"name": "Michael Lisboa",
-	"icons": [{
-		"src": "favicon.ico",
-		"sizes": "64x64 32x32 24x24 16x16",
-		"type": "image/x-icon"
-	}],
+	"name": "Hypermix - Michael Lisboa's Portfolio",
+	"icons": [
+        {
+    		"src": "favicon.ico",
+    		"sizes": "64x64 32x32 24x24 16x16",
+    		"type": "image/x-icon"
+    	},
+        {
+            "src": "astro-logo-144.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "astro-logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "astro-logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
     "start_url": "/?utm_source=hypermix",
 	"scope": "/",
 	"display": "standalone",

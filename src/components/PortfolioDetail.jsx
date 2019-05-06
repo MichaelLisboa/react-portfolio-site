@@ -15,7 +15,7 @@ class PortfolioDetail extends Component {
             entrySubHeadline: '',
             entryDetails: '',
             entryImages: '',
-            entryKey: '',
+            entrySlug: '',
             isLoading: true
         };
     }
@@ -44,7 +44,7 @@ class PortfolioDetail extends Component {
             entryCategory,
             entryDetails,
             entryImages,
-            entryKey,
+            entrySlug,
         } = this.state;
 
         const categories = entryCategory.split(',')
@@ -59,7 +59,7 @@ class PortfolioDetail extends Component {
 
         let portfolioImages = entryImages.map((image, i) => {
             return (
-                <div key={`${entryKey}-${i}`} className="portfolio-detail-content uk-margin-small-bottom
+                <div key={`${entrySlug}-${i}`} className="portfolio-detail-content uk-margin-small-bottom
                     uk-inline-clip uk-transition-toggle" data-tabindex="0">
                     <img
                         src={image.fields.file.url}

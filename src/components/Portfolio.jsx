@@ -29,10 +29,10 @@ class Portfolio extends Component {
     render () {
         if (!this.state.posts.length) return null;
         const portfolioNodes = this.state.posts
-            .sort((a, b) => b.entryId - a.entryId)
+            .sort((a, b) => new Date(b.entryDate).getTime() - new Date(a.entryDate).getTime())
             .map((post, i) => {
                 return (
-                    <PortfolioItem key={post.entryKey} portfolioItem={post} />
+                    <PortfolioItem key={post.entrySlug} portfolioItem={post} />
                 );
             });
 
