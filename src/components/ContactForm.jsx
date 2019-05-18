@@ -34,7 +34,6 @@ class ContactForm extends Component {
         this.setState({
             page: ''
         });
-        // console.log("MONKEY", this.props.location.pathname)
         if (!this.props.location) return;
         this.setState({
             page: this.props.location.pathname

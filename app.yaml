@@ -2,43 +2,23 @@ service: hypermix
 runtime: nodejs
 env: flex
 
-# [START handlers]
-# handlers:
-#  - url: /
-#    static_files: build/index.html
-#    upload: build/index.html
-#    secure: always
-#
-#  - url: /(.*)
-#    static_files: build/\1
-#    upload: build/(.*)
-#    secure: always
-# [END handlers]
-
-# This sample incurs costs to run on the App Engine flexible environment.
-# The settings below are to reduce costs during testing and are not appropriate
-# for production use. For more information, see:
-# https://cloud.google.com/appengine/docs/flexible/nodejs/configuring-your-app-with-app-yaml
-# manual_scaling:
-#   instances: 1
 resources:
-  cpu: 1
-  memory_gb: .5
+  cpu: 2
+  memory_gb: 8
   disk_size_gb: 10
 
 automatic_scaling:
   min_num_instances: 1
-  max_num_instances: 6
+  max_num_instances: 4
   cool_down_period_sec: 180
   cpu_utilization:
     target_utilization: 0.6
 
 skip_files:
-- ^env$ #virtual environment's folder
+- ^env$
 - ^node_modules$
 - ^(.*/)?#.*#$
 - ^(.*/)?.*~$
 - ^(.*/)?.*\.py[co]$
 - ^(.*/)?.*/RCS/.*$
 - ^(.*/)?\..*$
-- ^(.*/)?.*\.pkl$
