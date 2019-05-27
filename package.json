@@ -31,6 +31,7 @@
         "react-router-dom": "^5.0.0",
         "react-scripts": "2.1.8",
         "react-syntax-highlighter": "^10.2.1",
+        "recompose": "^0.30.0",
         "uikit": "^3.0.3",
         "yes-https": "^1.0.0"
     },

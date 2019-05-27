@@ -57,19 +57,36 @@ const CtaItem = (props) => {
 class Header extends Component {
     constructor (props) {
         super(props);
-        this.state = { posts: [] };
+        this.state = {
+            posts: [],
+            isLoading: true
+        };
     }
 
     componentDidMount () {
         getHeroCtas()
             .then(response => {
                 const posts = response.items.map(item => item.fields);
-                this.setState({ posts });
+                this.setState({
+                    posts,
+                    isLoading: false
+                });
             })
             .catch(error => console.error(error));
     }
 
     render () {
+
+        if (this.state.isLoading) {
+            return (
+                <header>
+                    <div className="uk-height-1-1 uk-container uk-container-expand
+                        uk-grid-collapse uk-flex-center uk-flex-middle" data-uk-grid>
+                        <span className="uk-padding-remove uk-margin-remove uk-spinner" data-uk-spinner="ratio: 1" />
+                    </div>
+                </header>
+            )
+        }
         let ctaArray = this.state.posts;
         let ctaNodes = ctaArray
             .sort((a, b) =>

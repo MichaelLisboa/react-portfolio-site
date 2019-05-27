@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import PortfolioItem from './presentation/PortfolioItem.jsx';
+import { compose } from 'recompose';
 import Contact from './Contact.jsx';
 import '../css/Portfolio.css';
 import { getPosts } from '../lib/contentful';
@@ -9,17 +10,41 @@ const headerStyles = {
     backgroundColor: '#49839a'
 };
 
+const withLoading = (Component) => (props) =>
+    <Fragment>
+        <Component {...props} />
+        <div className="interactions uk-container uk-container-expand uk-text-center uk-margin-large">
+            {props.isLoading && <span className="uk-padding-remove uk-margin-remove uk-spinner" data-uk-spinner="ratio: 1" />}
+        </div>
+    </Fragment>
+
+const PortfolioItems = ({items}) =>
+    <section className="uk-section">
+        <div className="uk-container uk-container-small">
+            <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid
+                data-uk-height-match="target: .uk-card-body">
+                {items}
+            </div>
+        </div>
+    </section>
+
 class Portfolio extends Component {
     constructor (props) {
         super(props);
-        this.state = { posts: [] };
+        this.state = {
+            posts: [],
+            isLoading: true
+        };
     }
 
     componentDidMount () {
         getPosts()
             .then(response => {
                 const posts = response.items.map(item => item.fields);
-                this.setState({ posts });
+                this.setState({
+                    posts,
+                    isLoading: false
+                });
             })
             .catch(error => {
                 console.error(error);
@@ -32,7 +57,10 @@ class Portfolio extends Component {
             .sort((a, b) => new Date(b.entryDate).getTime() - new Date(a.entryDate).getTime())
             .map((post, i) => {
                 return (
-                    <PortfolioItem key={post.entrySlug} portfolioItem={post} />
+                    <PortfolioItem
+                        key={post.entrySlug}
+                        portfolioItem={post}
+                    />
                 );
             });
 
@@ -52,20 +80,18 @@ class Portfolio extends Component {
                         </p>
                     </div>
                 </header>
-                <section className="uk-section">
-                    <Fragment>
-                        <div className="uk-container uk-container-small">
-                            <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid
-                                data-uk-height-match="target: .uk-card-body">
-                                {portfolioNodes}
-                            </div>
-                        </div>
-                    </Fragment>
-                </section>
+                <PortfolioItemsWithLoading
+                    items={portfolioNodes}
+                    isLoading={this.state.isLoading}
+                    />
                 <Contact />
             </Fragment>
         );
     }
 }
+
+const PortfolioItemsWithLoading = compose(
+    withLoading,
+)(PortfolioItems);
 
 export default Portfolio;
