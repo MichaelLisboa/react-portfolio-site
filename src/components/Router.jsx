@@ -1,16 +1,16 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Switch } from 'react-router-dom';
-import withTracker from './withTracker.jsx';
-import ScrollToTopRoute from '../lib/ScrollToTopRoute';
-import Navigation from './Navigation.jsx';
-import Home from './Home.jsx';
-import Rates from './Rates.jsx';
-import Resume from './Resume.jsx';
-import Portfolio from './Portfolio.jsx';
-import PortfolioDetail from './PortfolioDetail.jsx';
-import Blog from './Blog.jsx';
-import BlogPost from './BlogPost.jsx';
-import ContactForm from './ContactForm.jsx';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import withTracker from "./withTracker.jsx";
+import ScrollToTopRoute from "../lib/ScrollToTopRoute";
+import Navigation from "./Navigation.jsx";
+import Home from "./Home.jsx";
+import Rates from "./Rates.jsx";
+import Resume from "./Resume.jsx";
+import Portfolio from "./Portfolio.jsx";
+import PortfolioDetail from "./PortfolioDetail.jsx";
+import Blog from "./Blog.jsx";
+import BlogPost from "./BlogPost.jsx";
+import ContactForm from "./ContactForm.jsx";
 
 const NavRoutes = () => (
     <Fragment>

@@ -14,7 +14,7 @@
         "node": ">=8.0.0"
     },
     "scripts": {
-        "deploy": "npm run build && gcloud app deploy -q",
+        "deploy": "npm run build && git push heroku master",
         "start": "node server.js",
         "build": "react-scripts build",
         "server": "nodemon server.js",

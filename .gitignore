@@ -12,8 +12,8 @@
 /build
 
 # other
-lib
-bin
+#lib
+#bin
 dist
 .DS_Store
 .env.local
