@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio-site/static/css/main.c199f1cb.chunk.css",
-    "main.js": "/react-portfolio-site/static/js/main.e22fec49.chunk.js",
-    "runtime~main.js": "/react-portfolio-site/static/js/runtime~main.47e1dff8.js",
-    "static/js/2.96f46020.chunk.js": "/react-portfolio-site/static/js/2.96f46020.chunk.js",
-    "index.html": "/react-portfolio-site/index.html",
-    "precache-manifest.14111ea6d41080e656ea657957129fdf.js": "/react-portfolio-site/precache-manifest.14111ea6d41080e656ea657957129fdf.js",
-    "service-worker.js": "/react-portfolio-site/service-worker.js",
-    "static/media/astro-logo.svg": "/react-portfolio-site/static/media/astro-logo.3658d8d2.svg",
-    "static/media/creative-strategy-c.png": "/react-portfolio-site/static/media/creative-strategy-c.f3500fb8.png",
-    "static/media/creative-strategy-s.png": "/react-portfolio-site/static/media/creative-strategy-s.2eb003b5.png",
-    "static/media/creative-technology-c.png": "/react-portfolio-site/static/media/creative-technology-c.9f012ac4.png",
-    "static/media/creative-technology-s.png": "/react-portfolio-site/static/media/creative-technology-s.98723074.png",
-    "static/media/insead.png": "/react-portfolio-site/static/media/insead.6b7e9013.png",
-    "static/media/oreo.png": "/react-portfolio-site/static/media/oreo.2f534f87.png",
-    "static/media/sony.png": "/react-portfolio-site/static/media/sony.bd0dc0d5.png",
-    "static/media/user-experience-c.png": "/react-portfolio-site/static/media/user-experience-c.40bd351a.png",
-    "static/media/user-experience-s.png": "/react-portfolio-site/static/media/user-experience-s.63a43a6a.png"
+    "main.css": "/www.hypermix.com/static/css/main.c199f1cb.chunk.css",
+    "main.js": "/www.hypermix.com/static/js/main.1426cc1f.chunk.js",
+    "runtime~main.js": "/www.hypermix.com/static/js/runtime~main.afef03c8.js",
+    "static/js/2.96f46020.chunk.js": "/www.hypermix.com/static/js/2.96f46020.chunk.js",
+    "index.html": "/www.hypermix.com/index.html",
+    "precache-manifest.e30f3e79d2f86182edb512a20ff4569a.js": "/www.hypermix.com/precache-manifest.e30f3e79d2f86182edb512a20ff4569a.js",
+    "service-worker.js": "/www.hypermix.com/service-worker.js",
+    "static/media/astro-logo.svg": "/www.hypermix.com/static/media/astro-logo.3658d8d2.svg",
+    "static/media/creative-strategy-c.png": "/www.hypermix.com/static/media/creative-strategy-c.f3500fb8.png",
+    "static/media/creative-strategy-s.png": "/www.hypermix.com/static/media/creative-strategy-s.2eb003b5.png",
+    "static/media/creative-technology-c.png": "/www.hypermix.com/static/media/creative-technology-c.9f012ac4.png",
+    "static/media/creative-technology-s.png": "/www.hypermix.com/static/media/creative-technology-s.98723074.png",
+    "static/media/insead.png": "/www.hypermix.com/static/media/insead.6b7e9013.png",
+    "static/media/oreo.png": "/www.hypermix.com/static/media/oreo.2f534f87.png",
+    "static/media/sony.png": "/www.hypermix.com/static/media/sony.bd0dc0d5.png",
+    "static/media/user-experience-c.png": "/www.hypermix.com/static/media/user-experience-c.40bd351a.png",
+    "static/media/user-experience-s.png": "/www.hypermix.com/static/media/user-experience-s.63a43a6a.png"
   }
 }
