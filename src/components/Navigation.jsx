@@ -15,11 +15,6 @@ const LogoImage = () => (
 
 class Navigation extends Component {
 
-    constructor (props) {
-        super(props);
-        console.log("PROPS", this.props)
-    }
-
     render () {
         return (
             <Fragment>

@@ -10,11 +10,13 @@
         "type": "git",
         "url": "https://github.com/MichaelLisboa/react-portfolio-site.git"
     },
+    "homepage": "https://MichaelLisboa.github.io/react-portfolio-site",
     "engines": {
         "node": ">=8.0.0"
     },
     "scripts": {
-        "deploy": "npm run build && git push heroku master",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "node server.js",
         "build": "react-scripts build",
         "server": "nodemon server.js",
@@ -23,13 +25,14 @@
     "dependencies": {
         "concurrently": "^4.1.0",
         "contentful": "^7.5.0",
+        "gh-pages": "^2.0.1",
         "moment": "^2.24.0",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-ga": "^2.5.7",
         "react-markdown": "^4.0.6",
         "react-router-dom": "^5.0.0",
-        "react-scripts": "2.1.8",
+        "react-scripts": "3.0.1",
         "react-syntax-highlighter": "^10.2.1",
         "recompose": "^0.30.0",
         "uikit": "^3.0.3",
