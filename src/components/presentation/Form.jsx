@@ -60,11 +60,6 @@ class Form extends Component {
         fetch(endpoint, {
             method: 'POST',
             mode: 'no-cors',
-            credentials: 'include',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            },
             body: JSON.stringify(this.state)
         })
             .then(response => response.json())
