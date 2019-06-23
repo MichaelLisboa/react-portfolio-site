@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import { FormErrors } from './FormErrors.jsx';
+import axios from "axios";
 import UIkit from 'uikit';
 import '../../css/Contact.css';
 
@@ -51,16 +51,28 @@ class Form extends Component {
     }
 
     handleSubmit = (event) => {
+        console.log("SOME SHIT", this.state)
         event.preventDefault();
         // let endpoint = 'https://www.influense.me/api/contact/';
-        let endpoint = 'https://briskforms.com/go/8a383f199cbc27fa5faabd1a3d4fb0b1';
+        let endpoint = 'https://app.99inbound.com/api/e/1u4A4gJg';
         let target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
 
-        fetch(endpoint, {
-            method: 'POST',
-            mode: 'no-cors',
-            body: JSON.stringify(this.state)
+        const body = {
+            first_name: this.state.first_name,
+            last_name: this.state.last_name,
+            from_email: this.state.from_email,
+            comment: this.state.comment
+        }
+
+        console.log("FORM BODY", body)
+
+        axios.post(endpoint, {
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            data: body
         })
             .then(response => response.json())
             .then(json => {
