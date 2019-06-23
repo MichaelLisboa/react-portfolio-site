@@ -10,7 +10,7 @@
         "type": "git",
         "url": "https://github.com/MichaelLisboa/react-portfolio-site.git"
     },
-    "homepage": "https://MichaelLisboa.github.io/react-portfolio-site",
+    "homepage": "https://hypermix.com",
     "engines": {
         "node": ">=8.0.0"
     },
@@ -46,5 +46,6 @@
         "not dead",
         "not ie <= 11",
         "not op_mini all"
-    ]
+    ],
+    "proxy": "http://localhost:5000"
 }

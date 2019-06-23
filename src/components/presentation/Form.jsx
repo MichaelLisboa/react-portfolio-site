@@ -52,12 +52,15 @@ class Form extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        let endpoint = 'https://www.influense.me/api/contact/';
+        // let endpoint = 'https://www.influense.me/api/contact/';
+        let endpoint = 'https://briskforms.com/go/8a383f199cbc27fa5faabd1a3d4fb0b1';
         let target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
 
         fetch(endpoint, {
             method: 'POST',
+            mode: 'no-cors',
+            credentials: 'include',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
@@ -66,6 +69,7 @@ class Form extends Component {
         })
             .then(response => response.json())
             .then(json => {
+                console.log("RESPONSE", json)
                 this.setState({
                     message: json.message
                 });
@@ -102,6 +106,7 @@ class Form extends Component {
                 }
             })
             .catch(error => {
+                console.log("ERROR", error, error.message)
                 this.setState({
                     message: error.message,
                     title: "There was an error!"
