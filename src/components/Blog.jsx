@@ -50,7 +50,7 @@ class Blog extends Component {
                 </header>
                 <section className="uk-section">
                     <div className="uk-container uk-container-small">
-                        <div className="uk-grid" data-ukgrid>
+                        <div className="uk-grid" data-uk-grid>
                             <div className="uk-width-1-1">
                                 {postNodes}
                             </div>

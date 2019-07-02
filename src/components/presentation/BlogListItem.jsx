@@ -8,7 +8,7 @@ const BlogListItem = (props) => {
     const { date, title, subtitle, path } = props.blog;
     return (
         <article className="uk-section uk-section-small uk-padding-remove-top">
-            <header>
+            <div>
                 <p className="uk-text-lead uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom">
                     <Link className="uk-link-text"
                         to={{
@@ -27,7 +27,7 @@ const BlogListItem = (props) => {
                     }}>
                 Read this
                 </Link>
-            </header>
+            </div>
             <hr />
         </article>
     );
