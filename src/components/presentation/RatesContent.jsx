@@ -15,7 +15,7 @@ class RatesContent extends Component {
                                 <div className="uk-card-body uk-flex-1">
                                     <div className="uk-flex uk-flex-middle uk-flex-center">
                                         <span className="service-cost">
-                                            $<span>250</span> / day
+                                            $<span>350</span> / day
                                         </span>
                                     </div>
                                     <div className="uk-text-small uk-text-center uk-text-muted">Day Rate</div>
@@ -44,7 +44,7 @@ class RatesContent extends Component {
                                 <div className="uk-card-body uk-flex-1">
                                     <div className="uk-flex uk-flex-middle uk-flex-center">
                                         <span className="service-cost">
-                                            $<span>20</span> / hour
+                                            $<span>30</span> / hour
                                         </span>
                                     </div>
                                     <div className="uk-text-small uk-text-center uk-text-muted">Billed Hourly</div>

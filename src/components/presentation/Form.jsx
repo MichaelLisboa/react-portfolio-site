@@ -54,7 +54,7 @@ class Form extends Component {
         console.log("SOME SHIT", this.state)
         event.preventDefault();
         // let endpoint = 'https://www.influense.me/api/contact/';
-        let endpoint = 'https://app.99inbound.com/api/e/1u4A4gJg';
+        let endpoint = 'https://briskforms.com/go/edd980efe8925132300883618dc64e4c';
         let target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
 
@@ -67,12 +67,14 @@ class Form extends Component {
 
         console.log("FORM BODY", body)
 
-        axios.post(endpoint, {
+        fetch(endpoint, {
+            method: 'POST',
+            mode: 'no-cors',
+            data: body,
             headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            data: body
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            }
         })
             .then(response => response.json())
             .then(json => {
