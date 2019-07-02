@@ -11,7 +11,7 @@ class ScrollToTopRoute extends Component {
 
     render () {
         const { component: Component, ...rest } = this.props;
-        return <Route basename={process.env.PUBLIC_URL} {...rest} render={props => (<Component {...props} />)} />;
+        return <Route {...rest} render={props => (<Component {...props} />)} />;
     }
 }
 
