@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from "axios";
 import UIkit from 'uikit';
 import '../../css/Contact.css';
 
@@ -51,12 +50,21 @@ class Form extends Component {
     }
 
     handleSubmit = (event) => {
-        console.log("SOME SHIT", this.state)
         event.preventDefault();
         // let endpoint = 'https://www.influense.me/api/contact/';
-        let endpoint = 'https://briskforms.com/go/edd980efe8925132300883618dc64e4c';
-        let target = event.target;
+        const endpoint = process.env.REACT_APP_FORMCARRY_ENDPOINT;
+        const target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
+
+        const resetForm = () => {
+           this.setState({
+               ...this.state,
+               first_name: '',
+               last_name: '',
+               from_email: '',
+               comment: ''
+           })
+        }
 
         const body = {
             first_name: this.state.first_name,
@@ -65,81 +73,57 @@ class Form extends Component {
             comment: this.state.comment
         }
 
-        console.log("FORM BODY", body)
+        let httpRequest = new XMLHttpRequest();
+        httpRequest.open('POST', endpoint);
+        httpRequest.setRequestHeader('Content-Type', 'application/json');
+        httpRequest.setRequestHeader('Accept', 'application/json');
+        httpRequest.send(JSON.stringify(body));
 
-        fetch(endpoint, {
-            method: 'POST',
-            mode: 'no-cors',
-            data: body,
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
-            }
-        })
-            .then(response => response.json())
-            .then(json => {
-                console.log("RESPONSE", json)
-                this.setState({
-                    message: json.message
+        httpRequest.onreadystatechange = function(){
+          if(this.readyState === 4){
+            let json = JSON.parse(this.response);
+            if (json.status === 'success') {
+                const emailResponse = {
+                    title: "Received!",
+                    message: "Thanks, I got your email! I'll follow up with you soon."
+                };
+
+                let msg = (
+                    `<div class="uk-grid-collapse uk-margin-large-top uk-padding-remove uk-background-primary uk-light
+                        uk-flex uk-flex-column uk-flex-middle uk-flex-center"
+                        data-uk-height-viewport="true; offset-bottom: 20" data-uk-grid>
+                        <div class="uk-padding-large uk-first-column">
+                            <h1>${emailResponse.title}</h1>
+                            <p class="uk-text-lead">${emailResponse.message}</p>
+                        </div>
+                        <div class="uk-text-center uk-margin-large-bottom uk-first-column">
+                            <button class="uk-button uk-button-default uk-button-large uk-modal-close"
+                            type="button">Okay</button>
+                        </div>
+                    </div>`
+                );
+
+                UIkit.modal.dialog(msg, {
+                    keyboard: false,
+                    bgclose: false,
+                    center: true
                 });
-                if (json.status === 'success') {
-                    this.setState({
-                        title: "Received!"
-                    });
 
-                    let msg = (
-                        `<div class="uk-grid-collapse uk-margin-large-top uk-padding-remove uk-background-primary uk-light
-                            uk-flex uk-flex-column uk-flex-middle uk-flex-center"
-                            data-uk-height-viewport="true; offset-bottom: 20" data-uk-grid>
-                            <div class="uk-padding-large uk-first-column">
-                                <h1>${this.state.title}</h1>
-                                <p class="uk-text-lead">${this.state.message}</p>
-                            </div>
-                            <div class="uk-text-center uk-margin-large-bottom uk-first-column">
-                                <button class="uk-button uk-button-default uk-button-large uk-modal-close"
-                                type="button">Okay</button>
-                            </div>
-                        </div>`
-                    );
-
-                    UIkit.modal.dialog(msg, {
-                        keyboard: false,
-                        bgclose: false,
-                        center: true
-                    });
-
-                    this.resetForm();
-                    target.childNodes[0].removeAttribute('disabled');
-                } else {
-                    throw this.state;
-                }
-            })
-            .catch(error => {
-                console.log("ERROR", error, error.message)
-                this.setState({
-                    message: error.message,
-                    title: "There was an error!"
-                });
+                resetForm();
+                target.childNodes[0].removeAttribute('disabled');
+            } else {
                 UIkit.notification({
-                    message: error.message,
+                    message: json.message,
                     status: 'danger',
                     pos: 'bottom-center',
                     timeout: 5000
                 });
-                this.resetForm();
+                resetForm();
                 target.childNodes[0].removeAttribute('disabled');
-            });
+            }
+          }
+        }
     };
-
-    resetForm = () => {
-       this.setState({
-           ...this.state,
-           first_name: '',
-           last_name: '',
-           from_email: '',
-           comment: ''
-       })
-    }
 
     validateField = (fieldName, value) => {
         let fieldValidationErrors = this.state.formErrors;

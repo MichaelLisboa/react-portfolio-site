@@ -1,6 +1,6 @@
 nav {
   /* background-color: rgba(75, 99, 110, 1) !important; */
-  background-color: #eceff1 !important;
+  background-color: rgb(236, 239, 241) !important;
 }
 
 .anim-nav-container {
@@ -10,7 +10,7 @@ nav {
   z-index: 2;
   display: grid;
   grid-template-columns: repeat(1, minmax(100px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 1px;
   padding: 0;
   cursor: pointer;
   will-change: width, height;
@@ -20,7 +20,6 @@ nav {
   width: 100%;
   height: 100%;
   background: black;
-  border-radius: 5px;
   will-change: transform;
 }
 
