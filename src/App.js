@@ -32,13 +32,13 @@ class App extends Component {
     }
 
     render() {
-        return (
-            <CacheBuster>
-                {({ loading, isLatestVersion, refreshCacheAndReload }) => {
-                    if (loading) return null;
-                    if (!loading && !isLatestVersion) {
-                        refreshCacheAndReload();
-                    }
+        // return (
+        //     <CacheBuster>
+        //         {({ loading, isLatestVersion, refreshCacheAndReload }) => {
+        //             if (loading) return null;
+        //             if (!loading && !isLatestVersion) {
+        //                 refreshCacheAndReload();
+        //             }
 
                 return (
                     <Fragment>
@@ -61,9 +61,9 @@ class App extends Component {
                         </Router>
                     </Fragment>
                 )
-            }}
-            </CacheBuster>
-        );
+        //     }}
+        //     </CacheBuster>
+        // );
     }
 }
 
