@@ -3,9 +3,28 @@ nav {
   background-color: #eceff1 !important;
 }
 
+.anim-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100px, 1fr));
+  grid-gap: 5px;
+  padding: 0;
+  cursor: pointer;
+  will-change: width, height;
+}
+
+.anim-nav-item {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 5px;
+  will-change: transform;
+}
+
 a {
-  /* color: #fff !important; */
-  /* color: #b0bec5 !important; */
   cursor: pointer !important;
 }
 
@@ -13,6 +32,9 @@ a {
   height: 60px !important;
   margin: 0 !important;
   padding: 0 !important;
+  -webkit-box-shadow: 0 2px 0 0 #f8981c;
+  -moz-box-shadow: 0 2px 0 0 #f8981c;
+  box-shadow: 0 2px 0 0 #f8981c;
 }
 
 nav img {
@@ -46,12 +68,6 @@ a.hide-home-icon {
 
 #offcanvas .uk-active {
   font-weight: 600 !important;
-}
-
-.uk-navbar-container {
-  -webkit-box-shadow: 0 2px 0 0 #f8981c;
-  -moz-box-shadow: 0 2px 0 0 #f8981c;
-  box-shadow: 0 2px 0 0 #f8981c;
 }
 
 .navbar-container {

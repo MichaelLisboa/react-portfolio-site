@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
+import MobileNav from "./presentation/MobileNav.jsx"
 import logo from '../images/astro-logo.svg';
 import '../css/Navigation.css';
 
@@ -19,6 +20,7 @@ class Navigation extends Component {
         return (
             <Fragment>
                 <div className="navbar-container" data-uk-sticky>
+                    <MobileNav />
                     <nav className="uk-navbar-container" data-uk-navbar>
                         <LogoImage />
                         <div className="uk-navbar-left uk-margin-medium-left uk-visible@s">
@@ -60,12 +62,6 @@ class Navigation extends Component {
                                     </NavLink>
                                 </li>
                             </ul>
-                        </div>
-                        <div className="top-nav-overlay uk-navbar-left uk-hidden@s">
-                            <a className="uk-navbar-toggle" href="#offcanvas" data-uk-toggle="target: #offcanvas">
-                                <span className="uk-float-left" data-uk-icon="icon: menu; ratio: 0.8" />
-                                <small className="uk-float-left">&nbsp;MENU</small>
-                            </a>
                         </div>
                     </nav>
                 </div>
