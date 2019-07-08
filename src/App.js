@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import CacheBuster from "./CacheBuster";
 // import NavRoutes from './components/NavRoutes.jsx';
 
 import { BrowserRouter as Router, Switch } from "react-router-dom";
@@ -32,25 +33,36 @@ class App extends Component {
 
     render() {
         return (
-            <Fragment>
-                <Router basename={process.env.PUBLIC_URL}>
-                    <Navigation logoTitle="Hypermix" />
-                    <main>
-                        <Switch>
-                            <ScrollToTopRoute path="/portfolio/:portfolioDetail" component={withTracker(PortfolioDetail)}/>
-                            <ScrollToTopRoute path="/portfolio" component={withTracker(Portfolio)} />
-                            <ScrollToTopRoute path="/rates" component={withTracker(Rates)} />
-                            <ScrollToTopRoute path="/resume" component={withTracker(Resume)} />
-                            <ScrollToTopRoute path="/blog/:blog" component={withTracker(BlogPost)}/>
-                            <ScrollToTopRoute path="/blog" component={withTracker(Blog)}/>
-                            <ScrollToTopRoute path="/contact" component={withTracker(ContactForm)}/>
-                            <ScrollToTopRoute path="/" component={withTracker(Home)} />
+            <CacheBuster>
+                {({ loading, isLatestVersion, refreshCacheAndReload }) => {
+                    if (loading) return null;
+                    if (!loading && !isLatestVersion) {
+                        refreshCacheAndReload();
+                    }
 
-                            <ScrollToTopRoute path="/*" component={withTracker(Home)} />
-                        </Switch>
-                    </main>
-                </Router>
-            </Fragment>
+                return (
+                    <Fragment>
+                        <Router basename={process.env.PUBLIC_URL}>
+                            <Navigation logoTitle="Hypermix" />
+                            <main>
+                                <Switch>
+                                    <ScrollToTopRoute path="/portfolio/:portfolioDetail" component={withTracker(PortfolioDetail)}/>
+                                    <ScrollToTopRoute path="/portfolio" component={withTracker(Portfolio)} />
+                                    <ScrollToTopRoute path="/rates" component={withTracker(Rates)} />
+                                    <ScrollToTopRoute path="/resume" component={withTracker(Resume)} />
+                                    <ScrollToTopRoute path="/blog/:blog" component={withTracker(BlogPost)}/>
+                                    <ScrollToTopRoute path="/blog" component={withTracker(Blog)}/>
+                                    <ScrollToTopRoute path="/contact" component={withTracker(ContactForm)}/>
+                                    <ScrollToTopRoute path="/" component={withTracker(Home)} />
+
+                                    <ScrollToTopRoute path="/*" component={withTracker(Home)} />
+                                </Switch>
+                            </main>
+                        </Router>
+                    </Fragment>
+                )
+            }}
+            </CacheBuster>
         );
     }
 }
