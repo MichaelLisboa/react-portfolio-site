@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.b1200f7a.chunk.css",
-    "main.js": "/static/js/main.9151be71.chunk.js",
+    "main.css": "/static/css/main.47bba213.chunk.css",
+    "main.js": "/static/js/main.265b879a.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "static/js/2.126ffc7f.chunk.js": "/static/js/2.126ffc7f.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.5ea5bfe0441d2e7d7f025627858bcfc7.js": "/precache-manifest.5ea5bfe0441d2e7d7f025627858bcfc7.js",
+    "precache-manifest.158418b35a45ba4660a91354b5de21ef.js": "/precache-manifest.158418b35a45ba4660a91354b5de21ef.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/creative-strategy-c.png": "/static/media/creative-strategy-c.f3500fb8.png",
