@@ -15,10 +15,9 @@
         "node": ">=8.0.0"
     },
     "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
         "generate-build-version": "node generate-build-version",
-        "prebuild": "npm run generate-build-version",
+        "predeploy": "npm run generate-build-version && npm run build",
+        "deploy": "gh-pages -d build",
         "start": "node server.js",
         "build": "react-scripts build",
         "server": "nodemon server.js",
