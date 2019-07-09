@@ -51,7 +51,6 @@ class Form extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        // let endpoint = 'https://www.influense.me/api/contact/';
         const endpoint = process.env.REACT_APP_FORMCARRY_ENDPOINT;
         const target = event.target;
         target.childNodes[0].setAttribute('disabled', '');
