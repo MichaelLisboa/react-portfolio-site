@@ -1,3 +1,32 @@
+html,
+body {
+  /* overscroll-behavior-y: contain; */
+  /* background-color: #ede7f6 !important; */
+  /* margin: 0; */
+  /* padding: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none; */
+  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
+  /* position: fixed;
+  overflow: hidden; */
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+/* main {
+  padding-bottom: 45px;
+}
+
+@media (min-width: 640px) {
+  main {
+    padding-bottom: 0;
+  }
+} */
+
 h1,
 h3 {
   font-weight: 400 !important;

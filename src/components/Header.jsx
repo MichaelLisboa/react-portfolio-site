@@ -54,6 +54,10 @@ const CtaItem = (props) => {
     );
 };
 
+const headerStyles = {
+    height: '30vh'
+};
+
 class Header extends Component {
     constructor (props) {
         super(props);
@@ -76,17 +80,6 @@ class Header extends Component {
     }
 
     render () {
-
-        if (this.state.isLoading) {
-            return (
-                <header>
-                    <div className="uk-height-1-1 uk-container uk-container-expand
-                        uk-grid-collapse uk-flex-center uk-flex-middle" data-uk-grid>
-                        <span className="uk-padding-remove uk-margin-remove uk-spinner" data-uk-spinner="ratio: 1" />
-                    </div>
-                </header>
-            )
-        }
         let ctaArray = this.state.posts;
         let ctaNodes = ctaArray
             .sort((a, b) =>
@@ -98,16 +91,21 @@ class Header extends Component {
 
         return (
             <header>
-                <div className="uk-position-relative"
-                    data-uk-slideshow="autoplay: true; autoplay-interval: 5000; animation: fade; pause-on-hover: false;">
-                    <ul className="uk-slideshow-items uk-height-small">
-                        {ctaNodes}
-                    </ul>
-
-                    <div className="uk-position-bottom-center uk-visible@s uk-light">
-                        <ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin" />
+                {this.state.isLoading ?
+                    (<div className="uk-height-1-1 uk-container uk-container-expand
+                        uk-grid-collapse uk-flex-center uk-flex-middle" data-uk-grid>
+                        <span className="uk-padding-remove uk-margin-remove uk-spinner" data-uk-spinner="ratio: 1" />
+                    </div>)
+                : (<div className="uk-position-relative"
+                        data-uk-slideshow="autoplay: true; autoplay-interval: 5000; animation: fade; pause-on-hover: false;">
+                        <ul className="uk-slideshow-items uk-height-small">
+                            {ctaNodes}
+                        </ul>
+                        <div className="uk-position-bottom-center uk-visible@s uk-light">
+                            <ul className="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin" />
+                        </div>
                     </div>
-                </div>
+                )}
             </header>
         );
     }

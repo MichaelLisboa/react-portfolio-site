@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 // import CacheBuster from "./CacheBuster";
 
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import withTracker from "./components/withTracker.jsx";
+import withTracker from "./lib/withTracker";
 import ScrollToTopRoute from "./lib/ScrollToTopRoute";
 import Navigation from "./components/Navigation.jsx";
 import Home from "./components/Home.jsx";
@@ -53,7 +53,6 @@ class App extends Component {
                                     <ScrollToTopRoute path="/blog" component={withTracker(Blog)}/>
                                     <ScrollToTopRoute path="/contact" component={withTracker(ContactForm)}/>
                                     <ScrollToTopRoute path="/" component={withTracker(Home)} />
-
                                     <ScrollToTopRoute path="/*" component={withTracker(Home)} />
                                 </Switch>
                             </main>
