@@ -189,6 +189,7 @@ class ResumeContent extends Component {
                                     uk-text-uppercase uk-margin-remove-bottom">
                                     <span>Citibank</span>
                                 </p>
+                                <small>Eight Inc.</small>
                                 <p className="uk-article-meta">
                                     Creative &amp; Account Direction &bull; UI/UX Design
                                 </p>
@@ -215,6 +216,7 @@ class ResumeContent extends Component {
                                     uk-text-uppercase uk-margin-remove-bottom">
                                     <span>Microsoft</span>
                                 </p>
+                                <small>Frog Design</small>
                                 <p className="uk-article-meta">
                                     UI/UX Design &bull; Prototyping &bull; Advertising
                                 </p>

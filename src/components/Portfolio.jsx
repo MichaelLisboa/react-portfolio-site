@@ -21,8 +21,7 @@ const withLoading = (Component) => (props) =>
 const PortfolioItems = ({items}) =>
     <section className="uk-section">
         <div className="uk-container uk-container-small">
-            <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid
-                data-uk-height-match="target: .uk-card-body">
+            <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid data-uk-height-match="target: .uk-card-body">
                 {items}
             </div>
         </div>
