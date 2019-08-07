@@ -137,7 +137,7 @@ class ResumeContent extends Component {
                                     Creative Direction &amp; Strategy &bull; Advertising
                                 </p>
                                 <p className="uk-text-lead">
-                                    Two weeks to conceive and deliver one of the first social media, digital
+                                    Two weeks&mdash;conceive and deliver one of the first social media, digital
                                     integrated brand campaigns in the world, curating and aggregating content through
                                     the #refresheverything hashtag.<br />
                                     Leveraging on a combination of Pepsi generated and paid content, alongside user
@@ -145,9 +145,9 @@ class ResumeContent extends Component {
                                     campaigns ever since.
                                 </p>
                                 <ul className="uk-list uk-list-bullet">
-                                    <li>Developed a digital strategy and creative solution to Pepsi’s
+                                    <li>Developed a digital strategy and creative solution&mdash;Pepsi’s
                                         “rethink the old, refresh with the new” campaign objectives.</li>
-                                    <li>Created a social media strategy, engaging users to interact
+                                    <li>Created a social media strategy, engaging users&mdash;interact
                                         with fresh content provided by Pepsi’s content curation team.</li>
                                     <li>Led the concepting and design of a crowdsourcing social media
                                         strategy that included free music downloads, Facebook integration,
@@ -165,15 +165,15 @@ class ResumeContent extends Component {
                                     Start-up &bull; Artificial Intelligence &bull; Deep-tech
                                 </p>
                                 <p className="uk-text-lead">
-                                    Businesses are spending $Billions trying to understand their customers, but they're
-                                    blind to trillions of real-time visual conversations. Pixt indexes the visual web to
+                                    Businesses are spending $Billions trying&mdash;understand their customers, but they're
+                                    blind&mdash;trillions of real-time visual conversations. Pixt indexes the visual web to
                                     make sense, and generate quantified data, of the billions of images and videos
                                     shared on the web every day.
                                 </p>
                                 <ul className="uk-list uk-list-bullet">
                                     <li>Led fundraising and business development efforts in many, many pitches.</li>
-                                    <li>Performed market and product fit analysis to identify business verticals
-                                        to target at launch.</li>
+                                    <li>Performed market and product fit analysis&mdash;identify business verticals
+                                       &mdash;target at launch.</li>
                                     <li>Developed a machine learning powered platform, data models and
                                         subsequent deployment on high-availability Google Cloud infrastructure.</li>
                                     <li>Executed all UX and UI Design for desktop, mobile, PWA and bot interfaces.</li>
@@ -194,10 +194,10 @@ class ResumeContent extends Component {
                                     Creative &amp; Account Direction &bull; UI/UX Design
                                 </p>
                                 <p className="uk-text-lead">
-                                    Customers were detached from their banks and their money. Our focus was to evaluate
+                                    Customers were detached from their banks and their money. Our focus was&mdash;evaluate
                                     customer needs and redefine the banking experience. We used a combination of
                                     technology, architecture and design, supplemented with new retail channels that
-                                    connected with customers and gave them a much better way to do their banking.
+                                    connected with customers and gave them a much better way&mdash;do their banking.
                                 </p>
                                 <ul className="uk-list uk-list-bullet">
                                     <li>Spearheaded rebranding and remodelling of the consumer banking environmental
@@ -224,7 +224,7 @@ class ResumeContent extends Component {
                                     With the Windows Vista launch looming&mdash;one of the largest global
                                     product launches in history&mdash;I worked closely with Microsoft's
                                     product teams in Redmond and Silicon Valley, and Microsoft's global
-                                    UX Center in Texas to define the consumer experience of Windows Live,
+                                    UX Center in Texas&mdash;define the consumer experience of Windows Live,
                                     Microsoft TV, and Microsoft Vista Widgets.
                                 </p>
                                 <ul className="uk-list uk-list-bullet">
@@ -249,7 +249,7 @@ class ResumeContent extends Component {
                                 <p className="uk-text-lead">
                                     Zyllem is a funded Singapore startup that is the leading
                                     provider of fast, cost-effective, crowdsourced delivery services and logistics in
-                                    Southeast Asia. From workshops to user research, from UX to UI, I delivered a
+                                    Southeast Asia. From workshops&mdash;user research, from UX&mdash;UI, I delivered a
                                     complete overhaul of the consumer experience for this startup's mobile app and
                                     web services.
                                 </p>
@@ -258,7 +258,7 @@ class ResumeContent extends Component {
                                         leadership teams.</li>
                                     <li>Performed quantitative and qualitative user research, including surveys, data
                                         analytics and path tracking, and user interviews. Collected and analysed data
-                                        to identify insights and develop a fresh engagement approach to drive customer
+                                       &mdash;identify insights and develop a fresh engagement approach&mdash;drive customer
                                         acquisition through mobile app and website.</li>
                                     <li>Led user interface design including UX audits, wireframe production
                                         and UI design.</li>
@@ -271,56 +271,56 @@ class ResumeContent extends Component {
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Kizmo</span><br />
                                     <small className="uk-text-muted">
-                                        Experience Director<br />Feb 2010 - June 2018
+                                        Experience Director<br />Feb 2010&mdash;June 2018
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Havas Worldwide</span><br />
                                     <small className="uk-text-muted">
-                                        Regional Experience Director, Asia Pacific<br />May 2015 - Mar 2016
+                                        Regional Experience Director, Asia Pacific<br />May 2015&mdash;Mar 2016
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Publicis (contract)</span><br />
                                     <small className="uk-text-muted">
-                                        Director of User Experience, Singapore<br />Feb 2015 - June 2015
+                                        Director of User Experience, Singapore<br />Feb 2015&mdash;June 2015
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Dentsu</span><br />
                                     <small className="uk-text-muted">
-                                        Regional Creative Director, Southeast Asia<br />Apr 2015 - Dec 2015
+                                        Regional Creative Director, Southeast Asia<br />Apr 2015&mdash;Dec 2015
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Twentysix (MSQ Partners)</span><br />
                                     <small className="uk-text-muted">
-                                        Regional Creative Director, Asia Pacific<br />Sept 2011 - Mar 2015
+                                        Regional Creative Director, Asia Pacific<br />Sept 2012&mdash;Mar 2015
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">The Gate Worldwide (MSQ Partners)</span><br />
                                     <small className="uk-text-muted">
-                                        Creative Director, Singapore<br />Sept 2012 - Mar 2015
+                                        Creative Director, Singapore<br />Sept 2012&mdash;Mar 2015
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Eight Inc.</span><br />
                                     <small className="uk-text-muted">
-                                        Director of Communications, APAC<br />JAN 2011 - Jan 2012
+                                        Director of Communications, APAC<br />JAN 2011&mdash;Jan 2012
                                     </small>
                                 </h6>
 
                                 <h6 className="title uk-text-uppercase">
                                     <span className="uk-text-bold">Frog Design</span><br />
                                     <small className="uk-text-muted">
-                                        Lead Experience Designer, San Francisco<br />Dec 2005 - Dec 2006
+                                        Lead Experience Designer, San Francisco<br />Dec 2005&mdash;Dec 2006
                                     </small>
                                 </h6>
                             </div>

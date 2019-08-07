@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import { getPostBySlug } from '../lib/contentful';
 import * as Markdown from 'react-markdown';
@@ -75,7 +75,7 @@ class PortfolioDetail extends Component {
         });
 
         return (
-            <Fragment>
+            <>
                 <div className="uk-cover-container">
                     <canvas width="1800" height="600"></canvas>
                     <img
@@ -86,7 +86,7 @@ class PortfolioDetail extends Component {
                     />
                 </div>
                 <hr className="uk-margin-remove" />
-                <div className="uk-background-muted uk-padding-small uk-margin-large-bottom">
+                <div style={{opacity: "0.95", zIndex: "2"}} className="uk-background-muted uk-padding-small uk-margin-large-bottom">
                     <div className="uk-container">
                         <ul className="uk-breadcrumb uk-text-uppercase uk-text-small">
                             <li>
@@ -118,7 +118,7 @@ class PortfolioDetail extends Component {
                     </div>
                 </div>
                 <Contact />
-            </Fragment>
+            </>
         );
     }
 }

@@ -42,7 +42,7 @@ const PortfolioItem = (props) => {
                                 state: { props }
                             }}
                         >
-                        <h3 className="uk-card-title">{entryClient}</h3>
+                        <h3 className="uk-card-title">{entryClient} <span style={{color: "#b0bec5", opacity: "0.4"}} uk-icon="icon: arrow-right;"></span></h3>
                         </Link>
                         <p>{entryDescription}</p>
                         <div className="uk-width-1-1 uk-margin-small-bottom">
@@ -59,7 +59,7 @@ const PortfolioItem = (props) => {
                                 state: { props }
                             }}
                         >
-                        Read more
+                        Read more <span style={{color: "#b0bec5"}} uk-icon="icon: arrow-right; ratio: 0.75"></span>
                         </Link>
                     </div>
                 </div>
