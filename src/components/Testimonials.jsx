@@ -8,7 +8,10 @@ const TestimonalsStyles = {
 class Testimonials extends Component {
     render () {
         return (
-            <section style={TestimonalsStyles} className="uk-section uk-section-default uk-padding-small">
+            <section
+                style={TestimonalsStyles}
+                className="uk-section uk-section-default uk-padding-small"
+                uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}>
                 <div className="uk-container uk-container-small uk-text-center uk-margin-medium-top uk-margin-medium-bottom">
                     <h4 className="uk-heading-line uk-text-capitalize">
                         <span>{this.props.testimonialsTitle}</span>

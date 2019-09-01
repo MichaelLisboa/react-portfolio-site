@@ -55,6 +55,7 @@ class ContactForm extends Component {
                     </header>
                 ) : null}
                 <section style={footerStyles}
+                    uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}
                     className={
                         `${this.state.page ?
                             'uk-section uk-section-expand uk-margin-remove-top uk-padding-remove'
