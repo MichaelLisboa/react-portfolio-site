@@ -40,7 +40,7 @@ class App extends Component {
         //             }
 
                 return (
-                    <Fragment>
+                    <>
                         <Router basename={process.env.PUBLIC_URL}>
                             <Navigation logoTitle="Hypermix" />
                             <main>
@@ -57,7 +57,7 @@ class App extends Component {
                                 </Switch>
                             </main>
                         </Router>
-                    </Fragment>
+                    </>
                 )
         //     }}
         //     </CacheBuster>

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import BlogListItem from './presentation/BlogListItem.jsx';
 import Contact from './Contact.jsx';
 import { getBlogPosts } from '../lib/contentful';
@@ -25,8 +25,8 @@ class Blog extends Component {
     }
     render () {
         if (!this.state.posts.length) return null;
-        let postsArray = this.state.posts;
-        let postNodes = postsArray
+        const postsArray = this.state.posts;
+        const postNodes = postsArray
             .sort((a, b) =>
                 new Date(b.date).getTime() - new Date(a.date).getTime()
             )
@@ -35,7 +35,7 @@ class Blog extends Component {
             });
 
         return  (
-            <Fragment>
+            <>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light
                     uk-flex uk-flex-center uk-flex-middle">
@@ -58,7 +58,7 @@ class Blog extends Component {
                     </div>
                 </section>
                 <Contact />
-            </Fragment>
+            </>
         )
     }
 }

@@ -9,7 +9,7 @@ const LogoImage = () => (
         <NavLink
             className="uk-navbar-item uk-logo"
             to={'/'}>
-            <img src={logo} width="60px" alt="Phoenix Logo" data-uk-image />
+            <img src={logo} width="60px" alt="Astro Logo" data-uk-image />
         </NavLink>
     </div>
 );

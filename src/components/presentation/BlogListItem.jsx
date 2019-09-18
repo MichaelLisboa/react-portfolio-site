@@ -5,10 +5,20 @@ import moment from 'moment';
 import '../../css/Blog.css';
 
 const BlogListItem = (props) => {
-    const { date, title, subtitle, path } = props.blog;
+    console.log(props)
+    const { mainImage, date, title, subtitle, path } = props.blog;
     return (
-        <article className="uk-section uk-section-small uk-padding-remove-top">
-            <div>
+        <div className="uk-card uk-card-default uk-card-small uk-margin uk-border-rounded">
+            {mainImage &&
+            <div className="uk-card-media-top">
+                <img
+                    src={mainImage.fields.file.url}
+                    alt={mainImage.fields.description}
+                    data-uk-img
+                />
+            </div>
+            }
+            <div className="uk-card-body">
                 <p className="uk-text-lead uk-margin-remove-adjacent uk-text-bold uk-margin-small-bottom">
                     <Link className="uk-link-text"
                         to={{
@@ -28,8 +38,7 @@ const BlogListItem = (props) => {
                 Read this
                 </Link>
             </div>
-            <hr />
-        </article>
+        </div>
     );
 };
 
