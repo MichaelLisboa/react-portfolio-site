@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import RatesContent from "./presentation/RatesContent.jsx";
 import { NavLink } from 'react-router-dom';
 import Contact from './Contact.jsx';
@@ -12,7 +12,7 @@ const headerStyles = {
 class Rates extends Component {
     render () {
         return (
-            <Fragment>
+            <>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light uk-flex uk-flex-center uk-flex-middle">
                     <div className="uk-width-2-3 uk-text-center">
@@ -28,7 +28,7 @@ class Rates extends Component {
                     <div className="uk-container uk-container-small uk-text-center
                         uk-margin-medium-top uk-margin-large-bottom">
                         <h2 className="content-title uk-margin-large-left@s uk-margin-large-right@s">
-                            20 years of experience in Creative, UX and Technology at work.
+                            20 years of experience in Brand Experience, Creative, and Technology at work.
                         </h2>
                         <p className="content-lead uk-text-lead uk-margin-large-left@s uk-margin-large-right@s">
                             See my freelance rates below, or <NavLink className="text-background text-background-orange
@@ -40,11 +40,10 @@ class Rates extends Component {
                             </NavLink> for more info about my capabilities.
                         </p>
                     </div>
-
                     <RatesContent />
                 </section>
                 <Contact />
-            </Fragment>
+            </>
         );
     }
 }

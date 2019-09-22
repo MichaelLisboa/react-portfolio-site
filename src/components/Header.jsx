@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { getHeroCtas } from '../lib/contentful';
 import '../css/Header.css';
@@ -14,7 +14,7 @@ const CtaItem = (props) => {
     } = props.cta;
 
     return (
-        <Fragment>
+        <>
             <li>
                 <canvas width="750" height="300" />
                 <img
@@ -50,12 +50,8 @@ const CtaItem = (props) => {
                     </NavLink>
                 </div>
             </li>
-        </Fragment>
+        </>
     );
-};
-
-const headerStyles = {
-    height: '30vh'
 };
 
 class Header extends Component {

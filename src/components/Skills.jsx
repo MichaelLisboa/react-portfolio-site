@@ -12,7 +12,7 @@ class Skills extends Component {
                 <div className="uk-text-center uk-container uk-container-small">
                     <h4 className="uk-heading-line text-background
                          uk-text-capitalize uk-margin-small-top uk-margin-large-bottom">
-                        <span>{this.props.skillsTitle}</span>
+                        <span>I'm a Technocreativeologist.</span>
                     </h4>
                     <p className="uk-margin-remove-bottom uk-margin-medium-bottom@s">
                         See my portfolio <NavLink className="text-background text-background-indigo

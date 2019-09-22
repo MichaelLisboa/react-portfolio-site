@@ -24,7 +24,6 @@ class RatesContent extends Component {
                                             What you get
                                         </p>
                                         <ul className="uk-list uk-list-bullet uk-margin-remove">
-                                            <li>Delivery in 3 working days</li>
                                             <li>User personas &amp; journey</li>
                                             <li>Wireframes and task flows</li>
                                             <li>UI Design as Sketch files</li>
