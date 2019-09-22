@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c08c8ae343ec5b44fe864fe56d1e68e",
+    "revision": "50ed40dfe34041c583393dcca0e2a301",
     "url": "/index.html"
   },
   {
-    "revision": "99b1f2c43986cd2c1711",
+    "revision": "46a77e79f112dde8fb43",
     "url": "/static/css/main.23f1c8db.chunk.css"
   },
   {
-    "revision": "a99ebe6e547c58b28c9e",
-    "url": "/static/js/2.e9cf5cee.chunk.js"
+    "revision": "b621dec9557ac584b0a3",
+    "url": "/static/js/2.7e9fed76.chunk.js"
   },
   {
-    "revision": "99b1f2c43986cd2c1711",
-    "url": "/static/js/main.a6cc0c69.chunk.js"
+    "revision": "46a77e79f112dde8fb43",
+    "url": "/static/js/main.c9a63f28.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
+  },
+  {
+    "revision": "e82b9e40cd6ff94131cad761f24be8e4",
+    "url": "/static/media/anz.e82b9e40.png"
   },
   {
     "revision": "3658d8d298d3420a1167cc5934bc3ca7",
@@ -28,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/cadbury.045121d3.png"
   },
   {
-    "revision": "6e7ad85ce37284d86ea6172a686ff253",
-    "url": "/static/media/citibank.6e7ad85c.png"
+    "revision": "ec2cf0ab348aecab9bc400b39e37fda5",
+    "url": "/static/media/citibank.ec2cf0ab.png"
   },
   {
     "revision": "f3500fb88c2827937c22a6a4b24cdb38",
@@ -48,24 +52,52 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/creative-technology-s.98723074.png"
   },
   {
-    "revision": "6b7e9013d2431299e464d31b93bad982",
-    "url": "/static/media/insead.6b7e9013.png"
+    "revision": "85b29b35e63f594f2d87cdf1d0919042",
+    "url": "/static/media/hp.85b29b35.png"
+  },
+  {
+    "revision": "db83dc6a2c623e9fa03186cfd26c3222",
+    "url": "/static/media/lfc.db83dc6a.png"
+  },
+  {
+    "revision": "78b8acd28f0f73ad38ed4879a66181a3",
+    "url": "/static/media/microsoft.78b8acd2.png"
   },
   {
     "revision": "79e903a3a14dfb6c23c1ef7aac58d9f0",
     "url": "/static/media/monterey-aquarium.79e903a3.png"
   },
   {
+    "revision": "3f3b08727f7a9237b99fde4c928ed299",
+    "url": "/static/media/nec.3f3b0872.png"
+  },
+  {
     "revision": "b842c5e11ac324da02e17da64e5f3f7d",
     "url": "/static/media/oreo.b842c5e1.png"
+  },
+  {
+    "revision": "5128759878cf43ea369dd48eadc8e059",
+    "url": "/static/media/pepsi.51287598.png"
+  },
+  {
+    "revision": "56146cae917ec229dd3ea7cd354ce61e",
+    "url": "/static/media/raiders.56146cae.png"
   },
   {
     "revision": "a1705c9500ed6e08f8dcf2efed1f3247",
     "url": "/static/media/sia.a1705c95.png"
   },
   {
-    "revision": "bd0dc0d5ff65811e744d4b10fc4d5596",
-    "url": "/static/media/sony.bd0dc0d5.png"
+    "revision": "9ce9bc204f1f70e8886db207f025f0e5",
+    "url": "/static/media/sony.9ce9bc20.png"
+  },
+  {
+    "revision": "7524e6f18272af895ef42c55973ea132",
+    "url": "/static/media/standard-chartered.7524e6f1.png"
+  },
+  {
+    "revision": "1c0c7928686cc999a15ff207471d1e01",
+    "url": "/static/media/universal.1c0c7928.png"
   },
   {
     "revision": "40bd351a724b986e4868217d4fdd40f4",
