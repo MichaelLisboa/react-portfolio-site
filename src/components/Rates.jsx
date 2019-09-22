@@ -4,14 +4,9 @@ import { NavLink } from 'react-router-dom';
 import Contact from './Contact.jsx';
 import '../css/Rates.css';
 
-const headerStyles = {
-    height: '30vh',
-    backgroundColor: '#26a69a'
-};
-
 const Rates = () =>
     <>
-        <header style={headerStyles}
+        <header style={{height: '30vh', backgroundColor: '#26a69a'}}
             className="uk-container uk-container-expand uk-light uk-flex uk-flex-center uk-flex-middle">
             <div className="uk-width-2-3 uk-text-center">
                 <h2>
@@ -29,11 +24,11 @@ const Rates = () =>
                     20 years of experience in Brand Experience, Creative, and Technology at work.
                 </h2>
                 <p className="content-lead uk-text-lead uk-margin-large-left@s uk-margin-large-right@s">
-                    See my freelance rates below, or <NavLink className="text-background text-background-orange
+                    See my freelance rates below, or <NavLink className="text-background text-background-indigo
                         uk-link-reset uk-link uk-nowrap" to={'/contact'}>
                         contact me
                     </NavLink> for full-time opportunities. Have a look at <NavLink className="text-background
-                        text-background-green uk-link-reset uk-link uk-nowrap" to={'/resume'}>
+                        text-background-indigo uk-link-reset uk-link uk-nowrap" to={'/resume'}>
                         my resume
                     </NavLink> for more info about my capabilities.
                 </p>
