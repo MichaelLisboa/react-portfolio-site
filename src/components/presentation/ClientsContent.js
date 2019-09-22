@@ -7,22 +7,25 @@ import AnzLogo from '../../images/client_logos/anz.png';
 import MicrosoftLogo from '../../images/client_logos/microsoft.png';
 import OreoLogo from '../../images/client_logos/oreo.png';
 import RaidersLogo from '../../images/client_logos/raiders.png';
-import InseadLogo from '../../images/client_logos/insead.png';
+// import InseadLogo from '../../images/client_logos/insead.png';
 import NecLogo from '../../images/client_logos/nec.png';
-import AiaLogo from '../../images/client_logos/aia.png';
+// import AiaLogo from '../../images/client_logos/aia.png';
 import FairmontLogo from '../../images/client_logos/fairmont.png';
 import PepsiLogo from '../../images/client_logos/pepsi.png';
 import SiaLogo from '../../images/client_logos/sia.png';
 import CadburyLogo from '../../images/client_logos/cadbury.png';
 import MontereyAquariumLogo from '../../images/client_logos/monterey-aquarium.png';
+import LfcLogo from '../../images/client_logos/lfc.png';
+import ScbLogo from '../../images/client_logos/standard-chartered.png';
+import UniversalLogo from '../../images/client_logos/universal.png';
 
-const clients = [SonyLogo, SiaLogo, CitibankLogo, MontereyAquariumLogo, HpLogo, AnzLogo,
-    MicrosoftLogo, OreoLogo, RaidersLogo, InseadLogo, CadburyLogo, NecLogo,
-    AiaLogo, FairmontLogo, PepsiLogo]
+const clients = [SonyLogo, SiaLogo, CitibankLogo, MontereyAquariumLogo, HpLogo,
+    MicrosoftLogo, UniversalLogo, OreoLogo, RaidersLogo, ScbLogo, CadburyLogo, LfcLogo,
+    FairmontLogo, NecLogo, PepsiLogo]
 
 const clientLogos = clients.map((logo, i) => {
     return (
-        <div key={i} uk-scrollspy={`cls: uk-animation-slide-bottom; target: .logo-img; delay: ${50 * i+1}`}>
+        <div key={i} uk-scrollspy={`cls: uk-animation-slide-bottom; target: .logo-img; delay: ${50 * i+10}`}>
             <img
                 className="logo-img"
                 src={logo}
