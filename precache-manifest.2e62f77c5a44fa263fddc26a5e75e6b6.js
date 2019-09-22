@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d50b92e0fdc0a53d7e7b9a7592fe1f46",
+    "revision": "0c08c8ae343ec5b44fe864fe56d1e68e",
     "url": "/index.html"
   },
   {
-    "revision": "c4346bf5e985c98c99f6",
+    "revision": "99b1f2c43986cd2c1711",
     "url": "/static/css/main.23f1c8db.chunk.css"
   },
   {
-    "revision": "01554a06774ca2a448df",
-    "url": "/static/js/2.9df6875a.chunk.js"
+    "revision": "a99ebe6e547c58b28c9e",
+    "url": "/static/js/2.e9cf5cee.chunk.js"
   },
   {
-    "revision": "c4346bf5e985c98c99f6",
-    "url": "/static/js/main.79c0d0fa.chunk.js"
+    "revision": "99b1f2c43986cd2c1711",
+    "url": "/static/js/main.a6cc0c69.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -22,6 +22,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3658d8d298d3420a1167cc5934bc3ca7",
     "url": "/static/media/astro-logo.3658d8d2.svg"
+  },
+  {
+    "revision": "045121d320c28ae3213d55864bc34a63",
+    "url": "/static/media/cadbury.045121d3.png"
+  },
+  {
+    "revision": "6e7ad85ce37284d86ea6172a686ff253",
+    "url": "/static/media/citibank.6e7ad85c.png"
   },
   {
     "revision": "f3500fb88c2827937c22a6a4b24cdb38",
@@ -44,8 +52,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/insead.6b7e9013.png"
   },
   {
-    "revision": "2f534f871df385e8ade66b254e2deba9",
-    "url": "/static/media/oreo.2f534f87.png"
+    "revision": "79e903a3a14dfb6c23c1ef7aac58d9f0",
+    "url": "/static/media/monterey-aquarium.79e903a3.png"
+  },
+  {
+    "revision": "b842c5e11ac324da02e17da64e5f3f7d",
+    "url": "/static/media/oreo.b842c5e1.png"
+  },
+  {
+    "revision": "a1705c9500ed6e08f8dcf2efed1f3247",
+    "url": "/static/media/sia.a1705c95.png"
   },
   {
     "revision": "bd0dc0d5ff65811e744d4b10fc4d5596",
