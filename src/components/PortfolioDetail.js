@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import { getPostBySlug } from '../lib/contentful';
 import * as Markdown from 'react-markdown';
-import Contact from './Contact.jsx';
+import Contact from './Contact';
 
 import '../css/Portfolio.css';
 

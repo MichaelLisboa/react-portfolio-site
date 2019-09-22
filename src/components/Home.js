@@ -1,12 +1,12 @@
 import React, { Component, Fragment } from 'react';
 
-import Header from './Header.jsx';
-import About from './About.jsx';
-import Skills from './Skills.jsx';
-import Clients from './Clients.jsx';
-import Testimonials from './Testimonials.jsx';
-import ContactForm from './ContactForm.jsx';
-import Contact from './Contact.jsx';
+import Header from './Header';
+import About from './About';
+import Skills from './Skills';
+import Clients from './Clients';
+import Testimonials from './Testimonials';
+import ContactForm from './ContactForm';
+import Contact from './Contact';
 
 class Home extends Component {
     render () {

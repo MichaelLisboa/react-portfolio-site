@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import AboutContent from "./presentation/AboutContent.jsx";
+import AboutContent from "./presentation/AboutContent";
 import '../css/About.css';
 
 const AboutStyles = {

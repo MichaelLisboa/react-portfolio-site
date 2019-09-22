@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
-import MobileNav from "./presentation/MobileNav.jsx"
+import MobileNav from "./presentation/MobileNav"
 import logo from '../images/astro-logo.svg';
 import '../css/Navigation.css';
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import RatesContent from "./presentation/RatesContent.jsx";
+import RatesContent from "./presentation/RatesContent";
 import { NavLink } from 'react-router-dom';
-import Contact from './Contact.jsx';
+import Contact from './Contact';
 import '../css/Rates.css';
 
 const Rates = () =>

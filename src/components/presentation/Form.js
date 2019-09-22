@@ -72,6 +72,34 @@ class Form extends Component {
             comment: this.state.comment
         }
 
+        const emailResponse = {
+            title: "Received!",
+            message: "Thanks, I got your email! I'll follow up with you soon."
+        };
+
+        const msg = (
+            `<div class="uk-grid-collapse uk-margin-large-top uk-padding-remove uk-background-primary uk-light
+                uk-flex uk-flex-column uk-flex-middle uk-flex-center"
+                data-uk-height-viewport="true; offset-bottom: 20" data-uk-grid>
+                <div class="uk-padding-large uk-first-column">
+                    <h1>${emailResponse.title}</h1>
+                    <p class="uk-text-lead">${emailResponse.message}</p>
+                </div>
+                <div class="uk-text-center uk-margin-large-bottom uk-first-column">
+                    <button class="uk-button uk-button-default uk-button-large uk-modal-close"
+                    type="button">Okay</button>
+                </div>
+            </div>`
+        );
+
+        // fetch(endpoint, {
+        //     method: 'POST',
+        //     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+        //     body: JSON.stringify(body)
+        // })
+        // .then(response => console.log(response))
+        // .catch(error => console.log(error))
+
         let httpRequest = new XMLHttpRequest();
         httpRequest.open('POST', endpoint);
         httpRequest.setRequestHeader('Content-Type', 'application/json');
@@ -82,25 +110,6 @@ class Form extends Component {
           if(this.readyState === 4){
             let json = JSON.parse(this.response);
             if (json.status === 'success') {
-                const emailResponse = {
-                    title: "Received!",
-                    message: "Thanks, I got your email! I'll follow up with you soon."
-                };
-
-                let msg = (
-                    `<div class="uk-grid-collapse uk-margin-large-top uk-padding-remove uk-background-primary uk-light
-                        uk-flex uk-flex-column uk-flex-middle uk-flex-center"
-                        data-uk-height-viewport="true; offset-bottom: 20" data-uk-grid>
-                        <div class="uk-padding-large uk-first-column">
-                            <h1>${emailResponse.title}</h1>
-                            <p class="uk-text-lead">${emailResponse.message}</p>
-                        </div>
-                        <div class="uk-text-center uk-margin-large-bottom uk-first-column">
-                            <button class="uk-button uk-button-default uk-button-large uk-modal-close"
-                            type="button">Okay</button>
-                        </div>
-                    </div>`
-                );
 
                 UIkit.modal.dialog(msg, {
                     keyboard: false,

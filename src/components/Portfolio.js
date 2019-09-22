@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import PortfolioItem from './presentation/PortfolioItem.jsx';
+import PortfolioItem from './presentation/PortfolioItem';
 import { compose } from 'recompose';
-import Contact from './Contact.jsx';
+import Contact from './Contact';
 import '../css/Portfolio.css';
 import { getPosts } from '../lib/contentful';
 

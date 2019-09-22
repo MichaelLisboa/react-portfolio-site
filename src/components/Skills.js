@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import SkillsContent from "./presentation/SkillsContent.jsx";
+import SkillsContent from "./presentation/SkillsContent";
 import '../css/Skills.css';
 
 

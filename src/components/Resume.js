@@ -1,6 +1,6 @@
 import React from 'react';
-import ResumeContent from "./presentation/ResumeContent.jsx";
-import Contact from './Contact.jsx';
+import ResumeContent from "./presentation/ResumeContent";
+import Contact from './Contact';
 import '../css/Resume.css';
 
 const Resume = props =>

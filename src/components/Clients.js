@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ClientsContent from "./presentation/ClientsContent.jsx";
+import ClientsContent from "./presentation/ClientsContent";
 import '../css/Clients.css';
 
 const ClientsStyles = {

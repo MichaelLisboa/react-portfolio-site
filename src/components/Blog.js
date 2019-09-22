@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import BlogListItem from './presentation/BlogListItem.jsx';
-import Contact from './Contact.jsx';
+import BlogListItem from './presentation/BlogListItem';
+import Contact from './Contact';
 import { getBlogPosts } from '../lib/contentful';
 import '../css/Blog.css';
 

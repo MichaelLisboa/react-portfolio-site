@@ -4,15 +4,15 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 import withTracker from "./lib/withTracker";
 import ScrollToTopRoute from "./lib/ScrollToTopRoute";
-import Navigation from "./components/Navigation.jsx";
-import Home from "./components/Home.jsx";
-import Rates from "./components/Rates.jsx";
-import Resume from "./components/Resume.jsx";
-import Portfolio from "./components/Portfolio.jsx";
-import PortfolioDetail from "./components/PortfolioDetail.jsx";
-import Blog from "./components/Blog.jsx";
-import BlogPost from "./components/BlogPost.jsx";
-import ContactForm from "./components/ContactForm.jsx";
+import Navigation from "./components/Navigation";
+import Home from "./components/Home";
+import Rates from "./components/Rates";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import PortfolioDetail from "./components/PortfolioDetail";
+import Blog from "./components/Blog";
+import BlogPost from "./components/BlogPost";
+import ContactForm from "./components/ContactForm";
 
 class App extends Component {
 

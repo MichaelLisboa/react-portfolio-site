@@ -1,15 +1,15 @@
-import React, { Component, Fragment } from 'react';
-import Contact from './Contact.jsx';
-import Form from './presentation/Form.jsx';
-import '../css/Contact.css';
+import React, { Component, Fragment } from "react";
+import Contact from "./Contact";
+import Form from "./presentation/Form";
+import "../css/Contact.css";
 
 const footerStyles = {
-    // backgroundColor: '#37474f'
+    // backgroundColor: "#37474f"
 };
 
 const headerStyles = {
-    height: '30vh',
-    backgroundColor: '#37474f'
+    height: "30vh",
+    backgroundColor: "#37474f"
 }
 
 class ContactForm extends Component {
@@ -18,11 +18,11 @@ class ContactForm extends Component {
         super(props);
 
         this.state = {
-            first_name: '',
-            last_name: '',
-            from_email: '',
-            message: '',
-            title: ''
+            first_name: "",
+            last_name: "",
+            from_email: "",
+            message: "",
+            title: ""
         };
     }
 
@@ -32,7 +32,7 @@ class ContactForm extends Component {
 
     getCurrentPage = (props) => {
         this.setState({
-            page: ''
+            page: ""
         });
         if (!this.props.location) return;
         this.setState({
@@ -58,15 +58,15 @@ class ContactForm extends Component {
                     uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}
                     className={
                         `${this.state.page ?
-                            'uk-section uk-section-expand uk-margin-remove-top uk-padding-remove'
-                            : 'uk-section uk-section-expand uk-margin-remove-top uk-padding-remove uk-background-secondary uk-light'
+                            "uk-section uk-section-expand uk-margin-remove-top uk-padding-remove"
+                            : "uk-section uk-section-expand uk-margin-remove-top uk-padding-remove uk-background-secondary uk-light"
                         }`
                     }>
                     { !this.state.page ? (
                         <div className="contact-form uk-text-center uk-container uk-container-small">
                             <h4 className="uk-heading-line text-background
                                  uk-text-capitalize uk-margin-large-top uk-margin-medium-bottom">
-                                <span>Let's Talk</span>
+                                <span>Let"s Talk</span>
                             </h4>
                         </div>
                     ) : null }

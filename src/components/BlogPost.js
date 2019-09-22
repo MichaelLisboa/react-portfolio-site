@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { getBlogPostBySlug } from '../lib/contentful';
-import BlogPostContent from './presentation/BlogPostContent.jsx';
-import Contact from './Contact.jsx';
+import BlogPostContent from './presentation/BlogPostContent';
+import Contact from './Contact';
 
 import '../css/Blog.css';
 
