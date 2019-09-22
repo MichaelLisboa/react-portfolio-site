@@ -16,7 +16,7 @@ const AboutContent = () =>
                     </button>
                 </p>
 
-                <div id="toggle-about-content"  hidden>
+                <div id="toggle-about-content" hidden>
                     <p className="uk-margin-small-top">
                         <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
                         Originally from San Francisco, by way of New York, Michael launched his first digital agency back in the early 90's. Since then he’s led creative, user experience, and development teams to solve design and communication problems for the most recognized brands in the world, including Sony Entertainment, Justin Timberlake, Pepsi, Microsoft and over 100 others.</p>
@@ -27,11 +27,14 @@ const AboutContent = () =>
                 <div className="sc-only uk-width-1-1" data-uk-grid>
                     <div className="uk-align-left">
                         <a href="https://github.com/MichaelLisboa"
-                            className="uk-icon-button uk-margin-small-right" data-uk-icon="github"><span>GitHub</span></a>
+                            className="uk-icon-button uk-margin-small-right"
+                            data-uk-icon="github"><span>GitHub</span></a>
                         <a href="https://www.instagram.com/michael__lisboa/"
-                            className="uk-icon-button" data-uk-icon="instagram"><span>Instagram</span></a>
+                            className="uk-icon-button uk-margin-small-right"
+                            data-uk-icon="instagram"><span>Instagram</span></a>
                         <a href="https://www.linkedin.com/in/lisboa/"
-                            className="uk-icon-button uk-margin-small-right" data-uk-icon="linkedin"><span>LinkedIn</span></a>
+                            className="uk-icon-button uk-margin-small-right"
+                            data-uk-icon="linkedin"><span>LinkedIn</span></a>
                     </div>
                 </div>
             </div>

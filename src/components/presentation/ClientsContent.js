@@ -12,9 +12,13 @@ import NecLogo from '../../images/client_logos/nec.png';
 import AiaLogo from '../../images/client_logos/aia.png';
 import FairmontLogo from '../../images/client_logos/fairmont.png';
 import PepsiLogo from '../../images/client_logos/pepsi.png';
+import SiaLogo from '../../images/client_logos/sia.png';
+import CadburyLogo from '../../images/client_logos/cadbury.png';
+import MontereyAquariumLogo from '../../images/client_logos/monterey-aquarium.png';
 
-const clients = [SonyLogo, CitibankLogo, HpLogo, AnzLogo, MicrosoftLogo, OreoLogo,
-    RaidersLogo, InseadLogo, NecLogo, AiaLogo, FairmontLogo, PepsiLogo]
+const clients = [SonyLogo, SiaLogo, CitibankLogo, MontereyAquariumLogo, HpLogo, AnzLogo,
+    MicrosoftLogo, OreoLogo, RaidersLogo, InseadLogo, CadburyLogo, NecLogo,
+    AiaLogo, FairmontLogo, PepsiLogo]
 
 const clientLogos = clients.map((logo, i) => {
     return (
@@ -32,7 +36,7 @@ const clientLogos = clients.map((logo, i) => {
 class ClientsContent extends Component {
     render () {
         return (
-            <div className="client-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@m
+            <div className="client-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-5@m
                 uk-margin-remove-top uk-margin-medium-top@m uk-margin-large-bottom" data-uk-grid>
                 {clientLogos}
             </div>

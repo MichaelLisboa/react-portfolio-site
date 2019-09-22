@@ -11,10 +11,11 @@
 
 .service-cost {
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .service-cost span {
   font-size: 3.5rem;
   font-weight: 200;
+  color: #333;
 }

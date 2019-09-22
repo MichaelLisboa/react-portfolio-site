@@ -14,10 +14,10 @@ let UxMessage = () => (
             Brand Experience
         </h4>
         <h5 className="uk-margin-remove">
-            I design inspiring Experiences.<br />
+            I create inspiring Experiences.<br />
             Experiences that solve problems.<br />
             Experiences that will be remembered.<br />
-            Experiences that people <span data-uk-icon="icon: heart"></span>
+            Experiences that people <span className="uk-text-danger" data-uk-icon="icon: heart"></span>
         </h5>
     </>
 );
@@ -28,8 +28,8 @@ let CreativeMessage = () => (
             Creative Direction &amp; Strategy
         </h4>
         <h5 className="uk-margin-remove">
-            I'm also a creative guy. I've led teams as Creative Director for some of the biggest
-            (and smallest) advertising agencies in the world.
+            I'm also a creative guy, leading teams&mdash;large and small&mdash;as Creative Director for some of the biggest
+            advertising agencies in the world.
         </h5>
     </>
 );
