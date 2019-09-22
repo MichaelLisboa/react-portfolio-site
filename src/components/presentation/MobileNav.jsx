@@ -68,10 +68,6 @@ const MobileNav = () => {
     leave: { opacity: 0, transform: 'scale(0)' }
   })
 
-  const handleClick = props => {
-      console.log(props.history)
-  }
-
   // This will orchestrate the two animations above, comment the last arg and it creates a sequence
   useChain(open ? [springRef, transRef] : [transRef, springRef], [0, open ? 0.1 : 0.7])
   return (
@@ -82,7 +78,7 @@ const MobileNav = () => {
         </div>
         {transitions.map(({ item, key, props }) => (
             <NavLink key={key} style={{textDecoration: "none"}} exact to={item.path}>
-            <animated.div className="anim-nav-item uk-flex-center uk-flex uk-flex-middle" onClick={()=>{handleClick(props)}} key={key} style={{ ...props, background: item.css }}>
+            <animated.div className="anim-nav-item uk-flex-center uk-flex uk-flex-middle" key={key} style={{ ...props, background: item.css }}>
                 <p style={{color: "white"}} className="uk-h3 uk-margin-remove uk-padding-remove">{item.name}</p>
             </animated.div>
             </NavLink>

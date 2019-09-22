@@ -10,8 +10,7 @@ class Skills extends Component {
             <section className="skills-section uk-section uk-section-large uk-section-default
                 uk-padding-remove-vertical uk-padding-medium-bottom@s">
                 <div className="uk-text-center uk-container uk-container-small">
-                    <h4 className="uk-heading-line text-background
-                         uk-text-capitalize uk-margin-small-top uk-margin-large-bottom">
+                    <h4 className="uk-heading-line text-background uk-margin-small-top uk-margin-large-bottom">
                         <span>I'm a Technocreativeologist.</span>
                     </h4>
                     <p className="uk-margin-remove-bottom uk-margin-medium-bottom@s">

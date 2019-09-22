@@ -4,8 +4,7 @@ import * as Markdown from 'react-markdown';
 import moment from 'moment';
 import '../../css/Blog.css';
 
-const BlogListItem = (props) => {
-    console.log(props)
+const BlogListItem = props => {
     const { mainImage, date, title, subtitle, path } = props.blog;
     return (
         <div className="uk-card uk-card-default uk-card-small uk-margin uk-border-rounded">
