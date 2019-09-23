@@ -3,7 +3,6 @@ import React from 'react';
 import UxImage from '../../images/user-experience-c.png';
 import CreativeImage from '../../images/creative-strategy-c.png';
 import CreativeTechImage from '../../images/creative-technology-c.png';
-
 import UxImageS from '../../images/user-experience-s.png';
 import CreativeImageS from '../../images/creative-strategy-s.png';
 import CreativeTechImageS from '../../images/creative-technology-s.png';
@@ -40,8 +39,7 @@ let CreativeTechMessage = () => (
             Programming &amp; Technology Strategy
         </h4>
         <h5 className="uk-margin-remove">
-            I like to make things work, whether it's building mobile UIs in React (like this site),
-                or diving into Python and Pandas for deep data analysis.
+            I like to make things work, whether it's building mobile UIs in React (like this site), or diving into Python and Pandas for data analysis.
         </h5>
     </>
 );

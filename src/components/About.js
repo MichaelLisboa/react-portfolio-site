@@ -1,23 +1,12 @@
-import React, { Component, Fragment } from 'react';
+import React from 'react';
 import AboutContent from "./presentation/AboutContent";
 import '../css/About.css';
 
-const AboutStyles = {
-    // height: '80vh'
-};
-
-class About extends Component {
-    render () {
-        return (
-            <Fragment>
-            <section style={AboutStyles} className="uk-flex uk-flex-middle uk-flex-center">
-                <div className="uk-container uk-container-small">
-                    <AboutContent />
-                </div>
-            </section>
-            </Fragment>
-        );
-    }
-}
+const About = () =>
+    <section className="uk-flex uk-flex-middle uk-flex-center">
+        <div className="uk-container uk-container-small">
+            <AboutContent />
+        </div>
+    </section>
 
 export default About;

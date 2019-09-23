@@ -11,12 +11,12 @@ const headerStyles = {
 };
 
 const withLoading = (Component) => (props) =>
-    <Fragment>
+    <>
         <Component {...props} />
         <div className="interactions uk-container uk-container-expand uk-text-center uk-margin-large">
             {props.isLoading && <span className="uk-padding-remove uk-margin-remove uk-spinner" data-uk-spinner="ratio: 1" />}
         </div>
-    </Fragment>
+    </>
 
 const PortfolioItems = ({items}) =>
     <section className="uk-section">
@@ -64,7 +64,7 @@ class Portfolio extends Component {
             });
 
         return (
-            <Fragment>
+            <>
                 <header style={headerStyles}
                     className="uk-container uk-container-expand uk-light
                     uk-flex uk-flex-center uk-flex-middle">
@@ -84,7 +84,7 @@ class Portfolio extends Component {
                     isLoading={this.state.isLoading}
                     />
                 <Contact />
-            </Fragment>
+            </>
         );
     }
 }

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { getHeroCtas } from '../lib/contentful';
 import '../css/Header.css';
 
-const CtaItem = (props) => {
+const CtaItem = props => {
     const {
         entryPortfolioReference,
         entryClient,
@@ -65,14 +65,14 @@ class Header extends Component {
 
     componentDidMount () {
         getHeroCtas()
-            .then(response => {
-                const posts = response.items.map(item => item.fields);
-                this.setState({
-                    posts,
-                    isLoading: false
-                });
-            })
-            .catch(error => console.error(error));
+        .then(response => {
+            const posts = response.items.map(item => item.fields);
+            this.setState({
+                posts,
+                isLoading: false
+            });
+        })
+        .catch(error => console.error(error));
     }
 
     render () {

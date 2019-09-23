@@ -21,7 +21,7 @@ const Rates = () =>
             <div className="uk-container uk-container-small uk-text-center
                 uk-margin-medium-top uk-margin-large-bottom">
                 <h2 className="content-title uk-margin-large-left@s uk-margin-large-right@s">
-                    20 years of experience in Brand Experience, Creative, and Technology at work.
+                    20 years in Brand Experience, Creative, and Technology at work.
                 </h2>
                 <p className="content-lead uk-text-lead uk-margin-large-left@s uk-margin-large-right@s">
                     See my freelance rates below, or <NavLink className="text-background text-background-indigo

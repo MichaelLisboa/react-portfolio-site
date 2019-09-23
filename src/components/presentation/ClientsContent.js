@@ -22,7 +22,7 @@ const clients = [SonyLogo, CitibankLogo, MontereyAquariumLogo, HpLogo,
     SiaLogo, OreoLogo, ScbLogo, CadburyLogo, LfcLogo]
 
 const clientLogoItems = clients.map((logo, i) =>
-    <div key={i} data-uk-scrollspy={`cls: uk-animation-slide-bottom; target: .logo-img; delay: ${50 * i+10}; repeat: true;`}>
+    <div key={i} data-uk-scrollspy={`cls: uk-animation-slide-bottom-medium; target: img; delay: ${i*100};`}>
         <img
             className="logo-img"
             src={logo}

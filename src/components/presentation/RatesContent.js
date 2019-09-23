@@ -35,7 +35,7 @@ const RatesContent = () =>
             <div>
                 <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
                     <div className="uk-card-header uk-text-center">
-                        Creative Ideation
+                        Creative Direction
                     </div>
                     <div className="uk-card-body uk-flex-1">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">

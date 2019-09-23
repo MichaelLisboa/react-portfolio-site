@@ -3,10 +3,6 @@ import Contact from "./Contact";
 import Form from "./presentation/Form";
 import "../css/Contact.css";
 
-const footerStyles = {
-    // backgroundColor: "#37474f"
-};
-
 const headerStyles = {
     height: "30vh",
     backgroundColor: "#37474f"
@@ -42,7 +38,7 @@ class ContactForm extends Component {
 
     render () {
         return (
-            <Fragment>
+            <>
                 { this.state.page ? (
                     <header style={headerStyles}
                         className="uk-container uk-container-expand uk-light
@@ -54,7 +50,7 @@ class ContactForm extends Component {
                         </div>
                     </header>
                 ) : null}
-                <section style={footerStyles}
+                <section
                     uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}
                     className={
                         `${this.state.page ?
@@ -104,7 +100,7 @@ class ContactForm extends Component {
                     </div>
                 </section>
                 {this.state.page ? <Contact /> : null}
-            </Fragment>
+            </>
         );
     }
 }

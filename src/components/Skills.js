@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import SkillsContent from "./presentation/SkillsContent";
 import '../css/Skills.css';
 
-
 const Skills = () =>
     <section className="skills-section uk-section uk-section-large uk-section-default
         uk-padding-remove-vertical uk-padding-medium-bottom@s">

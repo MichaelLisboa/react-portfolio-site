@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import '../../css/Portfolio.css';
 
-const PortfolioItem = (props) => {
+const PortfolioItem = props => {
     const {
         entryCategory,
         entryClient,

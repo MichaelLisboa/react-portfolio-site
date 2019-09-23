@@ -4,7 +4,7 @@ import MobileNav from "./presentation/MobileNav"
 import logo from '../images/astro-logo.svg';
 import '../css/Navigation.css';
 
-const LogoImage = () => (
+const LogoImage = () =>
     <div className="uk-navbar-center uk-hidden@s">
         <NavLink
             className="uk-navbar-item uk-logo"
@@ -12,7 +12,6 @@ const LogoImage = () => (
             <img src={logo} width="60px" alt="Astro Logo" data-uk-image />
         </NavLink>
     </div>
-);
 
 const Navigation = () =>
     <div className="navbar-container" data-uk-sticky>
