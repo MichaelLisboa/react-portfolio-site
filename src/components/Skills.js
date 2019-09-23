@@ -7,7 +7,9 @@ import '../css/Skills.css';
 const Skills = () =>
     <section className="skills-section uk-section uk-section-large uk-section-default
         uk-padding-remove-vertical uk-padding-medium-bottom@s">
-        <div className="uk-text-center uk-container uk-container-small">
+        <div
+            className="uk-text-center uk-container uk-container-small"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
             <h4 className="uk-heading-line text-background uk-margin-small-top uk-margin-large-bottom">
                 <span>I'm a Technocreativeologist.</span>
             </h4>

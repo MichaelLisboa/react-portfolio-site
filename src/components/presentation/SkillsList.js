@@ -7,7 +7,7 @@ const SkillsList = props =>
             <h6 className="title uk-text-uppercase uk-margin-small-bottom">
                 <span className="uk-text-bold">Kizmo</span><br />
                 <small className="uk-text-muted">
-                    Experience Director<br />Feb 2010&mdash;June 2018
+                    Technocreativeologist<br />Feb 2005&mdash;June 2018
                 </small>
             </h6>
 
