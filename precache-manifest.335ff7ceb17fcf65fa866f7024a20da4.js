@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fd5db4d3a76bd2b20828750a0c93ebf",
+    "revision": "ed0dd9e565547358c9ee0d1df7c2ec43",
     "url": "/index.html"
   },
   {
-    "revision": "f020a6c470af1a7d5130",
+    "revision": "da8c0854b7c5a41cd899",
     "url": "/static/css/main.23f1c8db.chunk.css"
   },
   {
-    "revision": "c305484fec2b25b91ee9",
-    "url": "/static/js/2.c2cebe7f.chunk.js"
+    "revision": "3283e399f78895d17d18",
+    "url": "/static/js/2.eb8b668a.chunk.js"
   },
   {
-    "revision": "f020a6c470af1a7d5130",
-    "url": "/static/js/main.4fcbc386.chunk.js"
+    "revision": "da8c0854b7c5a41cd899",
+    "url": "/static/js/main.073c8204.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3658d8d298d3420a1167cc5934bc3ca7",
     "url": "/static/media/astro-logo.3658d8d2.svg"
-  },
-  {
-    "revision": "045121d320c28ae3213d55864bc34a63",
-    "url": "/static/media/cadbury.045121d3.png"
   },
   {
     "revision": "ec2cf0ab348aecab9bc400b39e37fda5",
@@ -48,12 +44,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/creative-technology-s.98723074.png"
   },
   {
-    "revision": "85b29b35e63f594f2d87cdf1d0919042",
-    "url": "/static/media/hp.85b29b35.png"
+    "revision": "7321bf6db1623e7847573c9a215b3b45",
+    "url": "/static/media/fairmont.7321bf6d.png"
   },
   {
-    "revision": "db83dc6a2c623e9fa03186cfd26c3222",
-    "url": "/static/media/lfc.db83dc6a.png"
+    "revision": "85b29b35e63f594f2d87cdf1d0919042",
+    "url": "/static/media/hp.85b29b35.png"
   },
   {
     "revision": "78b8acd28f0f73ad38ed4879a66181a3",
@@ -68,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/nec.3f3b0872.png"
   },
   {
-    "revision": "b842c5e11ac324da02e17da64e5f3f7d",
-    "url": "/static/media/oreo.b842c5e1.png"
+    "revision": "daa3700c5812f70dd83bf7086d5f4066",
+    "url": "/static/media/nestle.daa3700c.png"
   },
   {
     "revision": "5128759878cf43ea369dd48eadc8e059",
@@ -80,16 +76,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/raiders.56146cae.png"
   },
   {
-    "revision": "a1705c9500ed6e08f8dcf2efed1f3247",
-    "url": "/static/media/sia.a1705c95.png"
-  },
-  {
-    "revision": "9ce9bc204f1f70e8886db207f025f0e5",
-    "url": "/static/media/sony.9ce9bc20.png"
-  },
-  {
-    "revision": "7524e6f18272af895ef42c55973ea132",
-    "url": "/static/media/standard-chartered.7524e6f1.png"
+    "revision": "45cc245b01e78eacc4474a1afbfcfc1d",
+    "url": "/static/media/sony.45cc245b.png"
   },
   {
     "revision": "1c0c7928686cc999a15ff207471d1e01",
@@ -102,5 +90,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "63a43a6a3001e32847a4f62d0c49fa32",
     "url": "/static/media/user-experience-s.63a43a6a.png"
+  },
+  {
+    "revision": "42fac7f9871f76c45ff9fdf683d73dac",
+    "url": "/static/media/wellsfargo.42fac7f9.png"
   }
 ]);
