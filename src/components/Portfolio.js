@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import PortfolioItem from './presentation/PortfolioItem';
 import { compose } from 'recompose';
 import Contact from './Contact';

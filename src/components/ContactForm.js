@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import Contact from "./Contact";
 import Form from "./presentation/Form";
 import "../css/Contact.css";
