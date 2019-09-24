@@ -1,4 +1,5 @@
 import React from "react";
+import loveIcon from '../../images/Love.png';
 
 const AboutContent = () =>
     <div className="uk-container uk-container-small uk-margin-large-top">
@@ -7,7 +8,10 @@ const AboutContent = () =>
                 <p className="uk-text-lead about-intro">
                     <span className="uk-margin-bottom uk-display-block">Hi, I'm Michael.</span>
                     I'm an <span className="text-background text-background-red">experience designer</span>, <span className="text-background text-background-yellow uk-text-nowrap">creative director</span>, <span className="text-background text-background-orange">illustrator</span>, <span className="text-background text-background-green">programmer</span>, <span className="text-background text-background-indigo uk-text-nowrap">start-up founder</span>, and a <span className="text-background text-background-violet">really good guy</span> who specializes in the <i>creative</i> use
-                    of <i>technology</i> to invent and design brand experiences that people <span className="uk-icon uk-text-danger" data-uk-icon="icon: heart; ratio: 1.75"></span>
+                    of <i>technology</i> to invent and design products and experiences <span className="uk-text-nowrap">that people
+
+                        <img className="uk-margin-small-left" src={loveIcon} height="40" width="40" alt="Love" />
+                    </span>
                     <button
                         className="uk-text-small uk-text-muted uk-button uk-button-small uk-button-link uk-display-block
                             uk-text-baseline uk-text-capitalize uk-text-small uk-padding-remove uk-margin-remove"

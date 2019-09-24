@@ -2,6 +2,12 @@
   font-size: 1.5rem !important;
 }
 
+@media (min-width: 640px) {
+  .about-intro {
+    font-size: 1.75rem !important;
+  }
+}
+
 .about-detail {
   font-size: 1.5rem !important;
 }

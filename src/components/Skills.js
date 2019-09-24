@@ -10,7 +10,7 @@ const Skills = () =>
             className="uk-text-center uk-container uk-container-small"
             data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
             <h4 className="uk-heading-line text-background uk-margin-small-top uk-margin-large-bottom">
-                <span>I'm a Technocreativeologist.</span>
+                <span>The Technocreativeologist</span>
             </h4>
             <p className="uk-margin-remove-bottom uk-margin-medium-bottom@s">
                 See my portfolio <NavLink className="text-background text-background-indigo

@@ -10,10 +10,10 @@ import CreativeTechImageS from '../../images/creative-technology-s.png';
 let UxMessage = () => (
     <>
         <h4 className="uk-margin-remove">
-            Brand Experience
+            Experience Design
         </h4>
         <h5 className="uk-margin-remove">
-            I create inspiring Experiences.<br />
+            I create inspiring Consumer Experiences.<br />
             Experiences that solve problems.<br />
             Experiences that will be remembered.<br />
             Experiences that people <span className="uk-text-danger" data-uk-icon="icon: heart"></span>
