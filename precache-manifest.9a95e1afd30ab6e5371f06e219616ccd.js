@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dd8abb75f771796da8f0794b76b17ad6",
+    "revision": "57ea44a34d89517e625975d972ebd4cc",
     "url": "/index.html"
   },
   {
-    "revision": "8c8b25fb84fd155021db",
+    "revision": "81c541f6763b2ab795ea",
     "url": "/static/css/main.dc482ec4.chunk.css"
   },
   {
-    "revision": "f367a7546630e7bd5e6f",
-    "url": "/static/js/2.b31282ac.chunk.js"
+    "revision": "8c489daa7b62f265f4d9",
+    "url": "/static/js/2.a4248d88.chunk.js"
   },
   {
-    "revision": "8c8b25fb84fd155021db",
-    "url": "/static/js/main.2d9132a4.chunk.js"
+    "revision": "81c541f6763b2ab795ea",
+    "url": "/static/js/main.fa9fc45a.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,18 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec2cf0ab348aecab9bc400b39e37fda5",
     "url": "/static/media/citibank.ec2cf0ab.png"
-  },
-  {
-    "revision": "f3500fb88c2827937c22a6a4b24cdb38",
-    "url": "/static/media/creative-strategy-c.f3500fb8.png"
-  },
-  {
-    "revision": "2eb003b532086643f7588c4a4a02c238",
-    "url": "/static/media/creative-strategy-s.2eb003b5.png"
-  },
-  {
-    "revision": "9f012ac4d95a7d77aa21781e481b005a",
-    "url": "/static/media/creative-technology-c.9f012ac4.png"
   },
   {
     "revision": "98723074eafbaa98ac030c6254f37d9a",
@@ -76,16 +64,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/raiders.56146cae.png"
   },
   {
+    "revision": "cef116b15c38f7c06f887ac943ed0228",
+    "url": "/static/media/skills-creative.cef116b1.png"
+  },
+  {
+    "revision": "6d1b12d11986d36b4f2c19c8e07b6866",
+    "url": "/static/media/skills-tech.6d1b12d1.png"
+  },
+  {
+    "revision": "261a27ad59aafdffb8fa9541b307ab50",
+    "url": "/static/media/skills-ux.261a27ad.png"
+  },
+  {
     "revision": "45cc245b01e78eacc4474a1afbfcfc1d",
     "url": "/static/media/sony.45cc245b.png"
   },
   {
     "revision": "1c0c7928686cc999a15ff207471d1e01",
     "url": "/static/media/universal.1c0c7928.png"
-  },
-  {
-    "revision": "40bd351a724b986e4868217d4fdd40f4",
-    "url": "/static/media/user-experience-c.40bd351a.png"
   },
   {
     "revision": "63a43a6a3001e32847a4f62d0c49fa32",

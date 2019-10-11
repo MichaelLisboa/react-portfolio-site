@@ -1,17 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.dc482ec4.chunk.css",
-    "main.js": "/static/js/main.2d9132a4.chunk.js",
+    "main.js": "/static/js/main.fa9fc45a.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "static/js/2.b31282ac.chunk.js": "/static/js/2.b31282ac.chunk.js",
+    "static/js/2.a4248d88.chunk.js": "/static/js/2.a4248d88.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.464d15bfcec1ba1fe450664c6a6fae7c.js": "/precache-manifest.464d15bfcec1ba1fe450664c6a6fae7c.js",
+    "precache-manifest.9a95e1afd30ab6e5371f06e219616ccd.js": "/precache-manifest.9a95e1afd30ab6e5371f06e219616ccd.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
-    "static/media/creative-strategy-c.png": "/static/media/creative-strategy-c.f3500fb8.png",
-    "static/media/creative-strategy-s.png": "/static/media/creative-strategy-s.2eb003b5.png",
-    "static/media/creative-technology-c.png": "/static/media/creative-technology-c.9f012ac4.png",
     "static/media/creative-technology-s.png": "/static/media/creative-technology-s.98723074.png",
     "static/media/fairmont.png": "/static/media/fairmont.7321bf6d.png",
     "static/media/hp.png": "/static/media/hp.85b29b35.png",
@@ -21,9 +18,11 @@
     "static/media/nestle.png": "/static/media/nestle.daa3700c.png",
     "static/media/pepsi.png": "/static/media/pepsi.51287598.png",
     "static/media/raiders.png": "/static/media/raiders.56146cae.png",
+    "static/media/skills-creative.png": "/static/media/skills-creative.cef116b1.png",
+    "static/media/skills-tech.png": "/static/media/skills-tech.6d1b12d1.png",
+    "static/media/skills-ux.png": "/static/media/skills-ux.261a27ad.png",
     "static/media/sony.png": "/static/media/sony.45cc245b.png",
     "static/media/universal.png": "/static/media/universal.1c0c7928.png",
-    "static/media/user-experience-c.png": "/static/media/user-experience-c.40bd351a.png",
     "static/media/user-experience-s.png": "/static/media/user-experience-s.63a43a6a.png",
     "static/media/wellsfargo.png": "/static/media/wellsfargo.42fac7f9.png"
   }
