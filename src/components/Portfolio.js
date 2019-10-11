@@ -40,6 +40,7 @@ class Portfolio extends Component {
         getPosts()
             .then(response => {
                 const posts = response.items.map(item => item.fields);
+                console.log(posts)
                 this.setState({
                     posts,
                     isLoading: false

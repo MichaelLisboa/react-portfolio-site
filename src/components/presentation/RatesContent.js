@@ -7,25 +7,27 @@ const RatesContent = () =>
             <div className="uk-first-column">
                 <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
                     <div className="uk-card-header uk-text-center">
-                        Experience Design
+                        Lock
                     </div>
                     <div className="uk-card-body uk-flex-1">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">
                             <span className="service-cost">
-                                $<span>300</span>USD / day
+                                $<span>5,000</span>USD
                             </span>
                         </div>
-                        <div className="uk-text-small uk-text-center uk-text-muted">Day Rate (5 days minimum)</div>
+                        <div className="uk-text-small uk-text-center uk-text-muted">(Minumum fee)</div>
                         <div className="uk-margin-small-top">
                             <p className="uk-text-center uk-text-large uk-margin-small-bottom">
-                                Understand your audience
+                                Large, end-to-end projects
                             </p>
+                            <p>
+                                I'm dedicated, full-time on your project. I'll work with you to scope, execute, and deliver results on your schedule.
+                            </p>
+                            <p className="uk-h4 uk-heading-line uk-text-center uk-margin-remove-top"><span>Ideal for</span></p>
                             <ul className="uk-list uk-list-bullet uk-margin-remove">
-                                <li>Consumer Experience strategy</li>
-                                <li>Personas &amp; journeys</li>
-                                <li>Goal &amp; conversion mapping</li>
-                                <li>UX &amp; UI Design</li>
-                                <li>And a pint of beer</li>
+                                <li>Product design</li>
+                                <li>UX/UI Strategy &amp; Design</li>
+                                <li>Full-stack programming</li>
                             </ul>
                         </div>
                     </div>
@@ -35,25 +37,28 @@ const RatesContent = () =>
             <div>
                 <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
                     <div className="uk-card-header uk-text-center">
-                        Creative Direction
+                        Day
                     </div>
-                    <div className="uk-card-body uk-flex-1">
+                    <div className="uk-card-body">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">
                             <span className="service-cost">
-                                $<span>1000</span>USD / day
+                                $<span>500</span>USD / day
                             </span>
                         </div>
                         <div className="uk-text-small uk-text-center uk-text-muted">Day Rate (2 days minimum)</div>
                         <div className="uk-margin-small-top">
                             <p className="uk-text-center uk-text-large uk-margin-small-bottom">
-                                Get to the big idea
+                                Small or phased projects
                             </p>
+                            <p>
+                                Available when I'm not <strong>locked</strong> on a full-time project.
+                                This rate works for projects with smaller budgets.
+                            </p>
+                            <p className="uk-h4 uk-heading-line uk-text-center uk-margin-remove-top"><span>Ideal for</span></p>
                             <ul className="uk-list uk-list-bullet uk-margin-remove">
-                                <li>ID the problem, get to solutions</li>
-                                <li>Rapid ideation sessions</li>
-                                <li>Communication channel strategy</li>
-                                <li>Creative message &amp; copywriting</li>
-                                <li>And a pint of beer</li>
+                                <li>Creative direction and ideation</li>
+                                <li>Consumer experience research</li>
+                                <li>Usability testing and research</li>
                             </ul>
                         </div>
                     </div>
@@ -63,24 +68,28 @@ const RatesContent = () =>
             <div>
                 <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
                     <div className="uk-card-header uk-text-center">
-                        Technology &amp; Code
+                        Hourly
                     </div>
-                    <div className="uk-card-body uk-flex-1">
+                    <div className="uk-card-body">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">
                             <span className="service-cost">
-                                $<span>30</span>USD / hour
+                                $<span>100</span>USD / hour
                             </span>
                         </div>
-                        <div className="uk-text-small uk-text-center uk-text-muted">Billed Hourly</div>
+                        <div className="uk-text-small uk-text-center uk-text-muted">Hourly Rate (8 hours max)</div>
                         <div className="uk-margin-small-top">
-                            <p className="uk-text-center uk-text-large
-                                uk-margin-small-bottom">Execute &amp; deliver</p>
+                            <p className="uk-text-center uk-text-large uk-margin-small-bottom">
+                                Advisory &amp; scoping
+                            </p>
+                            <p>
+                                Available when I'm not <strong>locked</strong> on a full-time project.
+                                Good for fast turnaround advisory and scoping projects.
+                            </p>
+                            <p className="uk-h4 uk-heading-line uk-text-center uk-margin-remove-top"><span>Ideal for</span></p>
                             <ul className="uk-list uk-list-bullet uk-margin-remove">
-                                <li>Tech planning and strategy</li>
-                                <li>HTML5 / CSS3 / JavaScript / React</li>
-                                <li>Python / Django / Flask</li>
-                                <li>Deploy to cloud service</li>
-                                <li>And a pint of beer</li>
+                                <li>UX/UI audit &amp; recommendations</li>
+                                <li>Technical Director by-the-hour</li>
+                                <li>Project assesment/budget scoping</li>
                             </ul>
                         </div>
                     </div>

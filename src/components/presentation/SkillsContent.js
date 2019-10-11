@@ -1,167 +1,219 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-import UxImage from '../../images/user-experience-c.png';
-import CreativeImage from '../../images/creative-strategy-c.png';
-import CreativeTechImage from '../../images/creative-technology-c.png';
+import UxImage from '../../images/skills-ux.png';
+import CreativeImage from '../../images/skills-creative.png';
+import CreativeTechImage from '../../images/skills-tech.png';
 import UxImageS from '../../images/user-experience-s.png';
-import CreativeImageS from '../../images/creative-strategy-s.png';
+import CreativeImageS from '../../images/skills-creative.png';
 import CreativeTechImageS from '../../images/creative-technology-s.png';
 
-let UxMessage = () => (
-    <>
-        <h4 className="uk-margin-remove">
-            Experience Design
-        </h4>
-        <h5 className="uk-margin-remove">
-            I create inspiring Consumer Experiences.<br />
-            Experiences that solve problems.<br />
-            Experiences that will be remembered.<br />
-            Experiences that people <span className="uk-text-danger" data-uk-icon="icon: heart"></span>
-        </h5>
-    </>
-);
 
-let CreativeMessage = () => (
-    <>
-        <h4 className="uk-margin-remove">
-            Creative Direction &amp; Strategy
-        </h4>
-        <h5 className="uk-margin-remove">
-            I'm also a creative guy, leading teams&mdash;large and small&mdash;as Creative Director for some of the biggest
-            advertising agencies in the world.
-        </h5>
-    </>
-);
+const UxMessage = () =>{
+    return (
+        <>
+            <h4 className="uk-margin-remove">
+                Experience Design
+            </h4>
+            <h5 className="uk-margin-remove">
+                I create inspiring Consumer Experiences.<br />
+                Experiences that solve problems.<br />
+                Experiences that will be remembered.<br />
+                Experiences that people <span className="uk-text-danger" data-uk-icon="icon: heart"></span>
+            </h5>
+            <p style={{fontSize: "0.7em"}} className="uk-h6 uk-text-uppercase uk-text-center uk-heading-line uk-margin-top uk-margin-remove-bottom"><span>Case Studies</span></p>
+            <ul className="case-study-list uk-list">
+                <li>
+                    <Link
+                        to="/portfolio/thailand-fintech-app">
+                            DeeMoney<br />
+                            <small>Thailand Banking &amp; Financial Services</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/geomain">
+                            GeoMain<br />
+                            <small>Location Services Startup</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/zyllem">
+                            Zyllem<br />
+                            <small>SEA, Logistics &amp; Supply Chain Management</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+            </ul>
+        </>
+    )
+}
 
-let CreativeTechMessage = () => (
-    <>
-        <h4 className="uk-margin-remove">
-            Programming &amp; Technology Strategy
-        </h4>
-        <h5 className="uk-margin-remove">
-            I like to make things work, whether it's building mobile UIs in React (like this site), or diving into Python and Pandas for data analysis.
-        </h5>
-    </>
-);
+const CreativeMessage = () => {
+    return (
+        <>
+            <h4 className="uk-margin-remove">
+                Creative Direction &amp; Strategy
+            </h4>
+            <h5 className="uk-margin-remove">
+                Designer, copywriter, Creative Director.<br />I've led teams&mdash;large and small&mdash;for some of the biggest
+                advertising agencies in the world.
+            </h5>
+            <p style={{fontSize: "0.7em"}} className="uk-h6 uk-text-uppercase uk-text-center uk-heading-line uk-margin-remove-top"><span>Case Studies</span></p>
+            <ul className="case-study-list uk-list">
+                <li>
+                    <Link
+                        to="/portfolio/oreo">
+                            Oreo<br />
+                            <small>Creative Direction for Global FMCG Brand</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/raffles-hotels">
+                            Raffles Hotels (Accor)<br />
+                            <small>Strategy, Creative Direction &amp; Social for Luxury Hospitality</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/insead">
+                            Insead<br />
+                            <small>Creative Direction &amp; Client Services for Higher Education</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+            </ul>
+        </>
+)
+}
+const CreativeTechMessage = () => {
+    return (
+        <>
+            <h4 className="uk-margin-remove">
+                Full Stack Development
+            </h4>
+            <h5 className="uk-margin-remove">
+                I make things work, whether it's building mobile apps in React,
+                or diving into Python and Pandas for data analytics.<br />
+                <small className="uk-text-muted">P.S. Check <a href="https://github.com/MichaelLisboa" className="text-background text-background-indigo uk-link-reset uk-link uk-nowrap">my GitHub</a> to get the code for this site.</small>
+            </h5>
 
-const SkillsContent = () =>
-    <>
-        <div className="uk-container uk-margin-auto-left uk-margin-auto-right
-            uk-margin-remove-bottom uk-padding-remove uk-visible@s"
-            data-uk-slideshow="autoplay: true; autoplay-interval: 5000;">
-            <div className="skills-tabs uk-width-1-3 uk-margin-auto-left uk-margin-auto-right uk-flex-center">
-                <ul className="skills-menu uk-margin-remove-vertical uk-padding-remove" data-uk-tab>
-                    <li data-uk-slideshow-item="0"><a href="#one">Experience</a></li>
-                    <li data-uk-slideshow-item="1"><a href="#two">Creative</a></li>
-                    <li data-uk-slideshow-item="2"><a href="#three">Technology</a></li>
-                </ul>
-            </div>
+            <p style={{fontSize: "0.7em"}} className="uk-h6 uk-text-uppercase uk-text-center uk-heading-line uk-margin-remove-top"><span>Case Studies</span></p>
+            <ul className="case-study-list uk-list">
+                <li>
+                    <Link
+                        to="/portfolio/influense">
+                            Influen$e<br />
+                            <small>AI Powered Influencer Data Platform</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/influense-content-market-watch">
+                            Content MarketWatch<br />
+                            <small>The world's first content marketing trading platform</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/portfolio/insead">
+                            Insead<br />
+                            <small>UX and full-stack development for Higher Education</small>&nbsp;
+                            <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
+                    </Link>
+                </li>
+            </ul>
+        </>
+    )
+}
+const SkillsCards = [
+    {
+        name: "Experience Design",
+        image: UxImage,
+        content: UxMessage()
+    },
+    {
+        name: "Creative Strategy",
+        image: CreativeImage,
+        content: CreativeMessage()
+    },
+    {
+        name: "Technology",
+        image: CreativeTechImage,
+        content: CreativeTechMessage()
+    }
+]
 
-            <div className="uk-slideshow-items uk-box-shadow-xlarge ">
-                <div className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove" data-uk-grid>
-                    <div className="uk-flex-last@s uk-card-media-right uk-cover-container" data-uk-scrollspy="cls: uk-animation-slide-right;">
-                        <img
-                            src={UxImage}
-                            alt="User Experience"
-                            data-uk-img
-                            data-uk-cover
-                        />
-                        <canvas width="480" height="540" />
-                    </div>
-                    <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
-                        <div className="uk-card-body" data-uk-scrollspy="cls: uk-animation-slide-left;">
-                            <UxMessage />
-                        </div>
-                    </div>
+const SkillsContent = () => {
+    return (
+        <>
+            <div className="uk-container uk-margin-auto-left uk-margin-auto-right
+                uk-margin-remove-bottom uk-padding-remove uk-visible@s"
+                data-uk-slideshow="autoplay: true; autoplay-interval: 5000;">
+                <div className="skills-tabs uk-width-1-3 uk-margin-auto-left uk-margin-auto-right uk-flex-center">
+                    <ul className="skills-menu uk-margin-remove-vertical uk-padding-remove" data-uk-tab>
+                        <li data-uk-slideshow-item="0"><a href="#one">Experience</a></li>
+                        <li data-uk-slideshow-item="1"><a href="#two">Creative</a></li>
+                        <li data-uk-slideshow-item="2"><a href="#three">Technology</a></li>
+                    </ul>
                 </div>
 
+                <div className="skills-content uk-slideshow-items uk-box-shadow-xlarge ">
+                    {SkillsCards.map((item, i) => (
+                        <div key={i} className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove" data-uk-grid>
+                            <div className="uk-flex-last@s uk-card-media-right uk-cover-container" data-uk-scrollspy="cls: uk-animation-slide-right;">
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    data-uk-img
+                                    data-uk-cover
+                                />
+                                <canvas width="480" height="540" />
+                            </div>
+                            <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
+                                <div className="uk-card-body" data-uk-scrollspy="cls: uk-animation-slide-left;">
+                                    {item.content}
+                                </div>
+                            </div>
+                        </div>
+                        )
+                    )}
+                </div>
+            </div>
+
+            <div className="skills-content uk-container uk-container-expand uk-hidden@s">
+                {SkillsCards.map((item, i) => (
                 <div
-                    className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove"
+                    key={i}
+                    className="uk-grid-collapse uk-child-width-1-1 uk-margin-top"
+                    data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;"
                     data-uk-grid>
-                    <div className="uk-flex-last@s uk-card-media-right uk-cover-container">
-                        <img
-                            src={CreativeImage}
-                            alt="Creative Strategy"
-                            data-uk-img
-                            data-uk-cover
-                        />
-                        <canvas width="480" height="540" />
-                    </div>
-                    <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
-                        <div className="uk-card-body" data-uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                            <CreativeMessage />
+                        <div className="uk-card uk-card-small uk-card-default uk-margin-bottom">
+                            <div className="uk-card-media-top">
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    data-uk-img
+                                />
+                            </div>
+                            <div className="uk-card-body">
+                                {item.content}
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove" data-uk-grid>
-                    <div className="uk-flex-last@s uk-card-media-right uk-cover-container uk-animation-slide-right">
-                        <img
-                            src={CreativeTechImage}
-                            alt="Creative Technology"
-                            data-uk-img
-                            data-uk-cover
-                        />
-                        <canvas width="480" height="540" />
-                    </div>
-                    <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
-                        <div className="uk-card-body uk-animation-slide-left">
-                            <CreativeTechMessage />
-                        </div>
-                    </div>
-                </div>
+                    )
+                )}
             </div>
-        </div>
-
-        <div className="uk-container uk-container-expand uk-hidden@s">
-            <div
-                className="uk-grid-collapse uk-child-width-1-1 uk-margin-medium-top uk-margin-large-bottom"
-                data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;"
-                data-uk-grid>
-                <div>
-                    <div className="uk-card uk-card-small">
-                        <div className="uk-card-media-top">
-                            <img
-                                src={UxImageS}
-                                alt="client"
-                                data-uk-img
-                            />
-                        </div>
-                        <div className="uk-card-body">
-                            <UxMessage />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="uk-card uk-card-small">
-                        <div className="uk-card-media-top">
-                            <img
-                                src={CreativeImageS}
-                                alt="Creative Direction"
-                                data-uk-img
-                            />
-                        </div>
-                        <div className="uk-card-body">
-                            <CreativeMessage />
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="uk-card uk-card-small">
-                        <div className="uk-card-media-top">
-                            <img
-                                src={CreativeTechImageS}
-                                alt="Creative Direction"
-                                data-uk-img
-                            />
-                        </div>
-                        <div className="uk-card-body">
-                            <CreativeTechMessage />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </>
+        </>
+    )
+}
 
 export default SkillsContent;

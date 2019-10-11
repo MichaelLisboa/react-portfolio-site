@@ -1,4 +1,4 @@
-# Portfolio website done with React
+# Portfolio website
 
 ### UIKit for styles framework
 ### Contentful as CMS for portfolio items and blog.

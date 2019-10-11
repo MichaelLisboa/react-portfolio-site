@@ -13,12 +13,63 @@
   border-color: #f8981c !important;
 }
 
+.skills-content ul {
+  padding: 0 !important;
+  background-color: transparent;
+  line-height: 1em;
+}
+
+.skills-content ul li {
+  padding: 8px 0;
+  font-size: 0.879em;
+}
+
+.skills-content ul li + li {
+  /* margin-top: 15px !important; */
+}
+
+.skills-content ul li:hover {
+  background-color: #f8f8f8;
+}
+
+.skills-content ul li small {
+  color: #999;
+}
+
+.skills-content .case-study-list a {
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+
+/* .skills-content .uk-label {
+  padding: auto;
+  background-color: #bbdefb;
+  font-family: "Bitter", serif;
+}
+
+.skills-content .uk-label:hover {
+  background-color: #49839a;
+  color: #bbdefb !important;
+}
+
+.skills-content .uk-label a {
+  padding: 20px 10px !important;
+  color: #49839a;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.skills-content .uk-label a:hover {
+  color: #bbdefb;
+} */
+
 @media (max-width: 640px) {
 
-  .skills-section .uk-card-body {
+  /* .skills-section .uk-card-body {
     padding-left: 0;
     padding-right: 0;
-  }
+  } */
 
   .skills-section h4 {
     font-size: 1.125rem;
@@ -47,27 +98,45 @@
   }
 }
 
+.skills-section h4 {
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  margin-bottom: 14px !important;
+  font-weight: 800 !important;
+}
+
+.skills-section h5 {
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  color: #6c6c6c !important;
+  margin: 0 auto 12px !important;
+  font-weight: 400 !important;
+}
+
+.skills-section li {
+  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  color: #6c6c6c !important;
+  margin: 0 auto 6px !important;
+}
+
 @media (min-width: 640px) {
+  .skills-section-intro {
+    text-align: center;
+  }
+
+  .skills-section-intro p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
   .skills-section h4 {
     font-size: 1.5rem;
-    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
-    margin-bottom: 14px !important;
-    font-weight: 800 !important;
   }
 
   .skills-section h5 {
     font-size: 1.25rem;
-    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
-    color: #6c6c6c !important;
-    margin: 0 auto 12px !important;
-    font-weight: 400 !important;
   }
 
   .skills-section li {
     font-size: 1.25rem;
-    font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
-    color: #6c6c6c !important;
-    margin: 0 auto 6px !important;
   }
 }
 
