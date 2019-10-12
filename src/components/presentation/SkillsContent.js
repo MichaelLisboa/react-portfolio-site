@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import UxImage from '../../images/skills-ux.png';
-import CreativeImage from '../../images/skills-creative.png';
-import CreativeTechImage from '../../images/skills-tech.png';
+import UxImage_1 from '../../images/skills-ux-a.png';
+import UxImage_2 from '../../images/skills-ux-b.png';
+import CreativeImage_1 from '../../images/skills-creative-a.png';
+import CreativeImage_2 from '../../images/skills-creative-b.png';
+import CreativeImage_3 from '../../images/skills-creative-c.png';
+import TechImage_1 from '../../images/skills-tech-a.png';
+import TechImage_2 from '../../images/skills-tech-b.png';
 import UxImageS from '../../images/user-experience-s.png';
 import CreativeImageS from '../../images/skills-creative.png';
 import CreativeTechImageS from '../../images/creative-technology-s.png';
@@ -136,18 +140,18 @@ const CreativeTechMessage = () => {
 }
 const SkillsCards = [
     {
-        name: "Experience Design",
-        image: UxImage,
+        name: "Experience-Design",
+        image: [UxImage_1, UxImage_2],
         content: UxMessage()
     },
     {
-        name: "Creative Strategy",
-        image: CreativeImage,
+        name: "Creative-Strategy",
+        image: [CreativeImage_1, CreativeImage_2, CreativeImage_3],
         content: CreativeMessage()
     },
     {
         name: "Technology",
-        image: CreativeTechImage,
+        image: [TechImage_1, TechImage_2],
         content: CreativeTechMessage()
     }
 ]
@@ -157,7 +161,7 @@ const SkillsContent = () => {
         <>
             <div className="uk-container uk-margin-auto-left uk-margin-auto-right
                 uk-margin-remove-bottom uk-padding-remove uk-visible@s"
-                data-uk-slideshow="autoplay: true; autoplay-interval: 5000;">
+                data-uk-slideshow="autoplay: true; autoplay-interval: 10000;">
                 <div className="skills-tabs uk-width-1-3 uk-margin-auto-left uk-margin-auto-right uk-flex-center">
                     <ul className="skills-menu uk-margin-remove-vertical uk-padding-remove" data-uk-tab>
                         <li data-uk-slideshow-item="0"><a href="#one">Experience</a></li>
@@ -166,17 +170,27 @@ const SkillsContent = () => {
                     </ul>
                 </div>
 
-                <div className="skills-content uk-slideshow-items uk-box-shadow-xlarge ">
+                <div className="skills-content uk-slideshow-items uk-box-shadow-xlarge">
                     {SkillsCards.map((item, i) => (
-                        <div key={i} className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove" data-uk-grid>
-                            <div className="uk-flex-last@s uk-card-media-right uk-cover-container" data-uk-scrollspy="cls: uk-animation-slide-right;">
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                    data-uk-img
-                                    data-uk-cover
-                                />
-                                <canvas width="480" height="540" />
+                        <div key={`${i}-${item.name}`}
+                            className={`${item.name} uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove`}
+                            data-uk-grid>
+                            <div className="uk-padding-remove uk-flex-last@s uk-card-media-right" data-uk-scrollspy="cls: uk-animation-slide-right;">
+                                <div data-uk-slideshow="autoplay: true; autoplay-interval: 3000; animation: fade">
+                                    <div className="uk-margin-remove uk-padding-remove uk-slideshow-items">
+                                        {item.image.map((img, i) => (
+                                            <div key={`${i}-${img}`}>
+                                                <img
+                                                    src={img}
+                                                    alt={item.name}
+                                                    data-uk-cover
+                                                    data-uk-img={`target: !.skills-content`}
+                                                />
+                                            </div>
+                                            )
+                                        )}
+                                    </div>
+                                </div>
                             </div>
                             <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
                                 <div className="uk-card-body" data-uk-scrollspy="cls: uk-animation-slide-left;">
