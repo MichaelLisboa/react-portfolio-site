@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "57ea44a34d89517e625975d972ebd4cc",
+    "revision": "137487ccb91d92108a3a8cd211a50e3f",
     "url": "/index.html"
   },
   {
-    "revision": "81c541f6763b2ab795ea",
+    "revision": "69ed014d1a3e8288b0d6",
     "url": "/static/css/main.dc482ec4.chunk.css"
   },
   {
-    "revision": "8c489daa7b62f265f4d9",
-    "url": "/static/js/2.a4248d88.chunk.js"
+    "revision": "5d420cd8a16344a6df81",
+    "url": "/static/js/2.ce88d6fb.chunk.js"
   },
   {
-    "revision": "81c541f6763b2ab795ea",
-    "url": "/static/js/main.fa9fc45a.chunk.js"
+    "revision": "69ed014d1a3e8288b0d6",
+    "url": "/static/js/main.2a6e4e7e.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -64,16 +64,36 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/raiders.56146cae.png"
   },
   {
+    "revision": "91de2718bc91129fab1ebed7d7a5cdba",
+    "url": "/static/media/skills-creative-a.91de2718.png"
+  },
+  {
+    "revision": "14262edc149b43ec48e39a57918da5ef",
+    "url": "/static/media/skills-creative-b.14262edc.png"
+  },
+  {
+    "revision": "ea93a46bb981547c542a333ba3fd0f56",
+    "url": "/static/media/skills-creative-c.ea93a46b.png"
+  },
+  {
     "revision": "cef116b15c38f7c06f887ac943ed0228",
     "url": "/static/media/skills-creative.cef116b1.png"
   },
   {
-    "revision": "6d1b12d11986d36b4f2c19c8e07b6866",
-    "url": "/static/media/skills-tech.6d1b12d1.png"
+    "revision": "d5e7d21de71a6e365bd98b151f9eb67e",
+    "url": "/static/media/skills-tech-a.d5e7d21d.png"
   },
   {
-    "revision": "261a27ad59aafdffb8fa9541b307ab50",
-    "url": "/static/media/skills-ux.261a27ad.png"
+    "revision": "1db2f8dc122f391ff877e8f83afd8ec8",
+    "url": "/static/media/skills-tech-b.1db2f8dc.png"
+  },
+  {
+    "revision": "064d102d45669d176118e41de60062ee",
+    "url": "/static/media/skills-ux-a.064d102d.png"
+  },
+  {
+    "revision": "8ffaa67e3e7cff2123d622ea82af6800",
+    "url": "/static/media/skills-ux-b.8ffaa67e.png"
   },
   {
     "revision": "45cc245b01e78eacc4474a1afbfcfc1d",
