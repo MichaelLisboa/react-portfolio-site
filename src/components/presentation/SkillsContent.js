@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-import UxImage_1 from '../../images/skills-ux-a.png';
-import UxImage_2 from '../../images/skills-ux-b.png';
-import CreativeImage_1 from '../../images/skills-creative-a.png';
-import CreativeImage_2 from '../../images/skills-creative-b.png';
-import CreativeImage_3 from '../../images/skills-creative-c.png';
-import TechImage_1 from '../../images/skills-tech-a.png';
-import TechImage_2 from '../../images/skills-tech-b.png';
+import UxImage from '../../images/skills-ux.png';
+import CreativeImage from '../../images/skills-creative.png';
+import CreativeTechImage from '../../images/skills-tech.png';
 import UxImageS from '../../images/user-experience-s.png';
 import CreativeImageS from '../../images/skills-creative.png';
 import CreativeTechImageS from '../../images/creative-technology-s.png';
@@ -16,7 +12,7 @@ import CreativeTechImageS from '../../images/creative-technology-s.png';
 const UxMessage = () =>{
     return (
         <>
-            <h4 className="uk-margin-remove">
+            <h4 className="uk-margin-remove uk-visible@s">
                 Experience Design
             </h4>
             <h5 className="uk-margin-remove">
@@ -59,11 +55,11 @@ const UxMessage = () =>{
 const CreativeMessage = () => {
     return (
         <>
-            <h4 className="uk-margin-remove">
+            <h4 className="uk-margin-remove uk-visible@s">
                 Creative Direction &amp; Strategy
             </h4>
             <h5 className="uk-margin-remove">
-                Designer, copywriter, Creative Director.<br />I've led teams&mdash;large and small&mdash;for some of the biggest
+                Designer, Copywriter, Creative Director.<br />I've led teams&mdash;large and small&mdash;for some of the biggest
                 advertising agencies in the world.
             </h5>
             <p style={{fontSize: "0.7em"}} className="uk-h6 uk-text-uppercase uk-text-center uk-heading-line uk-margin-remove-top"><span>Case Studies</span></p>
@@ -99,8 +95,8 @@ const CreativeMessage = () => {
 const CreativeTechMessage = () => {
     return (
         <>
-            <h4 className="uk-margin-remove">
-                Full Stack Development
+            <h4 className="uk-margin-remove uk-visible@s">
+                Full-Stack Development
             </h4>
             <h5 className="uk-margin-remove">
                 I make things work, whether it's building mobile apps in React,
@@ -120,9 +116,9 @@ const CreativeTechMessage = () => {
                 </li>
                 <li>
                     <Link
-                        to="/portfolio/influense-content-market-watch">
-                            Content MarketWatch<br />
-                            <small>The world's first content marketing trading platform</small>&nbsp;
+                        to="/portfolio/purple-temple">
+                            Purple Temple<br />
+                            <small>The Tinder of Advertising for Global Brands</small>&nbsp;
                             <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
                     </Link>
                 </li>
@@ -140,18 +136,18 @@ const CreativeTechMessage = () => {
 }
 const SkillsCards = [
     {
-        name: "Experience-Design",
-        image: [UxImage_1, UxImage_2],
+        name: "Experience Design",
+        image: UxImage,
         content: UxMessage()
     },
     {
-        name: "Creative-Strategy",
-        image: [CreativeImage_1, CreativeImage_2, CreativeImage_3],
+        name: "Creative Direction & Strategy",
+        image: CreativeImage,
         content: CreativeMessage()
     },
     {
-        name: "Technology",
-        image: [TechImage_1, TechImage_2],
+        name: "Full-stack Developer",
+        image: CreativeTechImage,
         content: CreativeTechMessage()
     }
 ]
@@ -161,7 +157,7 @@ const SkillsContent = () => {
         <>
             <div className="uk-container uk-margin-auto-left uk-margin-auto-right
                 uk-margin-remove-bottom uk-padding-remove uk-visible@s"
-                data-uk-slideshow="autoplay: true; autoplay-interval: 10000;">
+                data-uk-slideshow="autoplay: true; autoplay-interval: 5000;">
                 <div className="skills-tabs uk-width-1-3 uk-margin-auto-left uk-margin-auto-right uk-flex-center">
                     <ul className="skills-menu uk-margin-remove-vertical uk-padding-remove" data-uk-tab>
                         <li data-uk-slideshow-item="0"><a href="#one">Experience</a></li>
@@ -172,25 +168,15 @@ const SkillsContent = () => {
 
                 <div className="skills-content uk-slideshow-items uk-box-shadow-xlarge">
                     {SkillsCards.map((item, i) => (
-                        <div key={`${i}-${item.name}`}
-                            className={`${item.name} uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove`}
-                            data-uk-grid>
-                            <div className="uk-padding-remove uk-flex-last@s uk-card-media-right" data-uk-scrollspy="cls: uk-animation-slide-right;">
-                                <div data-uk-slideshow="autoplay: true; autoplay-interval: 3000; animation: fade">
-                                    <div className="uk-margin-remove uk-padding-remove uk-slideshow-items">
-                                        {item.image.map((img, i) => (
-                                            <div key={`${i}-${img}`}>
-                                                <img
-                                                    src={img}
-                                                    alt={item.name}
-                                                    data-uk-cover
-                                                    data-uk-img={`target: !.skills-content`}
-                                                />
-                                            </div>
-                                            )
-                                        )}
-                                    </div>
-                                </div>
+                        <div key={i} className="uk-card uk-card-default uk-card-large uk-child-width-1-2 uk-margin-remove uk-padding-remove" data-uk-grid>
+                            <div className="uk-flex-last@s uk-card-media-right uk-cover-container" data-uk-scrollspy="cls: uk-animation-slide-right;">
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    data-uk-img
+                                    data-uk-cover
+                                />
+                                <canvas width="480" height="540" />
                             </div>
                             <div className="uk-flex uk-flex-column uk-flex-middle uk-flex-center">
                                 <div className="uk-card-body" data-uk-scrollspy="cls: uk-animation-slide-left;">
@@ -211,6 +197,11 @@ const SkillsContent = () => {
                     data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;"
                     data-uk-grid>
                         <div className="uk-card uk-card-small uk-card-default uk-margin-bottom">
+                            <div className="uk-card-header">
+                                <p className="uk-h5">
+                                    {item.name}
+                                </p>
+                            </div>
                             <div className="uk-card-media-top">
                                 <img
                                     src={item.image}

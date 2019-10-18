@@ -36,6 +36,23 @@
   color: #999;
 }
 
+.skills-content .uk-card,
+.skills-content .uk-card-header {
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.skills-content .uk-card-header {
+  /* background-color: #b0bec5; */
+}
+
+.skills-content .uk-card-header p {
+  color: #37474f;
+  font-family: "Bitter", serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
 .skills-content .case-study-list a {
   display: block;
   text-decoration: none;

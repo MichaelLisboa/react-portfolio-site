@@ -14,7 +14,7 @@ const Skills = () =>
             </h4>
             <div className="skills-section-intro">
                 <p>
-                    Depending on who you ask, they might say I'm a <span className="uk-text-nowrap">Creative Director</span>, Full-stack Programmer, <span className="uk-text-nowrap">UX Specialist</span>, or even TechnoCreativeologist.
+                    Depending on who you ask, you might hear that I'm a <span className="uk-text-nowrap">UX Specialist</span>, <span className="uk-text-nowrap">Creative Director</span>, <span className="uk-text-nowrap">Full-stack Programmer</span>, or even TechnoCreativeologist.
                 </p>
                 <p className="uk-margin-remove-bottom uk-margin-medium-bottom@s">Have a <NavLink className="text-background text-background-indigo
                     uk-link-reset uk-link uk-nowrap" to={'/portfolio'}>
