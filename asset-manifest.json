@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5aaf55f.chunk.css",
-    "main.js": "/static/js/main.a254df08.chunk.js",
+    "main.css": "/static/css/main.7e0c99b6.chunk.css",
+    "main.js": "/static/js/main.537c5b43.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "static/js/2.a4248d88.chunk.js": "/static/js/2.a4248d88.chunk.js",
+    "static/js/2.3596ec6d.chunk.js": "/static/js/2.3596ec6d.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.42dafaff7a2ab15756ccec7ff5e4ac28.js": "/precache-manifest.42dafaff7a2ab15756ccec7ff5e4ac28.js",
+    "precache-manifest.98dd92e092d379d44fc287664080ca97.js": "/precache-manifest.98dd92e092d379d44fc287664080ca97.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
-    "static/media/creative-technology-s.png": "/static/media/creative-technology-s.98723074.png",
     "static/media/fairmont.png": "/static/media/fairmont.7321bf6d.png",
     "static/media/hp.png": "/static/media/hp.85b29b35.png",
     "static/media/microsoft.png": "/static/media/microsoft.78b8acd2.png",
@@ -23,7 +22,6 @@
     "static/media/skills-ux.png": "/static/media/skills-ux.261a27ad.png",
     "static/media/sony.png": "/static/media/sony.45cc245b.png",
     "static/media/universal.png": "/static/media/universal.1c0c7928.png",
-    "static/media/user-experience-s.png": "/static/media/user-experience-s.63a43a6a.png",
     "static/media/wellsfargo.png": "/static/media/wellsfargo.42fac7f9.png"
   }
 }

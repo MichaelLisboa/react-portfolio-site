@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a12a91478d80923b35868e635b6b6316",
+    "revision": "cd33d9ff7ee8b688096e0c849ee49e35",
     "url": "/index.html"
   },
   {
-    "revision": "484a8acb9dfcb72cfb83",
-    "url": "/static/css/main.e5aaf55f.chunk.css"
+    "revision": "726df5dce7ade664e795",
+    "url": "/static/css/main.7e0c99b6.chunk.css"
   },
   {
-    "revision": "8c489daa7b62f265f4d9",
-    "url": "/static/js/2.a4248d88.chunk.js"
+    "revision": "8dd354be6d0bf465056d",
+    "url": "/static/js/2.3596ec6d.chunk.js"
   },
   {
-    "revision": "484a8acb9dfcb72cfb83",
-    "url": "/static/js/main.a254df08.chunk.js"
+    "revision": "726df5dce7ade664e795",
+    "url": "/static/js/main.537c5b43.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ec2cf0ab348aecab9bc400b39e37fda5",
     "url": "/static/media/citibank.ec2cf0ab.png"
-  },
-  {
-    "revision": "98723074eafbaa98ac030c6254f37d9a",
-    "url": "/static/media/creative-technology-s.98723074.png"
   },
   {
     "revision": "7321bf6db1623e7847573c9a215b3b45",
@@ -82,10 +78,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1c0c7928686cc999a15ff207471d1e01",
     "url": "/static/media/universal.1c0c7928.png"
-  },
-  {
-    "revision": "63a43a6a3001e32847a4f62d0c49fa32",
-    "url": "/static/media/user-experience-s.63a43a6a.png"
   },
   {
     "revision": "42fac7f9871f76c45ff9fdf683d73dac",
