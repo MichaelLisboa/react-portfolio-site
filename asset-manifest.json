@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.8abe8659.chunk.css",
-    "main.js": "/static/js/main.63c8143b.chunk.js",
+    "main.js": "/static/js/main.8aee1a8d.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "static/js/2.3596ec6d.chunk.js": "/static/js/2.3596ec6d.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.44b6624d92f558faed8b17769c3c3b62.js": "/precache-manifest.44b6624d92f558faed8b17769c3c3b62.js",
+    "precache-manifest.02491941e4ddc1ed472c2d0f7bb5e973.js": "/precache-manifest.02491941e4ddc1ed472c2d0f7bb5e973.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
@@ -18,7 +18,7 @@
     "static/media/pepsi.png": "/static/media/pepsi.51287598.png",
     "static/media/raiders.png": "/static/media/raiders.56146cae.png",
     "static/media/skills-creative.png": "/static/media/skills-creative.cef116b1.png",
-    "static/media/skills-tech.png": "/static/media/skills-tech.fcd9557f.png",
+    "static/media/skills-tech.png": "/static/media/skills-tech.55ee76bb.png",
     "static/media/skills-ux.png": "/static/media/skills-ux.261a27ad.png",
     "static/media/sony.png": "/static/media/sony.45cc245b.png",
     "static/media/universal.png": "/static/media/universal.1c0c7928.png",

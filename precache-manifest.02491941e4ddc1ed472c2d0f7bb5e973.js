@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "235da6c09dfae8413bdaa3a43f1dd8f9",
+    "revision": "9c5d06d0edb85de597b12de66d2fc0c0",
     "url": "/index.html"
   },
   {
-    "revision": "f3ad08921f1123dda0f3",
+    "revision": "11302dc6c2f7ea4f38ea",
     "url": "/static/css/main.8abe8659.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.3596ec6d.chunk.js"
   },
   {
-    "revision": "f3ad08921f1123dda0f3",
-    "url": "/static/js/main.63c8143b.chunk.js"
+    "revision": "11302dc6c2f7ea4f38ea",
+    "url": "/static/js/main.8aee1a8d.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -64,8 +64,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/skills-creative.cef116b1.png"
   },
   {
-    "revision": "fcd9557f84305cdb5032984d7d2778d2",
-    "url": "/static/media/skills-tech.fcd9557f.png"
+    "revision": "55ee76bb2172e8659fd0620cddd71afa",
+    "url": "/static/media/skills-tech.55ee76bb.png"
   },
   {
     "revision": "261a27ad59aafdffb8fa9541b307ab50",
