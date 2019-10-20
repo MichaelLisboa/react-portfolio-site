@@ -108,8 +108,8 @@ class PortfolioDetail extends Component {
                     {categories}
                 </div>
                 <div className="portfolio-detail uk-container uk-container-small uk-margin-large">
-                    <div className="uk-grid-small uk-width-1-1" data-uk-grid>
-                        <div className="uk-width-3-5@m">
+                    <div className="uk-grid-collapse uk-width-1-1" data-uk-grid>
+                        <div className="uk-width-3-5@m uk-margin-right@s">
                             {portfolioImages}
                         </div>
                         <div className="post-content uk-width-expand">

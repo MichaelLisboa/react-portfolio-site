@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom'
 import UxImage from '../../images/skills-ux.png';
 import CreativeImage from '../../images/skills-creative.png';
 import CreativeTechImage from '../../images/skills-tech.png';
-import UxImageS from '../../images/user-experience-s.png';
-import CreativeImageS from '../../images/skills-creative.png';
-import CreativeTechImageS from '../../images/creative-technology-s.png';
 
 
 const UxMessage = () =>{
@@ -59,8 +56,8 @@ const CreativeMessage = () => {
                 Creative Direction &amp; Strategy
             </h4>
             <h5 className="uk-margin-remove">
-                Designer, Copywriter, Creative Director.<br />I've led teams&mdash;large and small&mdash;for some of the biggest
-                advertising agencies in the world.
+                Designer, Copywriter, Creative Director.<br />I've led teams&mdash;large and small&mdash;for some of the biggest <Link className="text-background text-background-indigo
+                    uk-link-reset uk-link uk-nowrap" to={'/resume'}>advertising agencies</Link> in the world.
             </h5>
             <p style={{fontSize: "0.7em"}} className="uk-h6 uk-text-uppercase uk-text-center uk-heading-line uk-margin-remove-top"><span>Case Studies</span></p>
             <ul className="case-study-list uk-list">
@@ -124,9 +121,9 @@ const CreativeTechMessage = () => {
                 </li>
                 <li>
                     <Link
-                        to="/portfolio/insead">
-                            Insead<br />
-                            <small>UX and full-stack development for Higher Education</small>&nbsp;
+                        to="/portfolio/influense-content-market-watch">
+                            Content Market Watch<br />
+                            <small>A Live Trading Platform for Visual Content</small>&nbsp;
                             <span data-uk-icon="icon: arrow-right; ratio: 0.7" />
                     </Link>
                 </li>

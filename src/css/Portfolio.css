@@ -46,3 +46,8 @@
   border-color: #ffae47;
   color: #eceff1 !important;
 }
+
+.contentEmbed {
+  margin-top: 0 !important;
+  border-style: none !important;
+}

@@ -5,13 +5,6 @@ const SkillsList = props =>
         <h3 className="uk-margin-bottom">Agency Experience</h3>
         <div className="uk-margin-medium-top">
             <h6 className="title uk-text-uppercase uk-margin-small-bottom">
-                <span className="uk-text-bold">Kizmo</span><br />
-                <small className="uk-text-muted">
-                    Technocreativeologist<br />Feb 2005&mdash;June 2018
-                </small>
-            </h6>
-
-            <h6 className="title uk-text-uppercase uk-margin-remove-top uk-margin-small-bottom">
                 <span className="uk-text-bold">Havas Worldwide</span><br />
                 <small className="uk-text-muted">
                     Regional Experience Director, Asia Pacific<br />May 2015&mdash;Mar 2016
@@ -19,7 +12,7 @@ const SkillsList = props =>
             </h6>
 
             <h6 className="title uk-text-uppercase uk-margin-remove-top uk-margin-small-bottom">
-                <span className="uk-text-bold">Publicis (contract)</span><br />
+                <span className="uk-text-bold">Publicis <span style={{fontWeight: "100", textTransform: "lowercase"}} className="uk-text-muted">(Contract)</span></span><br />
                 <small className="uk-text-muted">
                     Director of User Experience, Singapore<br />Feb 2015&mdash;June 2015
                 </small>
@@ -54,9 +47,16 @@ const SkillsList = props =>
             </h6>
 
             <h6 className="title uk-text-uppercase uk-margin-remove-top uk-margin-small-bottom">
-                <span className="uk-text-bold">Frog Design</span><br />
+                <span className="uk-text-bold">Frog Design <span style={{fontWeight: "100", textTransform: "lowercase"}} className="uk-text-muted">(Contract)</span></span><br />
                 <small className="uk-text-muted">
                     Lead Experience Designer, San Francisco<br />Dec 2005&mdash;Dec 2006
+                </small>
+            </h6>
+
+            <h6 className="title uk-text-uppercase uk-margin-remove-top uk-margin-small-bottom">
+                <span className="uk-text-bold">Kizmo</span><br />
+                <small className="uk-text-muted">
+                    Chief TechnoCreativeologist<br />Feb 2005&mdash;Present
                 </small>
             </h6>
         </div>

@@ -167,6 +167,14 @@ h3.uk-section-title {
     margin-right: 0 !important;
   }
 
+  .uk-margin-right\@s {
+    margin-right: 20px !important;
+  }
+
+  .uk-margin-left\@s {
+    margin-left: 20px !important;
+  }
+
   .uk-margin-small-top\@s {
     margin-top: 10px !important;
   }
@@ -175,12 +183,28 @@ h3.uk-section-title {
     margin-bottom: 10px !important;
   }
 
+  .uk-margin-small-right\@s {
+    margin-right: 10px !important;
+  }
+
+  .uk-margin-small-left\@s {
+    margin-left: 10px !important;
+  }
+
   .uk-margin-medium-top\@s {
     margin-top: 40px !important;
   }
 
   .uk-margin-medium-bottom\@s {
     margin-bottom: 40px !important;
+  }
+
+  .uk-margin-medium-right\@s {
+    margin-right: 40px !important;
+  }
+
+  .uk-margin-medium-left\@s {
+    margin-left: 40px !important;
   }
 
   .uk-margin-large-top\@s {
