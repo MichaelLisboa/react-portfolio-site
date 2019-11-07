@@ -9,10 +9,10 @@ import Home from "./components/Home";
 import Rates from "./components/Rates";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import PortfolioDetail from "./components/PortfolioDetail";
+import PortfolioDetail from "./components/Portfolio/PortfolioDetail";
 import Blog from "./components/Blog";
-import BlogPost from "./components/BlogPost";
-import ContactForm from "./components/ContactForm";
+import BlogDetail from "./components/Blog/BlogDetail";
+import Contact from "./components/Contact";
 
 class App extends Component {
 
@@ -49,9 +49,9 @@ class App extends Component {
                                     <ScrollToTopRoute path="/portfolio" component={withTracker(Portfolio)} />
                                     <ScrollToTopRoute path="/rates" component={withTracker(Rates)} />
                                     <ScrollToTopRoute path="/resume" component={withTracker(Resume)} />
-                                    <ScrollToTopRoute path="/blog/:blog" component={withTracker(BlogPost)}/>
+                                    <ScrollToTopRoute path="/blog/:blog" component={withTracker(BlogDetail)}/>
                                     <ScrollToTopRoute path="/blog" component={withTracker(Blog)}/>
-                                    <ScrollToTopRoute path="/contact" component={withTracker(ContactForm)}/>
+                                    <ScrollToTopRoute path="/contact" component={withTracker(Contact)}/>
                                     <ScrollToTopRoute path="/" component={withTracker(Home)} />
                                     <ScrollToTopRoute path="/*" component={withTracker(Home)} />
                                 </Switch>
