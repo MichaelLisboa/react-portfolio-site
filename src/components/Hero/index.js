@@ -86,7 +86,7 @@ class Hero extends Component {
             });
 
         return (
-            <header>
+            <header className="hero-cta">
                 {this.state.isLoading ?
                     (<div className="uk-height-1-1 uk-container uk-container-expand
                         uk-grid-collapse uk-flex-center uk-flex-middle" data-uk-grid>

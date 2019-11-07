@@ -1,6 +1,6 @@
 nav {
   /* background-color: rgba(75, 99, 110, 1) !important; */
-  background-color: rgb(236, 239, 241) !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .anim-nav-container {
@@ -31,9 +31,9 @@ a {
   height: 60px !important;
   margin: 0 !important;
   padding: 0 !important;
-  -webkit-box-shadow: 0 2px 0 0 #f8981c;
+  /* -webkit-box-shadow: 0 2px 0 0 #f8981c;
   -moz-box-shadow: 0 2px 0 0 #f8981c;
-  box-shadow: 0 2px 0 0 #f8981c;
+  box-shadow: 0 2px 0 0 #f8981c; */
 }
 
 nav img {
@@ -70,9 +70,9 @@ a.hide-home-icon {
 }
 
 .navbar-container {
-  -webkit-box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
+  /* -webkit-box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1); */
 }
 
 #offcanvas {

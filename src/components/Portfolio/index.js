@@ -7,12 +7,11 @@ import { getPosts } from '../../lib/contentful';
 
 const headerStyles = {
     height: '30vh',
-    backgroundColor: '#49839a'
 };
 
 const Header = () =>
     <header style={headerStyles}
-        className="uk-container uk-container-expand uk-light
+        className="uk-container uk-container-expand
         uk-flex uk-flex-center uk-flex-middle">
         <div className="uk-width-4-5 uk-width-2-3@s uk-text-center">
             <h2>
@@ -36,8 +35,10 @@ const withLoading = (Component) => (props) =>
 
 const PortfolioItems = ({items}) =>
     <section className="uk-section">
-        <div className="uk-container uk-container-small">
-            <div className="portfolio-items uk-grid uk-grid-small uk-child-width-1-2@m" data-uk-grid data-uk-height-match="target: .uk-card-body">
+        <div className="uk-container uk-container-medium">
+            <div className="portfolio-items uk-child-width-1-2@m"
+                data-uk-grid
+                data-uk-height-match="target: .uk-card-body">
                 {items}
             </div>
         </div>

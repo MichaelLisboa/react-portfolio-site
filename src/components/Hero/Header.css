@@ -1,11 +1,11 @@
-header {
-  height: 33%;
+header.hero-cta {
+  height: 40%;
   min-height: 600px;
 }
 
 .uk-slideshow-items {
   min-height: 600px !important;
-  height: 600px !important;
+  height: 40% !important;
 }
 
 p.case-study-label {
