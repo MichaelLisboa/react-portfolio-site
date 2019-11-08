@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.60bb4ef1.chunk.css",
-    "main.js": "/static/js/main.05456f4b.chunk.js",
+    "main.js": "/static/js/main.cd5b284d.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "static/js/2.523c5c33.chunk.js": "/static/js/2.523c5c33.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.d3465954fe8b425db618facc664fdca2.js": "/precache-manifest.d3465954fe8b425db618facc664fdca2.js",
+    "precache-manifest.60b1b7508523972f9f937e6fa2ed310a.js": "/precache-manifest.60b1b7508523972f9f937e6fa2ed310a.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
