@@ -1,16 +1,33 @@
-.skills-tabs .uk-tab::before {
-  border-style: none !important;
+.skills-section {
+  /* base */
 }
 
-.skills-section img {
-  object-fit: cover !important;
-  width: 100%;
+.skills-tabs a {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.skills-tabs .uk-tab::before {
+  border-style: none !important;
 }
 
 .skills-tabs .uk-active a {
   color: #888;
   border-width: 2px;
   border-color: #f8981c !important;
+}
+
+.skills-tabs {
+  margin: 32px auto;
+}
+
+.skills-content img {
+  object-fit: cover !important;
+  width: 100%;
+}
+
+.skills-content {
+  box-shadow: 0 30px 40px -20px rgba(0, 0, 0, 0.05);
 }
 
 .skills-content ul {
@@ -59,128 +76,45 @@
   color: #666;
 }
 
-/* .skills-content .uk-label {
-  padding: auto;
-  background-color: #bbdefb;
-  font-family: "Bitter", serif;
-}
-
-.skills-content .uk-label:hover {
-  background-color: #49839a;
-  color: #bbdefb !important;
-}
-
-.skills-content .uk-label a {
-  padding: 20px 10px !important;
-  color: #49839a;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.skills-content .uk-label a:hover {
-  color: #bbdefb;
-} */
-
-@media (max-width: 640px) {
-
-  /* .skills-section .uk-card-body {
-    padding-left: 0;
-    padding-right: 0;
-  } */
-
-  .skills-section h4 {
-    font-size: 1.125rem;
-    margin-bottom: 14px !important;
-    font-weight: 800 !important;
-  }
-
-  .skills-section h5 {
-    font-size: 1rem;
-    font-family: "Bitter", Georgia, "Garamond", "Times New Roman", serif !important;
-    font-weight: 400 !important;
-    color: #6c6c6c !important;
-    margin: 0 auto 12px !important;
-  }
-
-  .skills-section li {
-    font-size: 1rem;
-    margin-top: 0;
-    line-height: 1.25em;
-    margin-bottom: 6px !important;
-  }
-
-  .skills-section li a {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-  }
-}
-
 .skills-section h4 {
-  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif !important;
   margin-bottom: 14px !important;
-  font-weight: 800 !important;
 }
 
 .skills-section h5 {
-  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif !important;
   color: #6c6c6c !important;
   margin: 0 auto 12px !important;
   font-weight: 400 !important;
 }
 
-.skills-section li {
-  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+.skills-section .uk-text-lead {
+  font-weight: 300;
+}
+
+.skills-case-study-buttons a {
+  margin-right: 16px !important;
+}
+
+.skills-content li {
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif !important;
   color: #6c6c6c !important;
   margin: 0 auto 6px !important;
 }
 
-@media (min-width: 640px) {
-  .skills-section-intro {
-    text-align: center;
-  }
-
-  .skills-section-intro p {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .skills-section h4 {
-    font-size: 1.5rem;
-  }
-
-  .skills-section h5 {
-    font-size: 1.25rem;
-  }
-
-  .skills-section li {
-    font-size: 1.25rem;
-  }
+.mobile-skills-content img {
+  /* border-radius: 3px; */
 }
 
-@media (min-width: 768px) {
-  .skills-section h4 {
-    font-size: 1.35rem;
-  }
-
-  .skills-section h5 {
-    font-size: 1.125rem;
-  }
-
-  .skills-section li {
-    font-size: 1rem;
-  }
+.mobile-skills-content-box {
+  position: relative;
+  background-color: rgb(255, 255, 255, 1);
+  margin: -64px 12px 40px !important;
+  padding: 12px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 960px) {
-  .skills-section h4 {
-    font-size: 1.5rem;
-  }
-
-  .skills-section h5 {
-    font-size: 1.275rem;
-  }
-
-  .skills-section li {
-    font-size: 1.25rem;
-  }
+.case-study-link {
+  font-size: 0.75rem;
+  color: #999;
 }

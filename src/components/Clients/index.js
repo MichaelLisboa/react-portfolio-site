@@ -3,19 +3,26 @@ import ClientsContent from "./presentation/ClientsContent";
 import './Clients.css';
 
 const Clients = props =>
+    <>
     <section className="clients-section uk-section uk-padding-small uk-background-muted">
-        <div className="uk-text-center uk-container uk-container-small">
-            <h4 className="uk-heading-line text-background
-                 uk-text-capitalize uk-margin-medium-top uk-margin-remove-bottom">
-                <span>Pride in the Company I Keep</span>
-            </h4>
-            <p className="uk-h6 uk-text-small uk-text-muted uk-padding-remove uk-margin-remove-top">
-                Some of my personal clients <small className="uk-text-muted"> (*no agency required)</small>
-            </p>
+        <div
+            className="uk-container uk-container-small uk-margin-large-top"
+            data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
+            <div className="uk-width-3-5@s">
+                <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
+                    <strong>&mdash;</strong> Pride in the company I keep
+                </p>
+                <p className="uk-h2 uk-margin-remove-top">
+                    <span className="uk-margin-bottom uk-display-block">
+                        Just some of my clients<br />(*no agency required)
+                    </span>
+                </p>
+            </div>
         </div>
         <div className="uk-container uk-container-small">
             <ClientsContent />
         </div>
     </section>
+    </>
 
 export default Clients;

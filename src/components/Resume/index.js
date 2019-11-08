@@ -8,7 +8,7 @@ const Resume = props =>
     <>
         <PageHeader
             theme="#ef5350"
-            title="These are my creds, because it's expected."
+            title={`These are my creds, \nbecause it's expected.`}
             subtitle="But, I'm not."
         />
         <section className="uk-container uk-container-small">

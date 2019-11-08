@@ -1,29 +1,30 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import SkillsContent from "./presentation/SkillsContent";
 import './Skills.css';
+import loveIcon from '../../images/Love.png';
 
 const Skills = () =>
-    <section className="skills-section uk-section uk-section-large uk-section-default
-        uk-padding-remove-vertical uk-padding-medium-bottom@s">
+    <>
+    <section className="skills-section uk-section uk-section-expand uk-section-default uk-margin-large-top">
         <div
             className="uk-container uk-container-small"
             data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
-            <h4 className="uk-heading-line text-background uk-margin-small-top uk-margin-large-bottom uk-text-center">
-                <span>The Things I Can Do For You</span>
-            </h4>
-            <div className="skills-section-intro">
-                <p>
-                    Depending on who you ask, you might hear that I'm a <span className="uk-text-nowrap">UX Specialist</span>, <span className="uk-text-nowrap">Creative Director</span>, <span className="uk-text-nowrap">Full-stack Programmer</span>, or even TechnoCreativeologist.
+            <div className="uk-width-3-5@s">
+                <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
+                    <strong>&mdash;</strong> The Things I Can Do For You
                 </p>
-                <p className="uk-margin-remove-bottom uk-margin-medium-bottom@s">Have a <NavLink className="text-background text-background-indigo
-                    uk-link-reset uk-link uk-nowrap" to={'/portfolio'}>
-                    look at my work
-                </NavLink>, you'll find that I'm all of the above.
+                <p className="uk-h2 uk-margin-remove-top">
+                    <span className="uk-margin-bottom uk-display-block">
+                        I ideate, create, and design experiences and products <span className="uk-text-nowrap">that people
+                        <img className="uk-margin-small-left" src={loveIcon} height="40" width="40" alt="Love" /></span>
+                    </span>
                 </p>
             </div>
         </div>
-        <SkillsContent />
     </section>
+    <div className="skills-section uk-margin-remove">
+        <SkillsContent />
+    </div>
+    </>
 
 export default Skills;

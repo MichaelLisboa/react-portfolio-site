@@ -1,21 +1,23 @@
 import React from "react";
 
 const RatesContent = () =>
-    <div className="uk-container uk-container-medium">
+    <div className="rates-content uk-container uk-container-medium">
         <div className="uk-grid uk-grid-small uk-child-width-1-3@m uk-grid-match uk-flex-center"
             data-uk-grid>
             <div className="uk-first-column">
-                <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                <div className="uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                    <i className="uk-width-1-1 uk-text-center"
+                        data-uk-icon="icon: lock; ratio: 2" />
                     <div className="uk-card-header uk-text-center">
-                        Lock
+                        Dedicated
                     </div>
                     <div className="uk-card-body uk-flex-1">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">
                             <span className="service-cost">
-                                $<span>5,000</span>USD
+                                $<span>7,500</span>USD
                             </span>
                         </div>
-                        <div className="uk-text-small uk-text-center uk-text-muted">(Minumum fee)</div>
+                        <div className="uk-text-small uk-text-center">Minumum fee</div>
                         <div className="uk-margin-small-top">
                             <p className="uk-text-center uk-text-large uk-margin-small-bottom">
                                 Large, end-to-end projects
@@ -35,9 +37,11 @@ const RatesContent = () =>
             </div>
 
             <div>
-                <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                <div className="uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                    <i className="uk-width-1-1 uk-text-center"
+                        data-uk-icon="icon: calendar; ratio: 2" />
                     <div className="uk-card-header uk-text-center">
-                        Day
+                        Day Rate
                     </div>
                     <div className="uk-card-body">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">
@@ -66,9 +70,11 @@ const RatesContent = () =>
             </div>
 
             <div>
-                <div className="card-brand uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                <div className="uk-card uk-card-small uk-card-default uk-card-hover uk-flex uk-flex-column">
+                    <i className="uk-width-1-1 uk-text-center"
+                        data-uk-icon="icon: history; ratio: 2" />
                     <div className="uk-card-header uk-text-center">
-                        Hourly
+                        Hourly Rate
                     </div>
                     <div className="uk-card-body">
                         <div className="uk-flex uk-flex-middle uk-flex-center uk-text-muted">

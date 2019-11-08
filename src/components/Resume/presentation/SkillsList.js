@@ -2,7 +2,7 @@ import React from "react";
 
 const SkillsList = props =>
     <aside className="skills-list uk-width-1-3@m uk-flex-last">
-        <h3 className="uk-margin-bottom">Agency Experience</h3>
+        <p className="uk-h5 uk-margin-bottom">&mdash; Agency Experience</p>
         <div className="uk-margin-medium-top">
             <h6 className="title uk-text-uppercase uk-margin-small-bottom">
                 <span className="uk-text-bold">Havas Worldwide</span><br />
@@ -61,7 +61,7 @@ const SkillsList = props =>
             </h6>
         </div>
 
-        <h3 className="uk-margin-small uk-padding-remove">Patents</h3>
+        <p className="uk-h5 uk-margin-bottom">&mdash; Patents</p>
         <h6 className="title uk-text-uppercase uk-margin-remove-top uk-margin-small-bottom">
             <span className="uk-text-bold">US Patent 12/633,371 (Sole author)</span><br />
             <small className="uk-text-muted">
@@ -75,7 +75,7 @@ const SkillsList = props =>
             </small>
         </h6>
 
-        <h3 className="uk-padding-remove">Skills</h3>
+        <p className="uk-h5 uk-margin-bottom">&mdash; Capabilities</p>
         <h5 className="uk-margin-remove-vertical uk-padding-remove">
             Creative Direction &amp; Strategy</h5>
         <hr className="uk-margin-remove-top uk-margin-small-bottom" />

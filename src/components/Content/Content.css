@@ -1,0 +1,21 @@
+.page-header h2 {
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.page-header p {
+  font-size: 1.25rem !important;
+  font-weight: 200 !important;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
+}
+
+@media (min-width: 640px) {
+  .page-header {
+    text-align: left;
+  }
+
+  .page-header h2 {
+    font-size: 2.25rem !important;
+    font-weight: 500 !important;
+  }
+}

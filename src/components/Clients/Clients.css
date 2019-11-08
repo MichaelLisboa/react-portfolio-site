@@ -1,4 +1,10 @@
-/* .client-grid img {
-  display: inline;
-  max-width: 125px;
-} */
+.client-grid img {
+  filter: grayscale(100%) opacity(70%);
+  -webkit-filter: grayscale(100%) opacity(70%);
+  transition: filter 0.75s;
+}
+
+.client-grid img:hover {
+  filter: grayscale(0) opacity(100%);
+  -webkit-filter: grayscale(0%) opacity(100%);
+}

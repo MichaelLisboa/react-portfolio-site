@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 
 import Hero from "../Hero";
 import About from "../About";
@@ -8,20 +8,15 @@ import Testimonials from "../Testimonials";
 import Contact from "../Contact";
 import Footer from "../Footer";
 
-class Home extends Component {
-    render () {
-        return (
-            <Fragment>
-                <Hero />
-                <About />
-                <Skills />
-                <Clients />
-                <Testimonials />
-                <Contact />
-                <Footer />
-            </Fragment>
-        );
-    }
-}
+const Home = () =>
+    <>
+        <About />
+        <Hero />
+        <Skills />
+        <Clients />
+        <Testimonials />
+        <Contact />
+        <Footer />
+    </>
 
 export default Home;

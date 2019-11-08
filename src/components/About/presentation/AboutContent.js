@@ -1,33 +1,34 @@
-import React from "react";
-import loveIcon from '../../../images/Love.png';
+import React, {useState} from "react";
+import Modal from "../../Modal";
 
-const AboutContent = () =>
-    <div className="uk-container uk-container-small uk-margin-large-top">
-        <div className="uk-width-expand@m">
-            <div className="uk-padding-small">
-                <p className="uk-text-lead about-intro">
+import profileImageA from  "../../../images/michael-a.png";
+import profileImageB from  "../../../images/michael-b.png";
+import profileImageC from  "../../../images/michael-c.png";
+import profileImageD from  "../../../images/michael-d.png";
+
+const profileImages = [profileImageA, profileImageB, profileImageC, profileImageD]
+
+
+const AboutContent = () => {
+    const [isShowing, setIsShowing] = useState(false);
+    return (
+        <section className="about-section uk-section uk-section-expand uk-section-default uk-margin-large-top">
+            <div className="uk-width-4-5@s uk-width-3-4@m">
+                <p className="uk-h2">
                     <span className="uk-margin-bottom uk-display-block">Hi, I'm Michael.</span>
-                    I'm an <span className="text-background text-background-red">experience designer</span>, <span className="text-background text-background-yellow uk-text-nowrap">creative director</span>, <span className="text-background text-background-orange">illustrator</span>, <span className="text-background text-background-green">programmer</span>, <span className="text-background text-background-indigo uk-text-nowrap">start-up founder</span>, and a <span className="text-background text-background-violet">really good guy</span> who specializes in the <i>creative</i> use
-                    of <i>technology</i> to invent and design products and experiences <span className="uk-text-nowrap">that people
-
-                        <img className="uk-margin-small-left" src={loveIcon} height="40" width="40" alt="Love" />
-                    </span>
+                    Depending on who you ask, <span className="uk-text-nowrap">you might hear</span> that I'm a
+                    brand strategist, creative director, <span className="uk-text-nowrap">UX specialist</span>,
+                    programmer, or even TechnoCreativeologist.
+                </p>
+                <p className="uk-text-lead uk-margin-remove-bottom uk-margin-medium-bottom@s">
+                    You'll find that I'm all of the above.
                     <button
+                        onClick={() => setIsShowing(true)}
                         className="uk-text-small uk-text-muted uk-button uk-button-small uk-button-link uk-display-block
-                            uk-text-baseline uk-text-capitalize uk-text-small uk-padding-remove uk-margin-remove"
-                        data-uk-toggle="target: #toggle-about-content; animation: uk-animation-fade">
-                        Read more...
+                            uk-text-baseline uk-text-capitalize uk-text-small uk-padding-remove uk-margin-remove">
+                        READ MORE...
                     </button>
                 </p>
-
-                <div id="toggle-about-content" hidden>
-                    <p className="uk-margin-small-top">
-                        <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
-                        Originally from San Francisco, by way of New York, Michael launched his first digital agency back in the early 90's. Since then he’s led creative, user experience, and development teams to solve design and communication problems for the most recognized brands in the world, including Sony Entertainment, Justin Timberlake, Pepsi, Microsoft and over 100 others.</p>
-                    <p className="uk-text-small uk-text-muted">Over the last 20 years he’s held Creative Director roles in some of the biggest agencies in Ad Land, he’s founded startups, and he’s developed massive AI platforms utilizing his talents in creative design, user experience, and programming.</p>
-                    <p className="uk-text-small uk-text-muted">He’s one of those unique people that soaks in information, continues to learn every day, and&mdash;most importantly&mdash;he applies that knowledge to invent, execute and deliver world class results.</p>
-                    <p className="uk-text-small uk-text-muted">Today, he’s living life as a freelancer in Bangkok with his dog, Astro.&quot;</p>
-                </div>
                 <div className="sc-only uk-width-1-1" data-uk-grid>
                     <div className="uk-align-left">
                         <a href="https://github.com/MichaelLisboa"
@@ -42,7 +43,63 @@ const AboutContent = () =>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <Modal
+                isShown={isShowing}>
+                <section style={{overflowY: "scroll"}} className="uk-width-1-1 uk-background-default">
+                    <div onClick={() => setIsShowing(false)} className="uk-position-top-right uk-position-z-index">
+                        <button className="uk-padding-small uk-background-secondary uk-light uk-padding-small" type="button" data-uk-close></button>
+                    </div>
+                    <div className="about-profile-header" data-uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 2000; pause-on-hover: false">
+                        <div className="uk-slideshow-items uk-background-secondary">
+                            {profileImages.map((image, i) => {
+                                return (
+                                    <img
+                                        key={`michael-${i}`}
+                                        src={image}
+                                        alt="Meet Michael"
+                                        data-uk-img
+                                    />
+                                )
+                            })}
+                        </div>
+                    </div>
 
+                    <div className="uk-section uk-section-expand uk-section-default uk-margin-large-top">
+                        <div
+                            className="about-profile-content uk-container uk-container-small">
+                            <div>
+                                <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
+                                    <strong>&mdash;</strong> My vainglorious bio story
+                                </p>
+                                <p className="uk-h2 uk-margin-remove-top">
+                                    <span className="uk-margin-bottom uk-display-block">
+                                        In the 3rd person
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="about-profile-content uk-container uk-container-small">
+                        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
+                        <p className="uk-margin-small-top">
+                            <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
+                            Originally from San Francisco, by way of New York, Michael launched his first digital agency in the 90's. Since then he’s led creative, UX, and development teams around the world to solve experience and communication problems for the most recognized brands in the world, including Justin Timberlake, Pepsi, Sony, Microsoft and hundreds of others.
+                        </p>
+                        <p className="uk-text-small uk-text-muted">He’s held Creative and Experience Director roles in some of the biggest agencies in Ad Land, he’s founded startups, and he’s developed massive AI platforms utilizing his talents in creative design, user experience, and programming.</p>
+                        <p className="uk-text-small uk-text-muted">He’s one of those unique people that soaks in information, continues to learn every day, and&mdash;most importantly&mdash;he applies that knowledge to invent, execute and deliver world class results.</p>
+                        <p className="uk-text-small uk-text-muted">Today, he’s living life as a freelancer in Bangkok with his dog, Astro.&quot;</p>
+                        </div>
+                        <div className="uk-text-center uk-margin-large">
+                            <button
+                                onClick={() => setIsShowing(false)}
+                                className="uk-button uk-button-large uk-button-text uk-margin-large-bottom">
+                                Go back
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </Modal>
+        </section>
+    )
+}
 export default AboutContent;

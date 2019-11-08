@@ -48,7 +48,7 @@ const PortfolioDetailContent = ({portfolio}) => {
                     </ul>
                 </div>
             </div>
-            <div className="portfolio-detail uk-container uk-container-small uk-text-center uk-margin">
+            <div className="portfolio-detail portfolio-header uk-container uk-container-small uk-margin">
                 <h2 className="content-title uk-margin-large-left@s uk-margin-large-right@s">
                     {entryHeadline}
                 </h2>

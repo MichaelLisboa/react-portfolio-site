@@ -14,7 +14,7 @@ const PortfolioItem = props => {
     const categories = entryCategory.split(',')
         .map((category, i) => {
             return (
-                <small key={i} className="uk-text-meta uk-margin-small-right uk-margin-small-top">
+                <small key={i} className="uk-margin-small-right uk-text-nowrap">
                     {category}
                 </small>
             )
@@ -23,32 +23,51 @@ const PortfolioItem = props => {
     return(
         <div className="portfolio-list">
             { props &&
-                <Link
-                    style={{textDecoration: 'none'}}
-                    className="uk-display-inline-block"
-                    to={{
-                        pathname: `/portfolio/${entrySlug}`,
-                        state: { props }
-                    }}
-                >
                 <div className="uk-card uk-card-small" data-tags={entryCategory.split(',')}>
                     <div className="uk-card-media-top">
+                        <Link
+                            style={{textDecoration: 'none'}}
+                            className="uk-display-inline-block uk-link-reset"
+                            to={{
+                                pathname: `/portfolio/${entrySlug}`,
+                                state: { props }
+                            }}
+                        >
                         <img
                             src={entryTileImage.fields.file.url}
                             alt="client"
                             data-uk-img
                         />
+                        </Link>
                     </div>
                     <div className="uk-card-body">
-                        <p className="uk-h5 uk-text-bold">
-                            {entryClient}&nbsp;
-                            <span style={{color: "#b0bec5", opacity: "0.4"}} uk-icon="icon: arrow-right;"></span>
+                        <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
+                            <Link
+                                style={{textDecoration: 'none'}}
+                                className="uk-display-inline-block uk-link-reset"
+                                to={{
+                                    pathname: `/portfolio/${entrySlug}`,
+                                    state: { props }
+                                }}
+                            >
+                            <strong>&mdash;</strong> {entryClient}
+                            </Link>
                         </p>
-                        <h3 className="uk-margin-remove-vertical">{entryDescription}</h3>
+                        <p className="uk-h3 uk-margin-remove-vertical">
+                            <Link
+                                style={{textDecoration: 'none'}}
+                                className="uk-display-inline-block uk-link-reset"
+                                to={{
+                                    pathname: `/portfolio/${entrySlug}`,
+                                    state: { props }
+                                }}
+                            >
+                            {entryDescription}
+                            </Link>
+                        </p>
                         {categories}
                     </div>
                 </div>
-                </Link>
             }
         </div>
     )

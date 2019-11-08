@@ -30,7 +30,7 @@ const clientLogoItems = clients.map((logo, i) =>
 )
 
 const ClientsContent = () =>
-    <div className="client-grid uk-grid-small uk-child-width-1-3 uk-child-width-1-4@s uk-child-width-1-6@m
+    <div className="client-grid uk-grid-small uk-child-width-1-4 uk-child-width-1-6@m
         uk-margin-remove-top uk-margin-medium-top@m uk-margin-large-bottom" data-uk-grid>
         {clientLogoItems}
     </div>

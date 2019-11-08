@@ -3,9 +3,9 @@ import React from "react";
 const NotableProjects = props =>
     <article className="uk-article uk-width-expand@m uk-flex-first">
         <div className="work-experience">
-            <h3 className="uk-margin-small">Notable Projects</h3>
+            <p className="uk-h5 uk-margin-small">&mdash; Notable Projects</p>
             <div>
-                <p className="uk-heading-line uk-article-title
+                <p className="uk-h4 uk-heading-line
                     uk-text-uppercase uk-margin-remove-bottom">
                     <span>Pepsi</span>
                 </p>
@@ -34,7 +34,7 @@ const NotableProjects = props =>
             </div>
 
             <div>
-                <p className="uk-heading-line uk-article-title
+                <p className="uk-h4 uk-heading-line
                     uk-text-uppercase uk-margin-remove-bottom">
                     <span>Pixt</span>
                 </p>
@@ -62,7 +62,7 @@ const NotableProjects = props =>
             </div>
 
             <div>
-                <p className="uk-heading-line uk-article-title
+                <p className="uk-h4 uk-heading-line
                     uk-text-uppercase uk-margin-remove-bottom">
                     <span>Citibank</span>
                 </p>
@@ -89,7 +89,7 @@ const NotableProjects = props =>
             </div>
 
             <div>
-                <p className="uk-heading-line uk-article-title
+                <p className="uk-h4 uk-heading-line
                     uk-text-uppercase uk-margin-remove-bottom">
                     <span>Microsoft</span>
                 </p>
@@ -116,7 +116,7 @@ const NotableProjects = props =>
             </div>
 
             <div>
-                <p className="uk-heading-line uk-article-title
+                <p className="uk-h4 uk-heading-line
                     uk-text-uppercase uk-margin-remove-bottom">
                     <span>Zyllem</span>
                 </p>

@@ -19,3 +19,8 @@
   font-weight: 200;
   color: #333;
 }
+
+.rates-content i {
+  color: #f8981c;
+  margin-top: 24px !important;
+}

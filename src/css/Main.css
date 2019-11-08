@@ -30,10 +30,10 @@ body {
 h1,
 h3 {
   font-weight: 400 !important;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
 }
 
-p,
+/* p,
 h4,
 h5,
 li {
@@ -47,16 +47,11 @@ h2 {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
   font-weight: 400 !important;
-}
+} */
 
 header h2 {
   font-family: "Maven Pro", "Helvetica", "Arial", sans-serif !important;
   font-weight: 500 !important;
-}
-
-h2.content-title {
-  font-weight: 600 !important;
-  text-align: left;
 }
 
 .content-lead {
@@ -87,16 +82,10 @@ h3.uk-card-title {
 
 h6 {
   font-size: 0.879rem;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
   font-weight: 400 !important;
-}
-
-.header-lead {
-  font-size: 1.25rem !important;
-  font-weight: 400;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
 }
 
 @media (min-width: 640px) {
@@ -122,7 +111,7 @@ h6 {
 h5 {
   margin-bottom: 0 !important;
   padding-bottom: 6px !important;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif !important;
   font-weight: 600 !important;
 }
 
@@ -456,31 +445,31 @@ h3.uk-section-title {
 }
 
 .text-background-red {
-  background-color: #ffcdd2;
+  background-color: rgba(255, 205, 210, 0.5);
 }
 
 .text-background-orange {
-  background-color: #ffe0b2;
+  background-color: rgba(255, 224, 178, 0.5);
 }
 
 .text-background-yellow {
-  background-color: #fff9c4;
+  background-color: rgba(255, 249, 196, 0.5);
 }
 
 .text-background-green {
-  background-color: #c8e6c9;
+  background-color: rgba(200, 230, 201, 0.5);
 }
 
 .text-background-blue {
-  background-color: #bbdefb;
+  background-color: rgba(187, 222, 251, 0.5);
 }
 
 .text-background-indigo {
-  background-color: #e8eaf6;
+  background-color: rgba(232, 234, 246, 0.5);
 }
 
 .text-background-violet {
-  background-color: #f3e5f5;
+  background-color: rgba(243, 229, 245, 0.5);
 }
 
 section h4.uk-heading-line {

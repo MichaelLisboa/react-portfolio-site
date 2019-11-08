@@ -6,12 +6,7 @@ const Testimonials = props =>
         style={{backgroundColor: '#eceff1'}}
         className="uk-section uk-section-default uk-padding-small"
         uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}>
-        <div className="uk-container uk-container-small uk-text-center uk-margin-medium-top uk-margin-medium-bottom">
-            <h4 className="uk-heading-line uk-text-capitalize">
-                <span>Nice things people have said</span>
-            </h4>
-        </div>
-        <div className="uk-container uk-container-small uk-child-width-2-3@m uk-margin-large-bottom">
+        <div className="uk-container uk-container-small uk-child-width-2-3@m uk-margin-large-bottom uk-margin-large-top">
             <div className="testimonials uk-position-relative uk-margin-auto-left uk-margin-auto-right" data-uk-slider="autoplay: true;">
                 <ul className="uk-slider-items uk-child-width-1-1">
                     <li>

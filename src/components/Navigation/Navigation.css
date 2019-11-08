@@ -31,9 +31,6 @@ a {
   height: 60px !important;
   margin: 0 !important;
   padding: 0 !important;
-  /* -webkit-box-shadow: 0 2px 0 0 #f8981c;
-  -moz-box-shadow: 0 2px 0 0 #f8981c;
-  box-shadow: 0 2px 0 0 #f8981c; */
 }
 
 nav img {
@@ -64,45 +61,3 @@ a.hide-home-icon {
 .top-nav-overlay a {
   color: #546e7a !important;
 }
-
-#offcanvas .uk-active {
-  font-weight: 600 !important;
-}
-
-.navbar-container {
-  /* -webkit-box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 3px 10px 10px rgba(0, 0, 0, 0.1); */
-}
-
-#offcanvas {
-  background-color: rgba(0, 0, 0, 0.25) !important;
-}
-
-#offcanvas .uk-offcanvas-bar {
-  background-color: #f8981c !important;
-  border-right: 3px solid #e65100;
-  -webkit-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.125);
-  box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.125);
-}
-
-#offcanvas li {
-  margin-bottom: 1.25em;
-}
-
-#offcanvas a {
-  font-family: "Product Sans", sans-serif;
-  font-size: 2em;
-  font-weight: 200 !important;
-  text-transform: lowercase;
-  color: #fff;
-}
-
-#offcanvas i {
-  margin-right: 5px;
-}
-
-/* a.off-canvas-menu {
-  color: 000 !important;
-} */
