@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import history from "./lib/historyUtils";
 // import CacheBuster from "./CacheBuster";
 
 import { BrowserRouter as Router, Switch } from "react-router-dom";
@@ -41,7 +42,7 @@ class App extends Component {
 
                 return (
                     <>
-                        <Router basename={process.env.PUBLIC_URL}>
+                        <Router history={history} basename={process.env.PUBLIC_URL}>
                             <Navigation logoTitle="Hypermix" />
                             <main>
                                 <Switch>

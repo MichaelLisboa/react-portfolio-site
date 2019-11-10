@@ -51,7 +51,7 @@ function usePortal(id) {
                 parentElem.remove();
             }
         };
-    }, []);
+    }, [id]);
 
     /**
      * It's important we evaluate this lazily:

@@ -12,7 +12,7 @@ const data = [
         height: 400
       },
       {
-        name: 'Portfolio',
+        name: 'Case Studies',
         path: '/portfolio',
         description: '#7ab3cb → #49839a',
         css: 'linear-gradient(135deg, #7ab3cb 0%, #49839a 100%)',
@@ -20,24 +20,24 @@ const data = [
         height: 400
       },
       {
-        name: 'Rates',
-        path: '/rates',
+        name: 'Resume',
+        path: '/resume',
         description: '#26c6da → #00897b',
         css: 'linear-gradient(135deg, #26c6da 0%, #00897b 100%)',
         backgroundColor: 'rgba(240, 98, 146, 0.8)',
         height: 400
       },
       {
-        name: 'Resume',
-        path: '/resume',
+        name: 'Waste',
+        path: '/blog',
         description: ' #f48fb1 → #ef5350',
         css: 'linear-gradient(135deg, #f48fb1 0%, #ef5350 100%)',
         backgroundColor: 'rgba(240, 98, 146, 0.7)',
         height: 400
       },
       {
-        name: 'Waste',
-        path: '/blog',
+        name: 'Contact',
+        path: '/contact',
         description: '#ff94c2 → #f06292',
         css: 'linear-gradient(135deg, #ff94c2 0%, #f06292 100%)',
         backgroundColor: 'rgba(240, 98, 146, 0.6)',

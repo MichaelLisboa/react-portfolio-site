@@ -35,8 +35,8 @@ const Navigation = () =>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="uk-active" exact to={'/rates'}>
-                            <span data-uk-icon="icon: bolt; ratio: 0.75" />Rates
+                        <NavLink activeClassName="uk-active" exact to={'/resume'}>
+                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Resume
                         </NavLink>
                     </li>
                     <li>
@@ -47,13 +47,13 @@ const Navigation = () =>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="uk-active" exact to={'/resume'}>
-                            <span data-uk-icon="icon: list; ratio: 0.75" /> &nbsp;Resume
+                        <NavLink activeClassName="uk-active" exact to={'/blog'}>
+                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Waste
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink activeClassName="uk-active" exact to={'/blog'}>
-                            <span data-uk-icon="icon: future; ratio: 0.75" /> &nbsp;Waste
+                        <NavLink activeClassName="uk-active" exact to={'/contact'}>
+                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Contact
                         </NavLink>
                     </li>
                 </ul>

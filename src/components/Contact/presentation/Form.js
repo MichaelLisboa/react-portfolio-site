@@ -91,14 +91,6 @@ class Form extends Component {
             </div>`
         );
 
-        // fetch(endpoint, {
-        //     method: 'POST',
-        //     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-        //     body: JSON.stringify(body)
-        // })
-        // .then(response => console.log(response))
-        // .catch(error => console.log(error))
-
         let httpRequest = new XMLHttpRequest();
         httpRequest.open('POST', endpoint);
         httpRequest.setRequestHeader('Content-Type', 'application/json');
@@ -142,11 +134,11 @@ class Form extends Component {
         switch (fieldName) {
             case 'first_name':
                 firstNameValid = value.length >= 1;
-                fieldValidationErrors.first_name = firstNameValid ? '' : ' is too short';
+                fieldValidationErrors.first_name = firstNameValid ? '' : ' is required';
                 break;
             case 'last_name':
                 lastNameValid = value.length >= 1;
-                fieldValidationErrors.last_name = lastNameValid ? '' : ' is too short';
+                fieldValidationErrors.last_name = lastNameValid ? '' : ' is required';
                 break;
             case 'from_email':
                 emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
@@ -191,7 +183,7 @@ class Form extends Component {
                 <fieldset className="uk-fieldset">
                     <div className="uk-margin-small-top">
                         <label htmlFor="first_name" className="uk-text-muted">
-                            First name
+                            First name {!this.state.firstNameValid && this.state.formErrors.first_name}
                             <input
                                 name="first_name"
                                 type="text"
@@ -207,7 +199,7 @@ class Form extends Component {
                     </div>
                     <div className="uk-margin-small-top">
                         <label htmlFor="last_name" className="uk-text-muted">
-                            Last name
+                            Last name {!this.state.lastNameValid && this.state.formErrors.last_name}
                             <input
                                 name="last_name"
                                 type="text"
@@ -223,7 +215,7 @@ class Form extends Component {
                     </div>
                     <div className="uk-margin-small-top">
                         <label htmlFor="from_email" className="uk-text-muted">
-                            Email address
+                            Email address {!this.state.emailValid && this.state.formErrors.from_email}
                             <input
                                 name="from_email"
                                 type="text"
@@ -239,7 +231,7 @@ class Form extends Component {
                     </div>
                     <div className="uk-margin-small-top">
                         <label htmlFor="comment" className="uk-text-muted">
-                            Your message
+                            Your message {!this.state.commentValid && this.state.formErrors.comment}
                             <textarea
                                 name="comment"
                                 rows="3"
@@ -254,7 +246,10 @@ class Form extends Component {
                         </label>
                     </div>
                     <div className="uk-margin-large-bottom uk-margin-medium-top uk-text-right">
-                        <button type="submit" className="uk-button uk-button-secondary uk-width-1-2 uk-width-1-3@s" disabled={!this.state.formValid}>Send</button>
+                        <button type="submit"
+                            className={`uk-button uk-button-large ${this.state.formValid ? "uk-button-primary" : "uk-button-default"} uk-width-1-2 uk-width-1-3@s`}
+                            disabled={!this.state.formValid}>Send
+                        </button>
                     </div>
                 </fieldset>
             </form>

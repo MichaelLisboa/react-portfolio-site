@@ -1,3 +1,9 @@
+.top-wrap-height {
+  height: 80vh !important;
+  min-height: 460px;
+  transition: height 0.25s;
+}
+
 .about-section h1 {
   font-size: 1.65rem;
 }
@@ -17,8 +23,10 @@
   width: 100%;
 }
 
-.about-profile-header img {
-  object-fit: cover;
+img.bio-image {
+  min-width: 100vw;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 
 .about-profile-content p {
@@ -31,4 +39,10 @@
     padding-left: 160px !important;
     padding-right: 160px !important;
   }
+}
+
+section.modal-bio {
+  border-style: none;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }

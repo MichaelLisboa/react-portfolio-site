@@ -1,12 +1,6 @@
 import React, { Component } from "react";
-import { PageHeader } from "../Content";
 import Footer from "../Footer";
 import Form from "./presentation/Form";
-
-const headerStyles = {
-    height: "30vh",
-    backgroundColor: "#37474f"
-}
 
 class Contact extends Component {
 
@@ -42,7 +36,7 @@ class Contact extends Component {
                 <section className={`contact-section uk-section uk-section-expand ${!this.state.page && "uk-background-secondary uk-light"}`}>
                     <div
                         className="uk-container uk-container-small"
-                        data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
+                    data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
                         <div className="uk-width-3-5@s">
                             <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
                                 <strong>&mdash;</strong> Not bound by timezones
@@ -65,20 +59,21 @@ class Contact extends Component {
                     <div
                         className="uk-container uk-container-small"
                         uk-scrollspy={`cls: uk-animation-fade; delay: 500;`}
-                        >
+                    >
                         <div className="uk-grid-medium uk-child-width-1-2@m" data-uk-grid>
                             <div>
-                                <p>If you like my work, why not get in touch to chat about your next project?</p>
-                                <p>I can be found on any of these great sites:</p>
+                                <p className="uk-h4">Create experiences that people love.</p>
+                                <p>I work with future-thinking brands, agencies and startups looking to create the next killer product or campaign.</p>
+                                <p>If that sounds like you, get in touch.</p>
                                 <div className="uk-width-1-1 uk-margin-medium-top" data-uk-grid>
                                     <div className="sc-only uk-width-1-1" data-uk-grid>
                                         <div className="uk-align-left">
                                             <a href="https://github.com/MichaelLisboa"
-                                                className="uk-icon-button uk-margin-right" data-uk-icon="github"><span>GitHub</span></a>
+                                            className="uk-icon-button uk-margin-right" data-uk-icon="github"><span>GitHub</span></a>
                                             <a href="https://www.instagram.com/michael__lisboa/"
-                                                className="uk-icon-button uk-margin-right" data-uk-icon="instagram"><span>Instagram</span></a>
+                                            className="uk-icon-button uk-margin-right" data-uk-icon="instagram"><span>Instagram</span></a>
                                             <a href="https://www.linkedin.com/in/lisboa/"
-                                                className="uk-icon-button" data-uk-icon="linkedin"><span>LinkedIn</span></a>
+                                            className="uk-icon-button" data-uk-icon="linkedin"><span>LinkedIn</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -93,7 +88,7 @@ class Contact extends Component {
                         </div>
                     </div>
                 </section>
-                {this.state.page && <Footer />}
+                <Footer className={`${!this.state.page ? "uk-background-secondary uk-light" : "uk-link-reset"}`} />
             </>
         );
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,700|Maven+Pro:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700,700i&display=swap|Maven+Pro:300,400,500,700');
 
 html {
   font-size: 16px !important;
@@ -28,6 +28,7 @@ h5,
 li {
   font-weight: 400;
   font-family: "Open Sans", "Helvetica", sans-serif;
+  font-kerning: normal;
 }
 
 h2 {

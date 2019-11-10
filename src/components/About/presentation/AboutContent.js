@@ -29,47 +29,19 @@ const AboutContent = () => {
                         READ MORE...
                     </button>
                 </p>
-                <div className="sc-only uk-width-1-1" data-uk-grid>
-                    <div className="uk-align-left">
-                        <a href="https://github.com/MichaelLisboa"
-                            className="uk-icon-button uk-margin-small-right"
-                            data-uk-icon="github"><span>GitHub</span></a>
-                        <a href="https://www.instagram.com/michael__lisboa/"
-                            className="uk-icon-button uk-margin-small-right"
-                            data-uk-icon="instagram"><span>Instagram</span></a>
-                        <a href="https://www.linkedin.com/in/lisboa/"
-                            className="uk-icon-button uk-margin-small-right"
-                            data-uk-icon="linkedin"><span>LinkedIn</span></a>
-                    </div>
-                </div>
             </div>
             <Modal
                 isShown={isShowing}>
-                <section style={{overflowY: "scroll"}} className="uk-width-1-1 uk-background-default">
+                <section className="modal-bio uk-width-1-1 uk-background-muted">
                     <div onClick={() => setIsShowing(false)} className="uk-position-top-right uk-position-z-index">
                         <button className="uk-padding-small uk-background-secondary uk-light uk-padding-small" type="button" data-uk-close></button>
                     </div>
-                    <div className="about-profile-header" data-uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 2000; pause-on-hover: false">
-                        <div className="uk-slideshow-items uk-background-secondary">
-                            {profileImages.map((image, i) => {
-                                return (
-                                    <img
-                                        key={`michael-${i}`}
-                                        src={image}
-                                        alt="Meet Michael"
-                                        data-uk-img
-                                    />
-                                )
-                            })}
-                        </div>
-                    </div>
-
-                    <div className="uk-section uk-section-expand uk-section-default uk-margin-large-top">
+                    <div className="uk-section uk-section-expand uk-margin-large-top">
                         <div
                             className="about-profile-content uk-container uk-container-small">
                             <div>
                                 <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
-                                    <strong>&mdash;</strong> My vainglorious bio story
+                                    <strong>&mdash;</strong> My bio story
                                 </p>
                                 <p className="uk-h2 uk-margin-remove-top">
                                     <span className="uk-margin-bottom uk-display-block">
@@ -79,15 +51,33 @@ const AboutContent = () => {
                             </div>
                         </div>
                     </div>
+                    <div
+                        className="about-profile-header uk-cover-container uk-margin-large-bottom">
+                        <div data-uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 2000; pause-on-hover: false">
+                        <div className="uk-slideshow-items">
+                        {profileImages.map((image, i) => {
+                            return (
+                                <img
+                                    className="bio-image"
+                                    key={`michael-${i}`}
+                                    src={image}
+                                    alt="Hi, I'm Michael"
+                                    data-uk-cover
+                                />
+                            )
+                        })}
+                        </div>
+                        </div>
+                    </div>
                     <div className="about-profile-content uk-container uk-container-small">
-                        <div data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
-                        <p className="uk-margin-small-top">
-                            <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
-                            Originally from San Francisco, by way of New York, Michael launched his first digital agency in the 90's. Since then he’s led creative, UX, and development teams around the world to solve experience and communication problems for the most recognized brands in the world, including Justin Timberlake, Pepsi, Sony, Microsoft and hundreds of others.
-                        </p>
-                        <p className="uk-text-small uk-text-muted">He’s held Creative and Experience Director roles in some of the biggest agencies in Ad Land, he’s founded startups, and he’s developed massive AI platforms utilizing his talents in creative design, user experience, and programming.</p>
-                        <p className="uk-text-small uk-text-muted">He’s one of those unique people that soaks in information, continues to learn every day, and&mdash;most importantly&mdash;he applies that knowledge to invent, execute and deliver world class results.</p>
-                        <p className="uk-text-small uk-text-muted">Today, he’s living life as a freelancer in Bangkok with his dog, Astro.&quot;</p>
+                        <div>
+                            <p className="uk-margin-small-top">
+                                <span className="uk-dropcap uk-float-left" data-uk-icon="icon: quote-right; ratio: 2;" />
+                                Originally from San Francisco, by way of New York, Michael launched his first digital agency in the 90's. Since then he’s led creative, UX, and development teams around the world to solve experience and communication problems for the most recognized brands in the world, including Justin Timberlake, Pepsi, Sony, Microsoft and hundreds of others.
+                            </p>
+                            <p className="uk-text-small uk-text-muted">He’s held Creative Experience Director roles in some of the biggest agencies in Ad Land, founded startups, and developed massive AI platforms utilizing his talents in creative design, user experience, and programming.</p>
+                            <p className="uk-text-small uk-text-muted">He’s one of those unique people that soaks in information, continues to learn every day, and&mdash;most importantly&mdash;applies that knowledge to invent, execute and deliver world class results.</p>
+                            <p className="uk-text-small uk-text-muted">Today, he’s living life as a freelancer in Bangkok with his dog, Astro.&quot;</p>
                         </div>
                         <div className="uk-text-center uk-margin-large">
                             <button

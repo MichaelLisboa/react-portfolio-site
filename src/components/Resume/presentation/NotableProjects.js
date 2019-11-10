@@ -10,26 +10,25 @@ const NotableProjects = props =>
                     <span>Pepsi</span>
                 </p>
                 <p className="uk-article-meta">
-                    Creative Direction &amp; Strategy &bull; Advertising
+                    Creative Direction &amp; Strategy &bull; Brand Experience
                 </p>
                 <p className="uk-text-lead">
-                    I was given two weeks to conceive, execute and deliver one of the first social media, digital
+                    Conceived, executed and delivered one of the first digital
                     integrated brand campaigns in the world, curating and aggregating content through
                     Pepsi's iconic #refresheverything hashtag.</p>
                 <p className="uk-text-lead">
                     Leveraging on a combination of Pepsi generated and paid content, alongside user
-                    generated content, this campaign set a standard for PepsiCo's digital
+                    generated content, this campaign set a standard for Pepsi's digital
                     campaigns ever since.
                 </p>
                 <ul className="uk-list uk-list-bullet">
                     <li>Developed a digital strategy and creative solution around Pepsi’s
                         “rethink the old, refresh with the new” campaign objectives.</li>
-                    <li>Created a social media strategy and engaged users to interact
+                    <li>Created a digital strategy and engaged users to interact
                         with, and create, fresh content provided by Pepsi’s content curation team.</li>
-                    <li>Led the ideation and design of a crowdsourced social content
+                    <li>Led the ideation and design of a crowdsourced content
                         strategy that included free music downloads, Facebook integration,
-                        and interaction with popular sites like Twitter,
-                        YouTube, Flickr, and more.</li>
+                        and interaction with popular sites like Twitter, YouTube, Flickr, and more.</li>
                 </ul>
             </div>
 

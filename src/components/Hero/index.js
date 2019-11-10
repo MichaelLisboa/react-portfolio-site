@@ -28,9 +28,9 @@ const CtaItem = props => {
                     <p className="case-study-label uk-margin-remove uk-padding-remove">
                         Case Study: {entryPortfolioReference.fields.entryTopic}
                     </p>
-                    <h3 className="case-study-header-title uk-margin-remove">
+                    <p className="case-study-header-title uk-h2 uk-margin-remove">
                         {entryText}
-                    </h3>
+                    </p>
                     <NavLink className={`uk-button uk-button-large ${buttonStyle} uk-margin`}
                         to={`/portfolio/${entryPortfolioReference.fields.entrySlug}`}>
                         See more
@@ -41,7 +41,7 @@ const CtaItem = props => {
                     <p className="case-study-label uk-margin-remove uk-padding-remove">
                         Case Study: {entryPortfolioReference.fields.entryTopic}
                     </p>
-                    <h3 className="case-study-header-title uk-margin-remove">
+                    <h3 className="case-study-header-title uk-h2 uk-margin-remove">
                         {entryText}
                     </h3>
                     <NavLink className={`uk-button uk-button-small ${buttonStyle}`}
