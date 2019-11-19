@@ -1,3 +1,10 @@
+.post-content h2 {
+  font-family: "Maven Pro", "Helvetica", "Arial", sans-serif !important;
+  font-weight: 500 !important;
+  margin-top: 32px !important;
+  margin-bottom: 16px !important;
+}
+
 .post-content h5 {
   font-size: 1.125rem;
   margin: 1.5rem auto 0.25rem;
@@ -15,6 +22,28 @@
 .post-content p {
   margin: 0 0 0.75rem;
   padding: 0;
+}
+
+.post-content a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.post-content em {
+  color: #666;
+}
+
+.post-content blockquote {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.post-content blockquote h3 {
+  color: #666 !important;
+  /* font-size: 1em;
+  line-height: 1.5em; */
+  /* font-family: "Georgia", serif !important; */
+  font-weight: normal;
 }
 
 .post-content hr {
