@@ -46,3 +46,15 @@ section.modal-bio {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
+
+section.modal-bio .uk-close {
+  position: absolute;
+  top: 60px !important;
+  right: 0 !important;
+  z-index: 1;
+}
+
+section.modal-bio button
+section.modal-bio a {
+  margin-bottom: 102px;
+}

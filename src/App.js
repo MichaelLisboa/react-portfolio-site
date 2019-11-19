@@ -7,6 +7,7 @@ import withTracker from "./lib/withTracker";
 import ScrollToTopRoute from "./lib/ScrollToTopRoute";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
+import ProfileContent from "./components/About/presentation/ProfileContent";
 import Rates from "./components/Rates";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
@@ -53,6 +54,7 @@ class App extends Component {
                                     <ScrollToTopRoute path="/blog/:blog" component={withTracker(BlogDetail)}/>
                                     <ScrollToTopRoute path="/blog" component={withTracker(Blog)}/>
                                     <ScrollToTopRoute path="/contact" component={withTracker(Contact)}/>
+                                    <ScrollToTopRoute path="/profile" component={withTracker(ProfileContent)} />
                                     <ScrollToTopRoute path="/" component={withTracker(Home)} />
                                     <ScrollToTopRoute path="/*" component={withTracker(Home)} />
                                 </Switch>
