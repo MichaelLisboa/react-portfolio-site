@@ -2,71 +2,88 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta content="Michael Lisboa: I'm a UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy who specializes in the creative use of technology to invent and design unforgettable user experiences."
-		name=description>
-	<meta content="user experience, consumer experience, digital strategy, marketing, advertising, programming, python, react" name=keywords>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Michael Lisboa's Portfolio</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#37474f">
-	<meta name="msapplication-TileColor" content="#37474f">
-	<meta name="theme-color" content="#37474f">
+    <meta charset="utf-8">
+    <meta content="Michael Lisboa: I'm a UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy who specializes in the creative use of technology to invent and design unforgettable user experiences."
+        name=description>
+    <meta content="user experience, consumer experience, digital strategy, marketing, advertising, programming, python, react" name=keywords>
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Michael Lisboa's Portfolio</title>
 
-	<!-- Open Graph -->
-	<meta property="fb:app_id" content="484644278572308">
-	<meta property="og:url" content="https://www.hypermix.com/">
-	<meta property="og:title" content="Michael Lisboa's Portfolio">
-	<meta property="og:description" content="A UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy specializing in the creative use of technology to invent & design unforgettable user experiences.">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="%PUBLIC_URL%/astro-logo-1200.png">
-	<meta property="og:site_name" content="Michael Lisboa's Portfolio">
-	<meta property="og:locale" content="en_US">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Hypermix">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#37474f">
 
-	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary">
-	<meta name="twitter:site" content="@MichaelLisboaCD">
-	<meta name="twitter:creator" content="@MichaelLisboaCD">
-	<meta name="twitter:url" content="https://www.hypermix.com/">
-	<meta name="twitter:title" content="Michael Lisboa's Portfolio">
-	<meta name="twitter:description" content="A UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy specializing in the creative use of technology to invent & design unforgettable user experiences.">
-	<meta name="twitter:image:src" content="%PUBLIC_URL%/astro-logo-1200.png">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700,900|Maven+Pro:400,500,600|Bitter:400,700" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link href="%PUBLIC_URL%/splashscreens/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="%PUBLIC_URL%/splashscreens/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
 
-	<!-- Start Single Page Apps for GitHub Pages -->
-	<script type="text/javascript">
-		(function(l) {
-			if (l.search) {
-				var q = {};
-				l.search.slice(1).split('&').forEach(function(v) {
-					var a = v.split('=');
-					q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
-				});
-				if (q.p !== undefined) {
-					window.history.replaceState(null, null,
-						l.pathname.slice(0, -1) + (q.p || '') +
-						(q.q ? ('?' + q.q) : '') +
-						l.hash
-					);
-				}
-			}
-		}(window.location))
-	</script>
-	<!-- End Single Page Apps for GitHub Pages -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#37474f">
+    <meta name="msapplication-TileColor" content="#37474f">
+    <meta name="theme-color" content="#37474f">
+
+    <!-- Open Graph -->
+    <meta property="fb:app_id" content="484644278572308">
+    <meta property="og:url" content="https://www.hypermix.com/">
+    <meta property="og:title" content="Michael Lisboa's Portfolio">
+    <meta property="og:description" content="A UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy specializing in the creative use of technology to invent & design unforgettable user experiences.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="%PUBLIC_URL%/astro-logo-1200.png">
+    <meta property="og:site_name" content="Michael Lisboa's Portfolio">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MichaelLisboaCD">
+    <meta name="twitter:creator" content="@MichaelLisboaCD">
+    <meta name="twitter:url" content="https://www.hypermix.com/">
+    <meta name="twitter:title" content="Michael Lisboa's Portfolio">
+    <meta name="twitter:description" content="A UX designer, creative director, illustrator, programmer, start-up founder, and a really good guy specializing in the creative use of technology to invent & design unforgettable user experiences.">
+    <meta name="twitter:image:src" content="%PUBLIC_URL%/astro-logo-1200.png">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,600,700,900|Maven+Pro:400,500,600|Bitter:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+        (function(l) {
+            if (l.search) {
+                var q = {};
+                l.search.slice(1).split('&').forEach(function(v) {
+                    var a = v.split('=');
+                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+                });
+                if (q.p !== undefined) {
+                    window.history.replaceState(null, null,
+                        l.pathname.slice(0, -1) + (q.p || '') +
+                        (q.q ? ('?' + q.q) : '') +
+                        l.hash
+                    );
+                }
+            }
+        }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
 </head>
 
-    <body>
-    	<noscript>You need to enable JavaScript to run this app.</noscript>
-    	<div id="root"></div>
-        <!-- script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script -->
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
-    	<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-    </body>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+</body>
 
 </html>

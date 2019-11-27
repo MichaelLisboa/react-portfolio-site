@@ -57,10 +57,14 @@ class PortfolioList extends Component {
             .sort((a, b) => new Date(b.entryDate).getTime() - new Date(a.entryDate).getTime())
             .map((post, i) => {
                 return (
+                    <>
+                    {post.entrySlug !== "citibank" &&
                     <PortfolioListItem
                         key={post.entrySlug}
                         portfolioItem={post}
                     />
+                    }
+                    </>
                 );
             });
 
