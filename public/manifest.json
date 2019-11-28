@@ -23,7 +23,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/?utm_source=hypermix",
+    "start_url": "/?utm_source=A2HS",
 	"scope": "/",
 	"display": "standalone",
 	"orientation": "portrait",
