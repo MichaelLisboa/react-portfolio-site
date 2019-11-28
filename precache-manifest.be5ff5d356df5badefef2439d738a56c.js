@@ -1,23 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f9fb386237015f1bf0a3153b64a609a",
+    "revision": "dcce7a47e28d0e05a394dd5ff4a218f2",
     "url": "/index.html"
   },
   {
-    "revision": "95819e64d175a6951907",
-    "url": "/static/css/main.091ad86c.chunk.css"
+    "revision": "973ad120ea80e8fde998",
+    "url": "/static/css/main.aa030484.chunk.css"
   },
   {
-    "revision": "5f13e8d5bd1f2cd4acfe",
-    "url": "/static/js/2.5ffe5b7a.chunk.js"
+    "revision": "5b4de8c7b3aaf6468fe0",
+    "url": "/static/js/2.63ca5b92.chunk.js"
   },
   {
-    "revision": "95819e64d175a6951907",
-    "url": "/static/js/main.a939223b.chunk.js"
+    "revision": "973ad120ea80e8fde998",
+    "url": "/static/js/main.62ae8841.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
+  },
+  {
+    "revision": "6f451127b0ba33a5eecde0a6a782785a",
+    "url": "/static/media/astro-logo-192.6f451127.png"
   },
   {
     "revision": "3658d8d298d3420a1167cc5934bc3ca7",

@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.091ad86c.chunk.css",
-    "main.js": "/static/js/main.a939223b.chunk.js",
+    "main.css": "/static/css/main.aa030484.chunk.css",
+    "main.js": "/static/js/main.62ae8841.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "static/js/2.5ffe5b7a.chunk.js": "/static/js/2.5ffe5b7a.chunk.js",
+    "static/js/2.63ca5b92.chunk.js": "/static/js/2.63ca5b92.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.b69df65a72ae828dc98eb38cbe66a11e.js": "/precache-manifest.b69df65a72ae828dc98eb38cbe66a11e.js",
+    "precache-manifest.be5ff5d356df5badefef2439d738a56c.js": "/precache-manifest.be5ff5d356df5badefef2439d738a56c.js",
     "service-worker.js": "/service-worker.js",
+    "static/media/astro-logo-192.png": "/static/media/astro-logo-192.6f451127.png",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
     "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
     "static/media/fairmont.png": "/static/media/fairmont.7321bf6d.png",
