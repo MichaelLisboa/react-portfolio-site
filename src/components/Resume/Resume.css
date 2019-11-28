@@ -46,12 +46,12 @@ article .title {
 .work-experience .uk-article-title {
   margin-top: 35px;
   font-size: 1.5rem;
-  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif !important;
   color: #2c2c2c;
 }
 
 .work-experience .uk-article-meta {
-  font-family: 'Roboto', "Helvetica", "Arial", sans-serif !important;
+  font-family: 'Open Sans', "Helvetica", "Arial", sans-serif !important;
   text-transform: uppercase;
   margin: 0 !important;
   padding: 0 !important;

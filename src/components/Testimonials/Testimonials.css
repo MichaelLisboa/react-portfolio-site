@@ -1,7 +1,8 @@
 .testimonials li p.uk-text-large {
   font-size: 1.2rem !important;
   margin-bottom: 1.5rem;
-  font-family: "Bitter", Georgia, "Garamond", "Times New Roman", serif;
+  font-family: "Bitter", "Georgia", "Garamond", "Times New Roman", serif;
+  font-style: italic;
 }
 
 .testimonials li p {

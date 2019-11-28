@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import ProfileContent from "./ProfileContent";
+import { useModal } from "../../Hooks/useModal";
 import Modal from "../../Modal";
 
 const AboutContent = () => {
-    const [isShowing, setIsShowing] = useState(false);
+    const [modalOpen, setModalOpen, toggleModal] = useModal();
     return (
         <section className="about-section uk-section uk-section-expand uk-section-default uk-margin-large-top">
             <div className="uk-width-4-5@s uk-width-3-4@m">
@@ -16,7 +17,7 @@ const AboutContent = () => {
                 <p className="uk-text-lead uk-margin-remove-bottom uk-margin-medium-bottom@s">
                     You'll find that I'm all of the above.
                     <button
-                        onClick={() => setIsShowing(true)}
+                        onClick={toggleModal}
                         className="uk-text-small uk-text-muted uk-button uk-button-small uk-button-link uk-display-block
                             uk-text-baseline uk-text-capitalize uk-text-small uk-padding-remove uk-margin-remove">
                         READ MORE...
@@ -24,8 +25,9 @@ const AboutContent = () => {
                 </p>
             </div>
             <Modal
-                isShown={isShowing}>
-                <ProfileContent isShowing={setIsShowing} />
+                isActive={modalOpen}
+                className="fullscreen-card">
+                <ProfileContent isShowing={setModalOpen} />
             </Modal>
         </section>
     )

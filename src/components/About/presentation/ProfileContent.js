@@ -12,7 +12,6 @@ const profileImages = [profileImageA, profileImageB, profileImageC, profileImage
 
 
 const ProfileContent = ({isShowing, ...props}) => {
-    console.log(history)
     return (
         <section className="modal-bio uk-width-1-1 uk-background-muted">
             {history.location.pathname !== "/profile" &&

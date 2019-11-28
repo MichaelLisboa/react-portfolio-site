@@ -1,49 +1,66 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
-import {useSpring, animated as a} from "react-spring";
-import usePortal from "../../lib/usePortal";
-
+import {useSpring, useChain, animated as a} from "react-spring";
+import usePortal from "../Hooks/usePortal";
 import "./Modal.css";
 
-const Modal = ({children, ...props}) => {
-    const [isShowing, setIsShowing] = useState(false);
-    const [isAnimating, setIsAnimating] = useState(false);
+const Modal = ({isActive, children, ...props}) => {
     const target = usePortal("ModalParent");
+    const [isShowing, setIsShowing] = useState(false);
+    const showingRef = useRef(false);
 
     useEffect(
         () => {
-            setIsAnimating(props.isShown);
-            if (props.isShown) {
-                setIsShowing(props.isShown);
-                // document.body.style.position = 'fixed';
+            let timer;
+            if (isActive) {
+                setIsShowing(true);
                 document.body.style.top = `-${window.scrollY}px`;
             } else {
+                timer = setTimeout(() => {
+                    setIsShowing(showingRef.current);
+                }, 1000)
                 const scrollY = document.body.style.top;
-                const unMount = setTimeout(() => { setIsShowing(props.isShown); }, 300);
-                document.body.style.position = '';
-                document.body.style.top = '';
-                window.scrollTo(0, parseInt(scrollY || '0') * -1);
+                document.body.style.position = "";
+                document.body.style.top = "";
+                window.scrollTo(0, parseInt(scrollY || "0") * -1);
             }
-        }, [props.isShown]
+            return () => clearTimeout(timer);
+        }, [isActive]
     )
 
-    const modalProps = useSpring({
-        opacity: isAnimating ? 1 : 0,
-        top: isAnimating ? 0 : 200,
-        borderStyle: "none"
+    const containerRef = useRef();
+    const cardRef = useRef();
+
+    const modalContainer = useSpring({
+        ref: containerRef,
+        delay: isActive ? 0 : 200,
+        opacity: isActive ? 1 : 0,
+        top: isActive ? 0 : 100,
     });
+
+    const modalCard = useSpring({
+        ref: cardRef,
+        delay: isActive ? 100 : 0,
+        opacity: isActive ? 1 : 0,
+        top: isActive ? 0 : 300,
+    });
+
+    useChain([containerRef, cardRef]);
 
     return (
         isShowing && ReactDOM.createPortal(
             <a.div
-                style={modalProps}
-                className="modal-full"
+                style={modalContainer}
+                className={`modal-background`}
                 tabIndex={-1} role="dialog">
-                <div className="modal-container">
+                <a.div
+                    style={modalCard}
+                    className={`modal-container ${props.className}`}>
                     {children}
-                </div>
+                </a.div>
             </a.div>,
-            target)
+            target
+        )
     )
 }
 

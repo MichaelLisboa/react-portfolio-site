@@ -29,8 +29,8 @@
         "contentful": "^7.10.0",
         "gh-pages": "^2.1.1",
         "moment": "^2.24.0",
-        "react": "^16.11.0",
-        "react-dom": "^16.11.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
         "react-ga": "^2.7.0",
         "react-markdown": "^4.2.2",
         "react-router-dom": "^5.1.2",
@@ -38,7 +38,7 @@
         "react-spring": "^8.0.27",
         "react-syntax-highlighter": "^10.3.5",
         "recompose": "^0.30.0",
-        "uikit": "^3.2.2",
+        "uikit": "^3.2.3",
         "yes-https": "^1.0.0"
     },
     "eslintConfig": {
