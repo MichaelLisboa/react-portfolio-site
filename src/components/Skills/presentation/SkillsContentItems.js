@@ -24,7 +24,7 @@ export const UxMessage =
         <div className="skills-case-study-buttons">
             <p className="uk-h6 uk-margin-remove uk-padding-remove">Cases</p>
             <CaseStudyLink
-                link="/portfolio/thailand-fintech-app">
+                link="/portfolio/deemoney-progressive-web-app">
                     DeeMoney
             </CaseStudyLink>
             <CaseStudyLink

@@ -28,6 +28,8 @@ const PortfolioItems = ({items}) =>
 
 const PortfolioItemsWithLoading = compose(withLoading,)(PortfolioItems);
 
+const hiddenCases = ['citibank', 'thailand-fintech-app'];
+
 class PortfolioList extends Component {
     constructor (props) {
         super(props);
@@ -58,7 +60,7 @@ class PortfolioList extends Component {
             .map((post, i) => {
                 return (
                     <>
-                    {post.entrySlug !== "citibank" &&
+                    {!hiddenCases.includes(post.entrySlug) &&
                     <PortfolioListItem
                         key={post.entrySlug}
                         portfolioItem={post}
