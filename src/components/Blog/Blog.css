@@ -29,6 +29,11 @@
   text-decoration: underline;
 }
 
+.post-content a.uk-button {
+  color: #fff;
+  text-decoration: none;
+}
+
 .post-content em {
   color: #666;
 }

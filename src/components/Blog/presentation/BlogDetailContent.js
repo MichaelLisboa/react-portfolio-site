@@ -32,14 +32,14 @@ const BlogPostContent = (props) => {
                     escapeHtml={false}
                 />
             </div>
-            { imageGallery.length > 0 ? (
+            { imageGallery.length > 0 &&
                 <div className="uk-container uk-container-small uk-margin-medium">
                     <div className="uk-grid uk-grid-medium uk-child-width-1-2 uk-child-width-1-3@s"
                         data-uk-grid data-uk-lightbox>
                         <BlogDetailImages gallery={imageGallery} />
                     </div>
                 </div>
-            ) : null}
+            }
         </section>
     );
 };
