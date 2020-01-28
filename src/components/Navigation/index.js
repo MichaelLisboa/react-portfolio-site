@@ -31,12 +31,12 @@ const Navigation = () =>
                 <ul className="uk-navbar-nav">
                     <li>
                         <NavLink activeClassName="uk-active" exact to={'/portfolio'}>
-                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Work
+                            Work
                         </NavLink>
                     </li>
                     <li>
                         <NavLink activeClassName="uk-active" exact to={'/resume'}>
-                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Resume
+                            Resume
                         </NavLink>
                     </li>
                     <li>
@@ -48,12 +48,12 @@ const Navigation = () =>
                     </li>
                     <li>
                         <NavLink activeClassName="uk-active" exact to={'/blog'}>
-                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Waste
+                            Waste
                         </NavLink>
                     </li>
                     <li>
                         <NavLink activeClassName="uk-active" exact to={'/contact'}>
-                            <span data-uk-icon="icon: grid; ratio: 0.75" /> &nbsp;Contact
+                            Contact
                         </NavLink>
                     </li>
                 </ul>
