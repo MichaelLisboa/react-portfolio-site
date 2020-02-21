@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.c2044f0f.chunk.css",
-    "main.js": "/static/js/main.d959919a.chunk.js",
+    "main.js": "/static/js/main.f1630228.chunk.js",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "static/js/2.e8b49b2f.chunk.js": "/static/js/2.e8b49b2f.chunk.js",
+    "static/js/2.794ab549.chunk.js": "/static/js/2.794ab549.chunk.js",
     "index.html": "/index.html",
-    "precache-manifest.8cd04c94509257917a2df401f2a7eb74.js": "/precache-manifest.8cd04c94509257917a2df401f2a7eb74.js",
+    "precache-manifest.2be3d9fad2f5044660e7e92c2212f8b6.js": "/precache-manifest.2be3d9fad2f5044660e7e92c2212f8b6.js",
     "service-worker.js": "/service-worker.js",
     "static/media/astro-logo-192.png": "/static/media/astro-logo-192.6f451127.png",
     "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
@@ -22,6 +22,7 @@
     "static/media/nestle.png": "/static/media/nestle.daa3700c.png",
     "static/media/pepsi.png": "/static/media/pepsi.51287598.png",
     "static/media/raiders.png": "/static/media/raiders.56146cae.png",
+    "static/media/silver-bullet-headline.png": "/static/media/silver-bullet-headline.3b88b6c9.png",
     "static/media/skills-creative.png": "/static/media/skills-creative.cef116b1.png",
     "static/media/skills-tech.png": "/static/media/skills-tech.55ee76bb.png",
     "static/media/skills-ux.png": "/static/media/skills-ux.261a27ad.png",

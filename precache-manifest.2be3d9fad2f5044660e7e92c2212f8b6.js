@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0964d464924dbdc481b5c764f747b7bd",
+    "revision": "780df46b2fb69fda633f26aca0552689",
     "url": "/index.html"
   },
   {
-    "revision": "90a41f78ff1b21840d84",
+    "revision": "3d6f4f79b0bf7b826941",
     "url": "/static/css/main.c2044f0f.chunk.css"
   },
   {
-    "revision": "1ac2323cef122721cf09",
-    "url": "/static/js/2.e8b49b2f.chunk.js"
+    "revision": "67f73c78dfa185357a80",
+    "url": "/static/js/2.794ab549.chunk.js"
   },
   {
-    "revision": "90a41f78ff1b21840d84",
-    "url": "/static/js/main.d959919a.chunk.js"
+    "revision": "3d6f4f79b0bf7b826941",
+    "url": "/static/js/main.f1630228.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -78,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "56146cae917ec229dd3ea7cd354ce61e",
     "url": "/static/media/raiders.56146cae.png"
+  },
+  {
+    "revision": "3b88b6c9a049976d290dd12a59f3c209",
+    "url": "/static/media/silver-bullet-headline.3b88b6c9.png"
   },
   {
     "revision": "cef116b15c38f7c06f887ac943ed0228",
