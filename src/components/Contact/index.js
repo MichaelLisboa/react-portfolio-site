@@ -39,7 +39,7 @@ class Contact extends Component {
                     data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; target: div > *; repeat: true;">
                         <div className="uk-width-3-5@s">
                             <p className="uk-h6 uk-text-muted uk-margin-small-bottom uk-text-uppercase">
-                                <strong>&mdash;</strong> Not bound by timezones
+                                <strong>&mdash;</strong> Let's do great things
                             </p>
                             <p className="uk-h2 uk-margin-remove-top">
                                 <span className="uk-margin-bottom uk-display-block">

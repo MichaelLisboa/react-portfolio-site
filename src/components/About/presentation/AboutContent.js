@@ -1,14 +1,20 @@
-import React, {useState} from "react";
+import React from "react";
 import ProfileContent from "./ProfileContent";
 import { useModal } from "../../Hooks/useModal";
 import Modal from "../../Modal";
 
+import headline from "../../../images/silver-bullet-headline.png";
+
 const AboutContent = () => {
     const [modalOpen, setModalOpen, toggleModal] = useModal();
     return (
-        <section className="about-section uk-section uk-section-expand uk-section-default uk-margin-large-top">
+        <section className="about-section uk-section uk-section-expand uk-section-default uk-margin-top">
             <div className="uk-width-4-5@s uk-width-3-4@m">
-                <p className="uk-h2">
+                <img
+                    src={headline}
+                    alt="Your Creative Silver Bullet. Right Here."
+                    />
+                <p className="uk-text-lead uk-margin-large-top">
                     <span className="uk-margin-bottom uk-display-block">Hi, I'm Michael.</span>
                     Depending on who you ask, <span className="uk-text-nowrap">you might hear</span> that I'm a
                     brand strategist, creative director, <span className="uk-text-nowrap">UX specialist</span>,

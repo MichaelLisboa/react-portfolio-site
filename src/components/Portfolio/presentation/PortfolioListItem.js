@@ -14,9 +14,11 @@ const PortfolioItem = props => {
     const categories = entryCategory.split(',')
         .map((category, i) => {
             return (
-                <small key={i} className="uk-margin-small-right uk-text-nowrap">
+                <p key={i}
+                    style={{fontSize: "0.75rem", color: "#a0a0a0", marginTop: "0", marginBottom: "4px", marginRight: "8px"}}
+                    className="uk-display-inline-block uk-text-small uk-text-nowrap">
                     {category}
-                </small>
+                </p>
             )
         })
 

@@ -2,6 +2,19 @@ nav {
   background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
+.uk-navbar-container a {
+  font-family: "Maven Pro", "Helvetica", sans-serif !important;
+  font-size: 0.8em !important;
+  min-width: 120px;
+  text-align: center;
+}
+
+.uk-navbar-container a.uk-active {
+  color: #333;
+  font-weight: 600;
+  text-decoration: overline;
+}
+
 .anim-nav-container {
   position: fixed;
   top: 0;
@@ -44,10 +57,6 @@ nav .uk-navbar-toggle,
 nav li a {
   min-height: 60px !important;
 }
-nav .uk-active {
-  color: #546e7a !important;
-  background-color: #f5f5f5;
-}
 
 a.home-icon {
   color: #888 !important;
@@ -58,5 +67,5 @@ a.hide-home-icon {
 }
 
 .top-nav-overlay a {
-  color: #546e7a !important;
+  /* color: #546e7a !important; */
 }

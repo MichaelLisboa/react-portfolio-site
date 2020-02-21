@@ -95,7 +95,7 @@ const MobileNav = () => {
                     key={key}
                     className="anim-nav-item uk-flex-center uk-flex uk-flex-middle"
                     style={{ background: item.backgroundColor, ...props }}>
-                        <p style={{color: "white", fontWeight: "normal"}} className="uk-h4 uk-margin-remove uk-padding-remove">{item.name}</p>
+                        <p style={{color: "white"}} className="uk-h4 uk-margin-remove uk-padding-remove">{item.name}</p>
                 </animated.div>
                 </NavLink>
             ))}
