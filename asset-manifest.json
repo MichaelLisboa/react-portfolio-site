@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61144063.chunk.css",
+    "main.js": "/static/js/main.674324af.chunk.js",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "static/js/2.794ab549.chunk.js": "/static/js/2.794ab549.chunk.js",
+    "index.html": "/index.html",
+    "precache-manifest.a2e27d9db15570a349faf61d7363161a.js": "/precache-manifest.a2e27d9db15570a349faf61d7363161a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/astro-logo-192.png": "/static/media/astro-logo-192.6f451127.png",
+    "static/media/astro-logo.svg": "/static/media/astro-logo.3658d8d2.svg",
+    "static/media/citibank.png": "/static/media/citibank.ec2cf0ab.png",
+    "static/media/fairmont.png": "/static/media/fairmont.7321bf6d.png",
+    "static/media/hp.png": "/static/media/hp.85b29b35.png",
+    "static/media/michael-a.png": "/static/media/michael-a.881d5499.png",
+    "static/media/michael-b.png": "/static/media/michael-b.d3682ccb.png",
+    "static/media/michael-c.png": "/static/media/michael-c.83868b04.png",
+    "static/media/michael-d.png": "/static/media/michael-d.a25f5cb3.png",
+    "static/media/microsoft.png": "/static/media/microsoft.78b8acd2.png",
+    "static/media/monterey-aquarium.png": "/static/media/monterey-aquarium.79e903a3.png",
+    "static/media/nec.png": "/static/media/nec.3f3b0872.png",
+    "static/media/nestle.png": "/static/media/nestle.daa3700c.png",
+    "static/media/pepsi.png": "/static/media/pepsi.51287598.png",
+    "static/media/raiders.png": "/static/media/raiders.56146cae.png",
+    "static/media/silver-bullet-headline.png": "/static/media/silver-bullet-headline.3b88b6c9.png",
+    "static/media/skills-creative.png": "/static/media/skills-creative.cef116b1.png",
+    "static/media/skills-tech.png": "/static/media/skills-tech.55ee76bb.png",
+    "static/media/skills-ux.png": "/static/media/skills-ux.261a27ad.png",
+    "static/media/sony.png": "/static/media/sony.45cc245b.png",
+    "static/media/universal.png": "/static/media/universal.1c0c7928.png",
+    "static/media/wellsfargo.png": "/static/media/wellsfargo.42fac7f9.png"
+  }
+}
